@@ -1,0 +1,96 @@
+.lista-de-productos {
+	margin-top: 2em;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	max-width: 1280px;
+	gap: 3em;
+}
+
+.productos {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-inline: 3em;
+	width: 280px;
+	height: 420px;
+	cursor: pointer;
+	border-radius: 25px;
+	background-color: #f6f6f6;
+}
+
+.logo-shoes {
+	position: absolute;
+	left: 25px;
+	top: 5px;
+	width: 60px;
+	z-index: 2;
+	height: 60px;
+}
+
+.shoes {
+	position: relative;
+	display: flex;
+	align-items: center;
+	top: 18px;
+	width: 210px;
+	height: 220px;
+	border-radius: 100px 100px 100px 100px;
+	transform: rotate(20deg) scaleX(-1);
+	z-index: 1;
+	margin-bottom: 0.7em;
+	transition: transform 0.3s ease;
+}
+
+.shoes:hover {
+	transform: scale(1.15) rotate(20deg) scaleX(-1);
+	/* transition: transform 0.3s ease; */
+}
+.description-shoes {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	z-index: 3;
+	height: 180px;
+	padding-bottom: 1em;
+	/* background-color: purple; */
+}
+
+.description-shoes h3 {
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+.description-shoes-par {
+	font-size: 0.7em;
+	color: gray;
+}
+
+.description-shoes-price p {
+	text-align: end;
+}
+
+.description-shoes-price span {
+	font-size: 1.3em;
+	font-weight: bold;
+	color: rgb(50, 50, 50);
+}
+
+.productos button {
+	cursor: pointer;
+	font-size: 0.8em;
+	font-weight: 800;
+	width: 225px;
+	height: 35px;
+	border-radius: 30px;
+	border: 0;
+	color: #fff;
+	background-color: rgb(255, 132, 0);
+}
+
+.productos button:hover {
+	background-color: rgba(255, 132, 0, 0.884);
+	transition: transform 0.3s ease;
+}
