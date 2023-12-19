@@ -5,8 +5,6 @@ export const datos = () => {
 		setTimeout(() => {
 			resolve(data);
 		}, 500);
-
-		console.log(data);
 	});
 };
 

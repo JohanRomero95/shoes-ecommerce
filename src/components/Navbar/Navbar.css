@@ -2,12 +2,12 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding-block: 1.6em;
-	padding-inline: 1em;
+	padding-block: 1.2em;
+	padding-inline: 5em;
 }
 
 .title {
-	padding-right: 1.6em;
+	/* padding-right: 1.6em; */
 	font-size: 2.1em;
 	color: black;
 }
@@ -17,7 +17,7 @@
 	font-weight: 500;
 	text-decoration: none;
 	margin-right: 2em;
-	font-size: 0.8em;
+	/* font-size: 0.8em; */
 }
 
 .navbar ul {
@@ -27,15 +27,19 @@
 	justify-content: center;
 }
 
-.navbar-left li:hover a {
+.navbar-center {
+	font-size: 0.9em;
+}
+
+.navbar-center li:hover a {
 	color: black;
-	border-bottom: 4px solid rgb(255, 132, 0);
-	padding-bottom: 2.8em;
+	border-bottom: 5px solid rgb(255, 132, 0);
+	padding-bottom: 2.2em;
 	transition: transform 0.3s ease;
 }
 
 .navbar img {
-	width: 40px;
+	width: 45px;
 	border: 1px solid rgba(0, 0, 0, 0.3);
 	border-radius: 50%;
 	cursor: pointer;
