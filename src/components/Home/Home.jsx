@@ -2,6 +2,8 @@ import { useRef } from "react";
 import "./Home.css";
 import { useState } from "react";
 import pauseImg from "../../assets/svg/pause.svg";
+import publicImg from "../../assets/images/holidayTwo.webp";
+import Slider from "../Slider/Slider";
 
 const Home = () => {
 	const videoRef = useRef(null);
@@ -41,9 +43,12 @@ const Home = () => {
 						<button>Press Here</button>
 					</div>
 				</div>
+				<Slider />
 				<section className="section-mid">
 					<div className="publicidad-mid">
-						<h3>hey you</h3>
+						<div className="background-public-img">
+							<img src={publicImg} className="publicidad-img"></img>
+						</div>
 					</div>
 				</section>
 			</section>

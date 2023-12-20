@@ -65,3 +65,14 @@
 }
 
 /* --------- Section MID --------------*/
+
+.publicidad-img {
+	width: 75%;
+}
+
+.background-public-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #13312c;
+}

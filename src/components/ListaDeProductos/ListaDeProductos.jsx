@@ -1,16 +1,9 @@
-import { useEffect, useState } from "react";
-import { datos } from "../../helpers/datos";
 import "./ListaDeProductos.css";
 import { agregarNueves } from "../../helpers/agregarNueves";
+import { useProductos } from "../Call/useProductos";
 
 const ListaDeProductos = () => {
-	const [productos, setProductos] = useState([]);
-
-	useEffect(() => {
-		datos().then((res) => {
-			setProductos(res);
-		});
-	}, []);
+	const productos = useProductos();
 
 	return (
 		<div className="contenedor">
