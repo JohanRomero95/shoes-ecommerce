@@ -5,10 +5,16 @@
 	padding: 0;
 }
 
-html {
+body {
 	width: 100vw;
 	height: 100vh;
+	overflow-x: hidden;
 }
+
+/* html { */
+/* width: 100vw;
+	height: 100vh; */
+/* } */
 
 body::-webkit-scrollbar {
 	width: 7px;

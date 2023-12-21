@@ -3,6 +3,13 @@
 	height: 100vh;
 }
 
+hr {
+	background-color: red;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
 .section-top {
 	height: 100vh;
 	width: 100vw;
@@ -13,7 +20,7 @@
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	width: 100%;
+	width: 100vw;
 }
 
 .video {
@@ -21,13 +28,13 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 100%;
+	width: 100vw;
 	height: 600px;
 }
 
 .video video {
 	position: relative;
-	width: 100%;
+	width: 100vw;
 	height: 100%;
 	object-fit: cover;
 }
@@ -37,7 +44,6 @@
 	position: absolute;
 	width: 100px;
 	height: 100px;
-	/* background-color: purple; */
 }
 
 .publicidad-video {
@@ -45,8 +51,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	/* background-color: purple; */
-	width: 100%;
+	width: 100vw;
 	font-size: 2em;
 	text-align: center;
 	height: 26vh;

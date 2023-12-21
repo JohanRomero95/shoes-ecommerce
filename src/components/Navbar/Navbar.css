@@ -1,9 +1,14 @@
 .navbar {
 	display: flex;
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100vw;
 	align-items: center;
 	justify-content: space-between;
 	padding-block: 1.2em;
 	padding-inline: 5em;
+	background-color: #ffff;
 }
 
 .title {
@@ -17,7 +22,6 @@
 	font-weight: 500;
 	text-decoration: none;
 	margin-right: 2em;
-	/* font-size: 0.8em; */
 }
 
 .navbar ul {
