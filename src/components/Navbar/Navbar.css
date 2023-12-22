@@ -1,6 +1,6 @@
 .navbar {
 	display: flex;
-	position: sticky;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100vw;
@@ -9,6 +9,7 @@
 	padding-block: 1.2em;
 	padding-inline: 5em;
 	background-color: #ffff;
+	z-index: 100;
 }
 
 .title {
@@ -38,7 +39,7 @@
 .navbar-center li:hover a {
 	color: black;
 	border-bottom: 5px solid rgb(255, 132, 0);
-	padding-bottom: 2.2em;
+	padding-bottom: 2.1em;
 	transition: transform 0.3s ease;
 }
 

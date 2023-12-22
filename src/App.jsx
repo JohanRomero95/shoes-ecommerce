@@ -9,7 +9,6 @@ function App() {
 		<div>
 			<BrowserRouter>
 				<Navbar />
-				<hr />
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/collections" element={<ListaDeProductos />} />
