@@ -1,0 +1,17 @@
+.promo-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	position: relative;
+	top: 0;
+	z-index: 101;
+	background-color: rgba(0, 0, 0, 0.9);
+	color: white;
+	padding-block: 0.3em;
+}
+
+.promo-header h1 {
+	font-size: 1em;
+	font-weight: 400;
+}

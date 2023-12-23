@@ -1,0 +1,55 @@
+.section-running {
+	background-color: rgb(255, 132, 0);
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100vw;
+	border-radius: 40px 0px 0px 0px;
+}
+
+.publicidad-running {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-block: 3em;
+	padding-inline: 4.3em;
+	/* background-color: red; */
+}
+
+.section-running video {
+	/* width: 700px; */
+}
+
+.texto {
+	display: flex;
+	text-align: start;
+	line-height: 4em;
+	padding-bottom: 3em;
+	/* background-color: blue; */
+}
+
+.publicidad-text {
+	color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-inline: 3em;
+	max-width: 500px;
+	/* background-color: red; */
+}
+
+.publicidad-text h1 {
+	text-transform: uppercase;
+	font-size: 5em;
+}
+
+.publicidad-text span {
+	text-transform: uppercase;
+	font-size: 0.7em;
+}
+
+.publicidad-text p {
+	line-height: 2em;
+	word-spacing: 0.2em;
+	font-weight: 500;
+}

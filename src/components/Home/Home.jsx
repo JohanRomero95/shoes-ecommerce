@@ -3,8 +3,9 @@ import "./Home.css";
 import { useState } from "react";
 import pauseImg from "../../assets/svg/pause.svg";
 import Slider from "../Slider/Slider";
-import PublicMid from "../Publicidad/PublicMid"
-
+import PublicMid from "../Publicidad/PublicHoliday/PublicMid";
+import PublicRunning from "../Publicidad/PublicRunning/PublicRunning";
+import VideoRihanna from "../../assets/videos/videoPumaRihanna.webm";
 
 const Home = () => {
 	const videoRef = useRef(null);
@@ -26,13 +27,7 @@ const Home = () => {
 						className="video"
 						onMouseEnter={() => setMostrarBoton(true)}
 						onMouseLeave={() => setMostrarBoton(false)}>
-						<video
-							ref={videoRef}
-							autoPlay
-							loop
-							muted
-							playsInline
-							src="https://cl.puma.com/media/contentmanager/content/23AW_SP_Fenty-Creeper_Rihanna_1536x1536_15s.mp4"></video>
+						<video ref={videoRef} autoPlay loop muted playsInline src={VideoRihanna}></video>
 						{mostrarBoton && (
 							<img src={pauseImg} className="button-pause" onClick={pausarReproducir}></img>
 						)}
@@ -46,7 +41,10 @@ const Home = () => {
 				</div>
 			</section>
 			<Slider />
-         <PublicMid/>
+			{/* <section className="mid"> */}
+				<PublicRunning />
+				<PublicMid />
+			{/* </section> */}
 		</main>
 	);
 };

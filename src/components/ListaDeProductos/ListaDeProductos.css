@@ -8,7 +8,7 @@
 .lista-de-productos {
 	margin-top: 2em;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: auto;
 	max-width: 100%;
 	gap: 3em;

@@ -32,9 +32,6 @@
 }
 
 .slider-contenedor img {
-	/* display: flex;
-	align-items: baseline;
-	justify-content: center; */
 	margin-inline: 0.3em;
 	width: 30%;
 	height: auto;
@@ -61,6 +58,12 @@
 	z-index: 20;
 	border-radius: 100%;
 	background-color: rgba(128, 128, 128, 0.3);
+}
+
+.button-slider-before:hover,
+.button-slider-next:hover {
+	transform: scale(1.4);
+	transition: transform 0.2s ease;
 }
 
 .button-slider-next {

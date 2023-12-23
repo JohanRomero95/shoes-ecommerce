@@ -5,9 +5,9 @@
 	padding: 0;
 }
 
-/* .contenedor {
-	padding-top: 90px;
-} */
+.contenedor {
+	padding-top: 6em;
+}
 
 body {
 	width: 100vw;

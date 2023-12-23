@@ -18,6 +18,11 @@
 	color: black;
 }
 
+.title:hover {
+	transform: scale(1.2);
+	transition: transform 0.3s ease;
+}
+
 .navbar a {
 	color: gray;
 	font-weight: 500;
@@ -33,13 +38,13 @@
 }
 
 .navbar-center {
-	font-size: 0.9em;
+	font-size: 1.2em;
 }
 
 .navbar-center li:hover a {
 	color: black;
 	border-bottom: 5px solid rgb(255, 132, 0);
-	padding-bottom: 2.1em;
+	padding-bottom: 1.4em;
 	transition: transform 0.3s ease;
 }
 
