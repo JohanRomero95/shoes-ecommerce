@@ -1,4 +1,5 @@
 import "../src/styles/App.css";
+import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
 import ListaDeProductos from "./components/ListaDeProductos/ListaDeProductos";
 import Navbar from "./components/Navbar/Navbar";
@@ -14,7 +15,8 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/collections" element={<ListaDeProductos />} />
-				</Routes>
+            </Routes>
+            <Footer />
 			</BrowserRouter>
 		</div>
 	);

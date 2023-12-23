@@ -6,7 +6,7 @@
 }
 
 .lista-de-productos {
-	margin-top: 2em;
+	margin-top: 6em;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: auto;

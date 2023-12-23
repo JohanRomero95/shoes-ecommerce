@@ -24,7 +24,7 @@ hr {
 	align-items: center;
 	width: 100vw;
 	height: 100vh;
-	/* padding-top: 6em; */
+	padding-top: 6em;
 }
 
 .video {
@@ -34,7 +34,7 @@ hr {
 	justify-content: center;
 	width: 100vw;
 	height: 600px;
-	top: -10px;
+	/* top: -10px; */
 }
 
 .video video {

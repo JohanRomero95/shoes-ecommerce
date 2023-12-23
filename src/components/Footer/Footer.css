@@ -1,0 +1,70 @@
+.footer-contenedor {
+	background-color: #1c1c1c;
+	position: relative;
+	color: #ffff;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	padding-block: 0.4em;
+}
+
+.footer-contenedor h2,
+.footer-contenedor h3 {
+	cursor: pointer;
+}
+
+.footer-contenedor hr {
+	background-color: red;
+}
+
+.footer-contenedor p {
+	color: #7e7e7e;
+	font-size: 0.8em;
+	word-spacing: 0.2em;
+	line-height: 2em;
+	cursor: pointer;
+}
+
+.footer-top {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 3em;
+	padding-bottom: 7em;
+}
+
+.redes {
+	display: flex;
+	color: whte;
+}
+
+.footer-bottom {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-inline: 7em;
+	padding-top: 2em;
+	padding-bottom: 0.6em;
+	/* background-color: red; */
+}
+
+.footer-bottom h2 {
+	display: flex;
+	align-items: center;
+	font-size: 0.8em;
+}
+
+.footer-bottom p {
+	display: flex;
+	align-items: center;
+	font-size: 0.7em;
+}
+
+.derechos {
+	display: flex;
+	gap: 2em;
+}
+
+.terminos {
+	display: flex;
+	gap: 1em;
+}

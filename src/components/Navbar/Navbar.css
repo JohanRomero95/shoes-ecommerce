@@ -7,7 +7,7 @@
 	align-items: center;
 	justify-content: space-between;
 	padding-block: 1.2em;
-	padding-inline: 5em;
+	padding-inline: 7.2em;
 	background-color: #ffff;
 	z-index: 100;
 }
@@ -44,7 +44,7 @@
 .navbar-center li:hover a {
 	color: black;
 	border-bottom: 5px solid rgb(255, 132, 0);
-	padding-bottom: 1.4em;
+	padding-bottom: 1.7em;
 	transition: transform 0.3s ease;
 }
 
