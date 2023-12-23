@@ -26,7 +26,7 @@ const Slider = () => {
 	const slidesToShow = productos.slice(startIndex, startIndex + 4);
 
 	return (
-		<div className="slider">
+		<section className="slider">
 			<img className="button-slider-before" src={before} onClick={prevSlide} />
 			<div className="slider-contenedor">
 				{slidesToShow.map((producto) => (
@@ -37,7 +37,7 @@ const Slider = () => {
 				))}
 			</div>
 			<img className="button-slider-next" src={next} onClick={nextSlide} />
-		</div>
+		</section>
 	);
 };
 

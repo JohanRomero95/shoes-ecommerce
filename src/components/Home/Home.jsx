@@ -2,8 +2,9 @@ import { useRef } from "react";
 import "./Home.css";
 import { useState } from "react";
 import pauseImg from "../../assets/svg/pause.svg";
-import publicImg from "../../assets/images/holidayTwo.webp";
 import Slider from "../Slider/Slider";
+import PublicMid from "../Publicidad/PublicMid"
+
 
 const Home = () => {
 	const videoRef = useRef(null);
@@ -18,7 +19,7 @@ const Home = () => {
 	};
 
 	return (
-		<div className="contenedor">
+		<main className="contenedor">
 			<section className="section-top">
 				<div className="publicidad-top">
 					<div
@@ -36,23 +37,17 @@ const Home = () => {
 							<img src={pauseImg} className="button-pause" onClick={pausarReproducir}></img>
 						)}
 					</div>
-					<div className="publicidad-video">
+					<article className="publicidad-video">
 						<h2>
 							FENTY x PUMA <br /> CREEPER PHATTY
 						</h2>
 						<button>Press Here</button>
-					</div>
+					</article>
 				</div>
-				<Slider />
-				<section className="section-mid">
-					<div className="publicidad-mid">
-						<div className="background-public-img">
-							<img src={publicImg} className="publicidad-img"></img>
-						</div>
-					</div>
-				</section>
 			</section>
-		</div>
+			<Slider />
+         <PublicMid/>
+		</main>
 	);
 };
 
