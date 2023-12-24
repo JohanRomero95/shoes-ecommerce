@@ -6,6 +6,7 @@ import Slider from "../Slider/Slider";
 import PublicMid from "../Publicidad/PublicHoliday/PublicMid";
 import PublicRunning from "../Publicidad/PublicRunning/PublicRunning";
 import VideoRihanna from "../../assets/videos/videoPumaRihanna.webm";
+import { Link } from "react-router-dom";
 
 const Home = () => {
 	const videoRef = useRef(null);
@@ -34,9 +35,11 @@ const Home = () => {
 					</div>
 					<article className="publicidad-video">
 						<h2>
-							FENTY x PUMA <br /> NEW COLLECTION
+							SNEAKERS <br /> NEW COLLECTION
 						</h2>
-						<button>Press Here</button>
+						<Link to="/collections">
+							<button>Press Here</button>
+						</Link>
 					</article>
 				</div>
 			</section>
