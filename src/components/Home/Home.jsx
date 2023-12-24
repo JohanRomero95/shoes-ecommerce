@@ -41,10 +41,8 @@ const Home = () => {
 				</div>
 			</section>
 			<Slider />
-			{/* <section className="mid"> */}
-				<PublicRunning />
-				<PublicMid />
-			{/* </section> */}
+			<PublicRunning />
+			<PublicMid />
 		</main>
 	);
 };

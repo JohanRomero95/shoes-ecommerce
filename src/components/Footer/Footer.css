@@ -14,7 +14,7 @@
 }
 
 .footer-contenedor hr {
-	background-color: red;
+	border-color: #7e7e7e;
 }
 
 .footer-contenedor p {
@@ -32,11 +32,6 @@
 	padding-bottom: 7em;
 }
 
-.redes {
-	display: flex;
-	color: whte;
-}
-
 .footer-bottom {
 	display: flex;
 	align-items: center;
@@ -44,7 +39,6 @@
 	padding-inline: 7em;
 	padding-top: 2em;
 	padding-bottom: 0.6em;
-	/* background-color: red; */
 }
 
 .footer-bottom h2 {
@@ -67,4 +61,13 @@
 .terminos {
 	display: flex;
 	gap: 1em;
+}
+
+.redes {
+	cursor: pointer;
+}
+
+.redes box-icon:hover {
+	transform: scale(1.5);
+	transition: transform 0.3s ease;
 }

@@ -29,17 +29,45 @@ const Footer = () => {
 					<p>NRC Santiago</p>
 				</div>
 				<div className="redes">
-					<box-icon name="instagram" type="logo" size="md" border="circle"></box-icon>
-					<box-icon type="logo" name="whatsapp" size="md" border="circle"></box-icon>
-					<box-icon name="linkedin" type="logo" size="md" border="circle"></box-icon>
-					<box-icon name="facebook" type="logo" size="md" border="circle"></box-icon>
+					<a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+						<box-icon
+							name="instagram"
+							type="logo"
+							size="md"
+							border="circle"
+							color="#7e7e7e"></box-icon>
+					</a>
+					<a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer">
+						<box-icon
+							type="logo"
+							name="whatsapp"
+							size="md"
+							border="circle"
+							color="#7e7e7e"></box-icon>
+					</a>
+					<a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+						<box-icon
+							name="linkedin"
+							type="logo"
+							size="md"
+							border="circle"
+							color="#7e7e7e"></box-icon>
+					</a>
+					<a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+						<box-icon
+							name="facebook"
+							type="logo"
+							size="md"
+							border="circle"
+							color="#7e7e7e"></box-icon>
+					</a>
 				</div>
 			</div>
 			<hr />
 			<div className="footer-bottom">
 				<div className="derechos">
 					<h2>
-						<box-icon name="map" type="solid" pull="left" size="sm"></box-icon>
+						<box-icon name="map" type="solid" pull="left" size="sm" color="#ffff"></box-icon>
 						Chile
 					</h2>
 					<p>© 2023 JR Company. Todos los derechos reservados</p>
