@@ -34,7 +34,7 @@ const Home = () => {
 					</div>
 					<article className="publicidad-video">
 						<h2>
-							FENTY x PUMA <br /> CREEPER PHATTY
+							FENTY x PUMA <br /> NEW COLLECTION
 						</h2>
 						<button>Press Here</button>
 					</article>

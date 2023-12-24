@@ -4,7 +4,7 @@ export const datos = () => {
 	return new Promise((resolve) => {
 		setTimeout(() => {
 			resolve(data);
-		}, 500);
+		}, 100);
 	});
 };
 

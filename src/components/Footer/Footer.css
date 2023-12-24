@@ -1,22 +1,26 @@
+/* Estilos generales del contenedor del footer */
 .footer-contenedor {
 	background-color: #1c1c1c;
 	position: relative;
-	color: #ffff;
+	color: #fff;
 	display: flex;
-	justify-content: space-between;
 	flex-direction: column;
-	padding-block: 0.4em;
+	justify-content: space-between;
+	padding: 0.4em 0;
 }
 
+/* Estilos para encabezados en el footer */
 .footer-contenedor h2,
 .footer-contenedor h3 {
 	cursor: pointer;
 }
 
+/* Estilos para la línea divisoria */
 .footer-contenedor hr {
 	border-color: #7e7e7e;
 }
 
+/* Estilos para párrafos en el footer */
 .footer-contenedor p {
 	color: #7e7e7e;
 	font-size: 0.8em;
@@ -25,49 +29,57 @@
 	cursor: pointer;
 }
 
+/* Estilos para la sección superior del footer */
 .footer-top {
 	display: flex;
 	justify-content: space-around;
-	padding-top: 3em;
-	padding-bottom: 7em;
+	padding: 3em 0 7em;
 }
 
+/* Estilos para la sección inferior del footer */
 .footer-bottom {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding-inline: 7em;
-	padding-top: 2em;
-	padding-bottom: 0.6em;
+	padding: 2em 7em 0.6em;
 }
 
-.footer-bottom h2 {
+/* Estilos para el título en la sección inferior del footer */
+.footer-bottom h2,
+.footer-bottom p {
 	display: flex;
 	align-items: center;
 	font-size: 0.8em;
 }
 
+/* Estilos para el texto de la sección inferior del footer */
 .footer-bottom p {
-	display: flex;
-	align-items: center;
 	font-size: 0.7em;
 }
 
-.derechos {
-	display: flex;
-	gap: 2em;
-}
-
+/* Estilos para elementos de derechos y términos */
+.derechos,
 .terminos {
 	display: flex;
-	gap: 1em;
+	gap: 1em; /* Ajustado para ambos elementos */
 }
 
+/* Estilos para íconos de redes sociales */
 .redes {
 	cursor: pointer;
 }
 
+/* Estilos para efecto de agrandamiento al pasar el mouse sobre el ícono */
 .redes box-icon:hover {
 	transform: scale(1.5);
 	transition: transform 0.3s ease;
+}
+
+.footer-contenedor h3:hover {
+	transform: scale(1.1);
+	transition: transform 0.5s ease;
+}
+
+.footer-contenedor p:hover {
+	text-decoration: underline;
 }

@@ -2,14 +2,10 @@ import { Link } from "react-router-dom";
 import IconoCarrito from "../Carrito";
 import Usuario from "../Usuario/Usuario";
 import "./Navbar.css";
-import PromoHeader from "../Publicidad/PromoHeader/PromoHeader";
 
 const Navbar = () => {
 	return (
 		<>
-			<header>
-				<PromoHeader />
-			</header>
 			<nav className="navbar">
 				<ul className="navbar-left">
 					<Link to="/">
