@@ -30,36 +30,16 @@ const Footer = () => {
 				</div>
 				<div className="redes">
 					<a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-						<box-icon
-							name="instagram"
-							type="logo"
-							size="md"
-							border="circle"
-							color="#7e7e7e"></box-icon>
+						<box-icon name="instagram" type="logo" size="md" color="#7e7e7e"></box-icon>
 					</a>
 					<a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer">
-						<box-icon
-							type="logo"
-							name="whatsapp"
-							size="md"
-							border="circle"
-							color="#7e7e7e"></box-icon>
+						<box-icon type="logo" name="whatsapp" size="md" color="#7e7e7e"></box-icon>
 					</a>
 					<a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
-						<box-icon
-							name="linkedin"
-							type="logo"
-							size="md"
-							border="circle"
-							color="#7e7e7e"></box-icon>
+						<box-icon name="linkedin" type="logo" size="md" color="#7e7e7e"></box-icon>
 					</a>
 					<a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-						<box-icon
-							name="facebook"
-							type="logo"
-							size="md"
-							border="circle"
-							color="#7e7e7e"></box-icon>
+						<box-icon name="facebook" type="logo" size="md" color="#7e7e7e"></box-icon>
 					</a>
 				</div>
 			</div>

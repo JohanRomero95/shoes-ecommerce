@@ -20,6 +20,8 @@ const Home = () => {
 		}
 	};
 
+	const [showContent, setShowContent] = useState(false);
+
 	return (
 		<main className="contenedor">
 			<section className="section-top">
@@ -30,7 +32,11 @@ const Home = () => {
 						onMouseLeave={() => setMostrarBoton(false)}>
 						<video ref={videoRef} autoPlay loop muted playsInline src={VideoRihanna}></video>
 						{mostrarBoton && (
-							<img src={pauseImg} className="button-pause" onClick={pausarReproducir}></img>
+							<img
+								src={pauseImg}
+								className="button-pause"
+								onClick={pausarReproducir}
+								alt="Pause"></img>
 						)}
 					</div>
 					<article className="publicidad-video">
@@ -43,6 +49,26 @@ const Home = () => {
 					</article>
 				</div>
 			</section>
+
+			<div className="container">
+				<div
+					className="hover-area"
+					onMouseEnter={() => setShowContent(true)}
+					onMouseLeave={() => setShowContent(false)}>
+					<p>Hover sobre este área</p>
+				</div>
+				<div className="content-wrapper">
+					{showContent && (
+						<ol className="hidden-content">
+							<li>
+								<Link to="/collections">Wena po shoro</Link>
+							</li>
+							{/* Agrega más elementos aquí */}
+						</ol>
+					)}
+				</div>
+			</div>
+
 			<Slider />
 			<PublicRunning />
 			<PublicMid />

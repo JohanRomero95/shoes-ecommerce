@@ -69,6 +69,10 @@
 	cursor: pointer;
 }
 
+.redes a {
+	padding-inline: 0.4em;
+}
+
 /* Estilos para efecto de agrandamiento al pasar el mouse sobre el ícono */
 .redes box-icon:hover {
 	transform: scale(1.5);
