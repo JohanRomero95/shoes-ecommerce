@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import IconoCarrito from "../Carrito";
 import Usuario from "../Usuario/Usuario";
 import "./Navbar.css";
+import MenuPlegable from "../MenuPlegable/MenuPlegable";
 
 const Navbar = () => {
 	return (
@@ -14,23 +15,7 @@ const Navbar = () => {
 						</h1>
 					</Link>
 				</ul>
-				<ul className="navbar-center">
-					<li>
-						<Link to="collections">Collections</Link>
-					</li>
-					<li>
-						<Link to="men">Men</Link>
-					</li>
-					<li>
-						<Link to="women">Women</Link>
-					</li>
-					<li>
-						<Link to="about">About</Link>
-					</li>
-					<li>
-						<Link to="contact">Contact</Link>
-					</li>
-				</ul>
+				<MenuPlegable />
 				<ul className="navbar-right">
 					<li>
 						<IconoCarrito />

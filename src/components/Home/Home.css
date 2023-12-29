@@ -5,41 +5,12 @@
 	height: 100vh;
 }
 
-hr {
+/* hr {
 	background-color: red;
 	width: 100%;
 	margin: 0;
 	padding: 0;
-}
-
-.container {
-	position: relative;
-	background-color: red;
-	/* height: 50px; */
-	/* Ajusta el tamaño y estilos según tus necesidades */
-}
-
-.hover-area {
-	/* background-color: blue;
-	height: 100px; */
-	/* Estilos para el área que activa el hover */
-}
-
-.content-wrapper {
-	position: absolute;
-	top: 100%; /* Posición debajo del área hover */
-	left: 0;
-	background-color: purple;
-	display: block;
-	z-index: 700;
-	/* Otros estilos necesarios */
-}
-
-.hidden-content {
-	display: block;
-	/* background-color: maroon; */
-	/* Otros estilos necesarios para el contenido */
-}
+} */
 
 .section-top {
 	height: 100vh;

@@ -1,12 +1,11 @@
-import { useRef } from "react";
+import { Link } from "react-router-dom";
+import { useRef, useState } from "react";
 import "./Home.css";
-import { useState } from "react";
 import pauseImg from "../../assets/svg/pause.svg";
 import Slider from "../Slider/Slider";
 import PublicMid from "../Publicidad/PublicHoliday/PublicMid";
 import PublicRunning from "../Publicidad/PublicRunning/PublicRunning";
 import VideoRihanna from "../../assets/videos/videoPumaRihanna.webm";
-import { Link } from "react-router-dom";
 
 const Home = () => {
 	const videoRef = useRef(null);
@@ -19,8 +18,6 @@ const Home = () => {
 			videoRef.current.pause();
 		}
 	};
-
-	const [showContent, setShowContent] = useState(false);
 
 	return (
 		<main className="contenedor">
@@ -49,25 +46,6 @@ const Home = () => {
 					</article>
 				</div>
 			</section>
-
-			<div className="container">
-				<div
-					className="hover-area"
-					onMouseEnter={() => setShowContent(true)}
-					onMouseLeave={() => setShowContent(false)}>
-					<p>Hover sobre este área</p>
-				</div>
-				<div className="content-wrapper">
-					{showContent && (
-						<ol className="hidden-content">
-							<li>
-								<Link to="/collections">Wena po shoro</Link>
-							</li>
-							{/* Agrega más elementos aquí */}
-						</ol>
-					)}
-				</div>
-			</div>
 
 			<Slider />
 			<PublicRunning />
