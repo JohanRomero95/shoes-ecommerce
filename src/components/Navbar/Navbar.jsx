@@ -15,7 +15,9 @@ const Navbar = () => {
 						</h1>
 					</Link>
 				</ul>
-				<MenuPlegable />
+				<ul className="navbar-center">
+					<MenuPlegable />
+				</ul>
 				<ul className="navbar-right">
 					<li>
 						<IconoCarrito />

@@ -1,89 +1,82 @@
 .contenedor {
-	display: flex;
-	flex-direction: column;
-	width: 100vw;
-	height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
 }
 
-/* hr {
-	background-color: red;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-} */
-
 .section-top {
-	height: 100vh;
-	width: 100vw;
+  height: 100vh;
+  width: 100vw;
 }
 
 .publicidad-top {
-	display: flex;
-	justify-content: space-evenly;
-	flex-direction: column;
-	align-items: center;
-	width: 100vw;
-	height: 100vh;
-	padding-bottom: 2em;
+  display: flex;
+  position: relative;
+  top: 5em;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding-bottom: 2em;
 }
 
 .video {
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100vw;
-	height: 600px;
-	/* top: -10px; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 600px;
 }
 
 .video video {
-	position: relative;
-	width: 100vw;
-	height: 100%;
-	object-fit: cover;
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
 }
 
 .button-pause {
-	cursor: pointer;
-	position: absolute;
-	width: 100px;
-	height: 100px;
+  cursor: pointer;
+  position: absolute;
+  width: 100px;
+  height: 100px;
 }
 
 .publicidad-video {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 100vw;
-	font-size: 2em;
-	text-align: center;
-	/* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  font-size: 2em;
+  text-align: center;
 }
 
 .publicidad-video h2 {
-	padding-bottom: 0.4em;
+  padding-bottom: 0.4em;
+  padding-top: .4em;
 }
 
 .publicidad-video button {
-	cursor: pointer;
-	font-size: 0.5em;
-	font-weight: 700;
-	width: 250px;
-	height: 50px;
-	border-radius: 30px;
-	border: 0;
-	color: #fff;
-	background-color: rgb(255, 132, 0);
+  cursor: pointer;
+  font-size: 0.5em;
+  font-weight: 700;
+  width: 250px;
+  height: 50px;
+  border-radius: 30px;
+  border: 0;
+  color: #fff;
+  background-color: rgb(255, 132, 0);
 }
 
 .publicidad-video button:hover {
-	background-color: rgba(255, 132, 0, 0.8);
-	transform: scale(1.1);
-	transition: transform 0.3s ease;
+  background-color: rgba(255, 132, 0, 0.8);
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 .mid {
-	height: 100vh;
+  height: 100vh;
 }

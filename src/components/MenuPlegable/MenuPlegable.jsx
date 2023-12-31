@@ -1,17 +1,54 @@
 import { Link } from "react-router-dom";
 
 const MenuPlegable = () => {
-	const links = [{ name: "Collections" }, { name: "Men" }, { name: "Women" }, { name: "Kid's" }];
+	const links = [
+		{
+			titulo: "Collections",
+			submenu: true,
+			categorias: [
+				{
+					encabezado: "Novedades para Hombres",
+					subCategorias: [
+						{ nombre: "Zapatillas" },
+						{ nombre: "Ropa" },
+						{ nombre: "Accesorios y Equipo" },
+						{ nombre: "Todo Hombre" },
+					],
+				},
+			],
+		},
+		{ nombre: "Men" },
+		{ nombre: "Women" },
+		{ nombre: "Kid's" },
+	];
 
 	return (
 		<>
-			{links.map((link, index) => (
-				<div key={index} className="navbar-center">
-					<ul>
-						<li>
-							<Link to={link.name}>{link.name}</Link>
-						</li>
-					</ul>
+			{links.map((menu, index) => (
+				<div key={index}>
+					<div>
+						<Link to={menu.titulo}>{menu.titulo}</Link>
+						{menu.submenu && (
+							<div>
+								<div>
+									{menu.categorias.map((submenu, subIndex) => (
+										<div key={subIndex}>
+											<h1 className="encabezado-submenu">
+												<Link to={submenu.encabezado}>{submenu.encabezado}</Link>
+											</h1>
+											<ul>
+												{submenu.subCategorias.map((sl, slIndex) => (
+													<Link to={sl.nombre} key={slIndex}>
+														{sl.nombre}
+													</Link>
+												))}
+											</ul>
+										</div>
+									))}
+								</div>
+							</div>
+						)}
+					</div>
 				</div>
 			))}
 		</>
