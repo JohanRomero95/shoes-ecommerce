@@ -34,7 +34,8 @@
   align-items: center;
   text-align: start;
   color: black;
-  font-size: 1em;
+  font-size: .9em;
+  font-weight: 400;
 }
 
 /* Estilo al pasar el mouse sobre elementos de subcategoría */

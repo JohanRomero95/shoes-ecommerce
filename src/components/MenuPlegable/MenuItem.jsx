@@ -12,7 +12,7 @@ const MenuItem = ({ titulo, submenu }) => {
 
 	return (
 		<div onMouseEnter={toggleSubMenu} onMouseLeave={toggleSubMenu}>
-			<Link to={titulo}>{titulo}</Link>
+			<Link to={`/${titulo}`}>{titulo}</Link>
 			{showSubMenu && submenu && (
 				<div className="contenedor--menu">
 					<div className="contenedor--menu-articulo">
@@ -20,12 +20,16 @@ const MenuItem = ({ titulo, submenu }) => {
 						{submenu.map((submenuItem, subIndex) => (
 							<div key={subIndex} className="contenedor--menu-articulo-inicio">
 								<h3 className="contenedor--menu-articulo-titulo">
-									<Link to={submenuItem.encabezado}>{submenuItem.encabezado}</Link>
+									<Link to={`/${titulo}/${submenuItem.encabezado}`}>
+										{submenuItem.encabezado}
+									</Link>
 								</h3>
 
 								<ul className="contenedor--menu-articulo-lista">
 									{submenuItem.subCategorias.map((sl, slIndex) => (
-										<Link to={sl.nombre} key={slIndex}>
+										<Link
+											to={`/${titulo}/${submenuItem.encabezado}/${sl.nombre}`}
+											key={slIndex}>
 											{sl.nombre}
 										</Link>
 									))}
