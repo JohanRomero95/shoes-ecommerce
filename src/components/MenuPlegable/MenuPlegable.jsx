@@ -1,58 +1,42 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import "./MenuPlegable.css";
+import { dataSubMenu } from "./SubMenu/dataSubMenu";
+import { SubMenu } from "./SubMenu/SubMenu";
 
-const MenuPlegable = () => {
-	const links = [
-		{
-			titulo: "Collections",
-			submenu: true,
-			categorias: [
-				{
-					encabezado: "Novedades para Hombres",
-					subCategorias: [
-						{ nombre: "Zapatillas" },
-						{ nombre: "Ropa" },
-						{ nombre: "Accesorios y Equipo" },
-						{ nombre: "Todo Hombre" },
-					],
-				},
-			],
-		},
-		{ nombre: "Men" },
-		{ nombre: "Women" },
-		{ nombre: "Kid's" },
-	];
+const MenuItem = ({ titulo, submenu }) => {
+	const [showSubMenu, setShowSubMenu] = useState(false);
+
+	const toggleSubMenu = () => {
+		setShowSubMenu(!showSubMenu);
+	};
 
 	return (
-		<>
-			{links.map((menu, index) => (
-				<div key={index}>
-					<div>
-						<Link to={menu.titulo}>{menu.titulo}</Link>
-						{menu.submenu && (
-							<div>
-								<div>
-									{menu.categorias.map((submenu, subIndex) => (
-										<div key={subIndex}>
-											<h1 className="encabezado-submenu">
-												<Link to={submenu.encabezado}>{submenu.encabezado}</Link>
-											</h1>
-											<ul>
-												{submenu.subCategorias.map((sl, slIndex) => (
-													<Link to={sl.nombre} key={slIndex}>
-														{sl.nombre}
-													</Link>
-												))}
-											</ul>
-										</div>
+		<div className="completo" onMouseEnter={toggleSubMenu} onMouseLeave={toggleSubMenu}>
+			<Link to={titulo}>{titulo}</Link>
+			{showSubMenu && submenu && (
+				<div className="ccds">
+					<div className="ccds-c"></div>
+					<div className="ccds-ccc">
+						{submenu.map((submenuItem, subIndex) => (
+							<div key={subIndex}>
+								<h5 className="encabezado-submenu">
+									<Link to={submenuItem.encabezado}>{submenuItem.encabezado}</Link>
+								</h5>
+								<ul className="lista-desordenada">
+									{submenuItem.subCategorias.map((sl, slIndex) => (
+										<Link to={sl.nombre} key={slIndex}>
+											{sl.nombre}
+										</Link>
 									))}
-								</div>
+								</ul>
 							</div>
-						)}
+						))}
 					</div>
 				</div>
-			))}
-		</>
+			)}
+		</div>
 	);
 };
 
-export default MenuPlegable;
+<SubMenu />;

@@ -5,7 +5,6 @@ import ListaDeProductos from "./components/ListaDeProductos/ListaDeProductos";
 import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PromoHeader from "./components/Publicidad/PromoHeader/PromoHeader";
-import Localizacion from "./components/Call/Localizacion";
 
 function App() {
 	return (
@@ -18,7 +17,6 @@ function App() {
 					<Route path="/collections" element={<ListaDeProductos />} />
 				</Routes>
 				<Footer />
-				{/* <Localizacion /> */}
 			</BrowserRouter>
 		</div>
 	);
