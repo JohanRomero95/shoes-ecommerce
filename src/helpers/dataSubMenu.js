@@ -49,12 +49,12 @@ export const dataSubMenu = [
 		titulo: "Women",
 		submenu: [
 			{
-				encabezado: "Novedades para Hombres",
+				encabezado: "Novedades para Mujer",
 				subCategorias: [
 					{ nombre: "Zapatillas" },
 					{ nombre: "Ropa" },
 					{ nombre: "Accesorios y Equipo" },
-					{ nombre: "Todo Hombre" },
+					{ nombre: "Todo Mujer" },
 				],
 			},
 		],
@@ -63,12 +63,12 @@ export const dataSubMenu = [
 		titulo: "Kid's",
 		submenu: [
 			{
-				encabezado: "Novedades para Hombres",
+				encabezado: "Novedades para Kid's",
 				subCategorias: [
 					{ nombre: "Zapatillas" },
 					{ nombre: "Ropa" },
 					{ nombre: "Accesorios y Equipo" },
-					{ nombre: "Todo Hombre" },
+					{ nombre: "Todo Kid's" },
 				],
 			},
 		],

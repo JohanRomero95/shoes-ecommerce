@@ -25,11 +25,17 @@
 }
 
 .navbar a {
-  color: gray;
+  color: black;
+  opacity: 80%;
   font-weight: 500;
   text-decoration: none;
-  padding-inline: 1em;
+  /* padding-inline: 1em; */
 }
+
+.navbar a:hover {
+  color: rgb(255, 132, 0);
+}
+
 
 .navbar ul {
   display: flex;
@@ -39,16 +45,18 @@
 }
 
 .navbar-center {
-  font-size: 1.2em;
+  font-size: 1.3em;
+  gap: 4em;
 }
 
 
-/* .navbar-center li:hover a {
-	color: black;
-	border-bottom: 5px solid rgb(255, 132, 0);
-	padding-bottom: 1.4em;
-	transition: transform 0.3s ease;
-} */
+.navbar-center li:hover a {
+  color: black;
+  border-bottom: 5px solid rgb(255, 132, 0);
+  padding-bottom: 1.4em;
+  z-index: 2000;
+  transition: transform 0.3s ease;
+}
 
 .navbar img {
   width: 45px;
@@ -73,4 +81,5 @@
   justify-content: center;
   align-items: center;
   padding-left: 7em;
+  gap: 2em;
 }
