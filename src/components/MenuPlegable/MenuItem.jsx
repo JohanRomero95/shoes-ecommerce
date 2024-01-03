@@ -12,7 +12,9 @@ const MenuItem = ({ titulo, submenu }) => {
 
 	return (
 		<div onMouseEnter={toggleSubMenu} onMouseLeave={toggleSubMenu}>
-			<Link to={`/${titulo}`}>{titulo}</Link>
+			<Link className="navbar--center-titulo" to={`/${titulo}`}>
+				{titulo}
+			</Link>
 			{showSubMenu && submenu && (
 				<div className="contenedor--menu">
 					<div className="contenedor--menu-articulo">
@@ -48,4 +50,5 @@ MenuItem.propTypes = {
 	titulo: PropTypes.string.isRequired,
 	submenu: PropTypes.array.isRequired,
 };
+
 export default MenuItem;

@@ -1,3 +1,4 @@
+/* Estilos generales del navbar */
 .navbar {
   display: flex;
   position: fixed;
@@ -12,31 +13,21 @@
   padding-right: 9em;
 }
 
+/* Estilos para el logo */
 .title {
   font-size: 2.1em;
   color: black;
   margin-left: 1em;
+  transition: transform 0.3s ease;
+  /* Efecto de escala al hacer hover */
 }
-
 
 .title:hover {
   transform: scale(1.2);
-  transition: transform 0.3s ease;
+  /* Aumenta el tamaño al hacer hover */
 }
 
-.navbar a {
-  color: black;
-  opacity: 80%;
-  font-weight: 500;
-  text-decoration: none;
-  /* padding-inline: 1em; */
-}
-
-.navbar a:hover {
-  color: rgb(255, 132, 0);
-}
-
-
+/* Estilos para los elementos de la barra de navegación */
 .navbar ul {
   display: flex;
   list-style: none;
@@ -44,42 +35,33 @@
   justify-content: center;
 }
 
+/* Estilos para dar espaciado al navbar center y tamaño fuente */
 .navbar-center {
   font-size: 1.3em;
   gap: 4em;
 }
 
-
-.navbar-center li:hover a {
-  color: black;
-  border-bottom: 5px solid rgb(255, 132, 0);
-  padding-bottom: 1.4em;
-  z-index: 2000;
-  transition: transform 0.3s ease;
-}
-
+/* Estilos para las imágenes en el navbar */
 .navbar img {
   width: 45px;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 50%;
   cursor: pointer;
+  position: relative;
+  transition: border 0.1s ease;
+  /* Efecto de cambio de borde al hacer hover */
 }
 
 .navbar img:hover {
   border: 2px solid rgb(255, 132, 0);
-  transition: transform 0.3s ease;
+  /* Aumenta el grosor del borde al hacer hover */
 }
 
-.navbar hr {
-  border-color: rgba(0, 0, 0, 0.15);
-  border-width: 1px;
-  border-style: solid;
-}
-
+/* Estilos para el área de la derecha del navbar, modifica el navbar-center */
 .navbar-right {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 7em;
+  padding-left: 6em;
   gap: 2em;
 }
