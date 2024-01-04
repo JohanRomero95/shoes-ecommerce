@@ -21,11 +21,11 @@ const MenuItem = ({ titulo, submenu }) => {
 						{/*ME SIRVE PARA HACER RESPONSIVE DESIGN*/}
 						{submenu.map((submenuItem, subIndex) => (
 							<div key={subIndex} className="contenedor--menu-articulo-inicio">
-								<h3 className="contenedor--menu-articulo-titulo">
-									<Link to={`/${titulo}/${submenuItem.encabezado}`}>
-										{submenuItem.encabezado}
-									</Link>
-								</h3>
+								<Link
+									className="contenedor--menu-articulo-titulo"
+									to={`/${titulo}/${submenuItem.encabezado}`}>
+									{submenuItem.encabezado}
+								</Link>
 
 								<ul className="contenedor--menu-articulo-lista">
 									{submenuItem.subCategorias.map((sl, slIndex) => (

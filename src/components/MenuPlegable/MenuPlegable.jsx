@@ -1,4 +1,4 @@
-import { dataSubMenu } from "../../helpers/dataSubMenu";
+import { dataSubMenu } from "../../data/dataSubMenu";
 import MenuItem from "./MenuItem";
 
 const MenuPlegable = () => {

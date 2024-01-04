@@ -10,7 +10,7 @@
   padding-bottom: 1.3em;
   /* color: rgb(255, 132, 0); */
   border-width: 4px;
-  transition: border-bottom 0.5s ease, padding-bottom 0.5s ease;
+  transition: border-bottom 0.3s ease, padding-bottom 0.3s ease;
 }
 
 /* Estilos para el menú desplegable */
@@ -63,12 +63,15 @@
 
 
 /* Estilo al pasar el mouse sobre elementos de subcategoría y el título */
-.contenedor--menu-articulo-lista>a:hover,
-.contenedor--menu-articulo-titulo>a:hover {
+.contenedor--menu-articulo-lista a:hover,
+.contenedor--menu-articulo-titulo:hover {
   color: rgb(255, 132, 0);
 }
 
 /* Estilo para el título */
-.contenedor--menu-articulo-titulo>a {
+.contenedor--menu-articulo-titulo {
   color: black;
+  opacity: 80%;
+  font-weight: 700;
+  font-size: 1.2em;
 }
