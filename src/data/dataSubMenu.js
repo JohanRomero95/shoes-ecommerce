@@ -35,12 +35,21 @@ export const dataSubMenu = [
 		titulo: "Men",
 		submenu: [
 			{
-				encabezado: "Novedades para Hombres",
+				encabezado: "Zapatillas",
 				subCategorias: [
-					{ nombre: "Zapatillas" },
-					{ nombre: "Ropa" },
-					{ nombre: "Accesorios y Equipo" },
-					{ nombre: "Todo Hombre" },
+					{ nombre: "Running" },
+					{ nombre: "Football" },
+					{ nombre: "Casual" },
+					{ nombre: "Todo Zapatillas" },
+				],
+			},
+			{
+				encabezado: "Ropa",
+				subCategorias: [
+					{ nombre: "Poleras" },
+					{ nombre: "Pantalones" },
+					{ nombre: "Shorts" },
+					{ nombre: "Todo Ropa" },
 				],
 			},
 		],
@@ -49,12 +58,21 @@ export const dataSubMenu = [
 		titulo: "Women",
 		submenu: [
 			{
-				encabezado: "Novedades para Mujer",
+				encabezado: "Zapatillas",
 				subCategorias: [
-					{ nombre: "Zapatillas" },
-					{ nombre: "Ropa" },
-					{ nombre: "Accesorios y Equipo" },
-					{ nombre: "Todo Mujer" },
+					{ nombre: "Running" },
+					{ nombre: "Football" },
+					{ nombre: "Casual" },
+					{ nombre: "Todo Zapatillas" },
+				],
+			},
+			{
+				encabezado: "Ropa",
+				subCategorias: [
+					{ nombre: "Poleras y tops" },
+					{ nombre: "Pantalones y Calzas" },
+					{ nombre: "Shorts" },
+					{ nombre: "Todo Ropa" },
 				],
 			},
 		],
@@ -63,12 +81,30 @@ export const dataSubMenu = [
 		titulo: "Kid's",
 		submenu: [
 			{
-				encabezado: "Novedades para Kid's",
+				encabezado: "Zapatillas",
 				subCategorias: [
-					{ nombre: "Zapatillas" },
-					{ nombre: "Ropa" },
-					{ nombre: "Accesorios y Equipo" },
-					{ nombre: "Todo Kid's" },
+					{ nombre: "Running" },
+					{ nombre: "Football" },
+					{ nombre: "Casual" },
+					{ nombre: "Todo Zapatillas" },
+				],
+			},
+			{
+				encabezado: "Ropa Niño",
+				subCategorias: [
+					{ nombre: "Poleras" },
+					{ nombre: "Pantalones" },
+					{ nombre: "Shorts" },
+					{ nombre: "Todo Ropa" },
+				],
+			},
+			{
+				encabezado: "Ropa Niña",
+				subCategorias: [
+					{ nombre: "Poleras y tops" },
+					{ nombre: "Pantalones" },
+					{ nombre: "Shorts" },
+					{ nombre: "Todo Ropa" },
 				],
 			},
 		],

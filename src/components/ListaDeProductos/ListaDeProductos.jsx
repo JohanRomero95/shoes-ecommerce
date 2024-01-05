@@ -8,7 +8,6 @@ const ListaDeProductos = () => {
 
 	return (
 		<>
-			<h1 className="contenedor--titulo-navegacion">Gwty</h1>
 			<div className="contenedor">
 				<div className="lista-de-productos">
 					{productos.map((productos) => (

@@ -18,7 +18,6 @@ const MenuItem = ({ titulo, submenu }) => {
 			{showSubMenu && submenu && (
 				<div className="contenedor--menu">
 					<div className="contenedor--menu-articulo">
-						{/*ME SIRVE PARA HACER RESPONSIVE DESIGN*/}
 						{submenu.map((submenuItem, subIndex) => (
 							<div key={subIndex} className="contenedor--menu-articulo-inicio">
 								<Link
@@ -45,7 +44,6 @@ const MenuItem = ({ titulo, submenu }) => {
 	);
 };
 
-// Define la estructura de los props esperados
 MenuItem.propTypes = {
 	titulo: PropTypes.string.isRequired,
 	submenu: PropTypes.array.isRequired,

@@ -8,4 +8,16 @@ export const datos = () => {
 	});
 };
 
+export const pedirItemPorGender = (gender) => {
+	return new Promise((resolve, reject) => {
+		const item = data.find((el) => el.gender === gender);
+
+		if (item) {
+			resolve(item);
+		} else {
+			reject({ error: "No se encontro el producto" });
+		}
+	});
+};
+
 export default datos;
