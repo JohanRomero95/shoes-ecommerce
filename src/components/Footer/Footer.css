@@ -1,89 +1,90 @@
 /* Estilos generales del contenedor del footer */
 .footer-contenedor {
-	background-color: #1c1c1c;
-	position: relative;
-	color: #fff;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	padding: 0.4em 0;
+  background-color: #1c1c1c;
+  position: relative;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.4em 0;
 }
 
 /* Estilos para encabezados en el footer */
 .footer-contenedor h2,
 .footer-contenedor h3 {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 /* Estilos para la línea divisoria */
 .footer-contenedor hr {
-	border-color: #7e7e7e;
+  border-color: #7e7e7e;
 }
 
 /* Estilos para párrafos en el footer */
 .footer-contenedor p {
-	color: #7e7e7e;
-	font-size: 0.8em;
-	word-spacing: 0.2em;
-	line-height: 2em;
-	cursor: pointer;
+  color: #7e7e7e;
+  font-size: 0.8em;
+  word-spacing: 0.2em;
+  line-height: 2em;
+  cursor: pointer;
 }
 
 /* Estilos para la sección superior del footer */
 .footer-top {
-	display: flex;
-	justify-content: space-around;
-	padding: 3em 0 7em;
+  display: flex;
+  justify-content: space-around;
+  padding: 3em 0 7em;
 }
 
 /* Estilos para la sección inferior del footer */
 .footer-bottom {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 2em 7em 0.6em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em 7em 0.6em;
 }
 
 /* Estilos para el título en la sección inferior del footer */
 .footer-bottom h2,
 .footer-bottom p {
-	display: flex;
-	align-items: center;
-	font-size: 0.8em;
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
 }
 
 /* Estilos para el texto de la sección inferior del footer */
 .footer-bottom p {
-	font-size: 0.7em;
+  font-size: 0.7em;
 }
 
 /* Estilos para elementos de derechos y términos */
 .derechos,
 .terminos {
-	display: flex;
-	gap: 1em; /* Ajustado para ambos elementos */
+  display: flex;
+  gap: 1em;
+  /* Ajustado para ambos elementos */
 }
 
 /* Estilos para íconos de redes sociales */
 .redes {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .redes a {
-	padding-inline: 0.4em;
+  padding-inline: 0.4em;
 }
 
 /* Estilos para efecto de agrandamiento al pasar el mouse sobre el ícono */
 .redes box-icon:hover {
-	transform: scale(1.5);
-	transition: transform 0.3s ease;
+  transform: scale(1.5);
+  transition: transform 0.3s ease;
 }
 
 .footer-contenedor h3:hover {
-	transform: scale(1.1);
-	transition: transform 0.5s ease;
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
 }
 
 .footer-contenedor p:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }

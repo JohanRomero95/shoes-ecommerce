@@ -2,9 +2,9 @@ import "./PromoHeader.css";
 
 const PromoHeader = () => {
 	return (
-		<div className="promo-header">
-			<h1>DESPACHO GRATIS EN COMPRAS SOBRE $50.000</h1>
-		</div>
+		<header className="promo-header">
+			<h2>DESPACHO GRATIS EN COMPRAS SOBRE $50.000</h2>
+		</header>
 	);
 };
 

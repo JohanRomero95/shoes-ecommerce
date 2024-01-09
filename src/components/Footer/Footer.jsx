@@ -3,7 +3,7 @@ import "boxicons";
 
 const Footer = () => {
 	return (
-		<div className="footer-contenedor">
+		<footer className="footer-contenedor">
 			<div className="footer-top">
 				<div className="ubicacion">
 					<h3>Buscar Tienda</h3>
@@ -59,7 +59,7 @@ const Footer = () => {
 					<p>Politica de privacidad y cookies</p>
 				</div>
 			</div>
-		</div>
+		</footer>
 	);
 };
 

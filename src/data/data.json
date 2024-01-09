@@ -268,5 +268,50 @@
     "imageURL": "https://nikeclprod.vtexassets.com/arquivos/ids/835615-800-800?v=638327405245100000&width=800&height=800&aspect=true",
     "slug": "nike-flex-runner-2",
     "featured": 0
+  },
+  {
+    "id": 20,
+    "name": "Camisa prueba",
+    "brand": "NIKE",
+    "logo": "https://nikeclprod.vtexassets.com/assets/vtex/assets-builder/nikeclprod.store/2.0.60/icons/Assets_for_off%20platform/swoosh___33f7ffaf2fc124733c2c4a60a12a1160.svg",
+    "gender": "Hombre",
+    "category": "Poleras",
+    "price": 1,
+    "is_in_inventory": true,
+    "type": "Ropa",
+    "items_left": 3,
+    "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-5cc7de3b-2afc-49c2-a1e4-0508997d09e6/react-miler-Hombres-Running-shoe-DgF6nr.jpg",
+    "slug": "nike-react-miler",
+    "featured": 1
+  },
+  {
+    "id": 21,
+    "name": "Camisa prueba 2",
+    "brand": "NIKE",
+    "logo": "https://nikeclprod.vtexassets.com/assets/vtex/assets-builder/nikeclprod.store/2.0.60/icons/Assets_for_off%20platform/swoosh___33f7ffaf2fc124733c2c4a60a12a1160.svg",
+    "gender": "Hombre",
+    "category": "Poleras",
+    "price": 5,
+    "is_in_inventory": true,
+    "type": "Ropa",
+    "items_left": 3,
+    "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-5cc7de3b-2afc-49c2-a1e4-0508997d09e6/react-miler-Hombres-Running-shoe-DgF6nr.jpg",
+    "slug": "nike-react-miler",
+    "featured": 1
+  },
+  {
+    "id": 22,
+    "name": "Camisa niño",
+    "brand": "NIKE",
+    "logo": "https://nikeclprod.vtexassets.com/assets/vtex/assets-builder/nikeclprod.store/2.0.60/icons/Assets_for_off%20platform/swoosh___33f7ffaf2fc124733c2c4a60a12a1160.svg",
+    "gender": "Ropa Niño",
+    "category": "Pantalones",
+    "price": 1,
+    "is_in_inventory": true,
+    "type": "Ropa",
+    "items_left": 3,
+    "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-5cc7de3b-2afc-49c2-a1e4-0508997d09e6/react-miler-Hombres-Running-shoe-DgF6nr.jpg",
+    "slug": "nike-react-miler",
+    "featured": 1
   }
 ]

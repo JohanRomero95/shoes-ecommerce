@@ -5,16 +5,16 @@ import { Link, useParams } from "react-router-dom";
 
 const ListaDeProductos = () => {
 	const productos = useProductos();
-	const { titulo } = useParams();
-	const filtrarProductos = productos.filter((producto) => {
-		return producto.gender.toLowerCase() == titulo.toLowerCase();
-	});
+	// const { titulo } = useParams();
+	// const filtrarProductos = productos.filter((producto) => {
+	// 	return producto.gender.toLowerCase() == titulo.toLowerCase();
+	// });
 
 	return (
 		<>
 			<div className="contenedor">
 				<div className="lista-de-productos">
-					{filtrarProductos.map((productos) => (
+					{productos.map((productos) => (
 						<div className="productos" key={productos.id}>
 							<img className="logo-shoes" src={productos.logo} alt="" />
 							<img className="shoes" src={productos.imageURL} alt={productos.name} />
