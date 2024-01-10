@@ -13,7 +13,7 @@
 .publicidad-top {
   display: flex;
   position: relative;
-  top: 5em;
+  /* top: 5em; */
   flex-direction: column;
   align-items: center;
   width: 100vw;

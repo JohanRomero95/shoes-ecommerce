@@ -4,7 +4,7 @@ import "./PublicRunning.css";
 
 const PublicRunning = () => {
 	return (
-		<Link to="/collections">
+		<Link to="/Colección">
 			<section className="section-running">
 				<article className="publicidad-running">
 					<div className="publicidad-text">

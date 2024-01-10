@@ -3,7 +3,7 @@ export const dataSubMenu = [
 		titulo: "Colección",
 		submenu: [
 			{
-				encabezado: "Novedades para Hombres",
+				encabezado: "Novedades para Hombre",
 				subCategorias: [
 					{ nombre: "Zapatillas" },
 					{ nombre: "Ropa" },
@@ -21,7 +21,7 @@ export const dataSubMenu = [
 				],
 			},
 			{
-				encabezado: "Novedades para Kid's",
+				encabezado: "Novedades para Niños",
 				subCategorias: [
 					{ nombre: "Zapatillas" },
 					{ nombre: "Ropa" },

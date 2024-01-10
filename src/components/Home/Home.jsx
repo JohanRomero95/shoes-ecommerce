@@ -40,7 +40,7 @@ const Home = () => {
 						<h2>
 							SNEAKERS <br /> NEW COLLECTION
 						</h2>
-						<Link to="/collections">
+						<Link to="/Colección">
 							<button>Press Here</button>
 						</Link>
 					</article>
