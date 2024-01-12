@@ -2,23 +2,21 @@ import { useProductos } from "../Call/useProductos";
 import { useParams } from "react-router-dom";
 import Card from "../Cards/Card";
 
-const ListaDeProductos = () => {
+const ListaPorTitulo = () => {
 	const productos = useProductos();
 	const { titulo } = useParams();
 
-	let productosFiltradosPorTitulo = productos;
+	const productosFiltradosPorTitulo =
+		titulo === "Colección"
+			? productos
+			: productos.filter(
+					(producto) => producto.gender.toLowerCase().trim() === titulo.toLowerCase().trim(),
+			);
 
-	if (titulo != "Colección") {
-		productosFiltradosPorTitulo = productos.filter(
-			(producto) => producto.gender.toLowerCase().trim() === titulo.toLowerCase().trim(),
-		);
-		return productosFiltradosPorTitulo;
-	}
-
-	// if (encabezado.toLowerCase().includes(`${titulo}`);
 	return (
 		<>
 			<div className="contenedor">
+				<h1>Todo los productos para {titulo}</h1>
 				<div className="lista-de-productos">
 					{productosFiltradosPorTitulo.map((producto) => (
 						<Card key={producto.id} {...producto} />
@@ -28,4 +26,4 @@ const ListaDeProductos = () => {
 		</>
 	);
 };
-export default ListaDeProductos;
+export default ListaPorTitulo;

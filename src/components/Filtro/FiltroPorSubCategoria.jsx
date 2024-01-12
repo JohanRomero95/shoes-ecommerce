@@ -3,10 +3,10 @@ import { useProductos } from "../Call/useProductos";
 import Card from "../Cards/Card";
 
 const FiltroPorSubCategoria = () => {
-	const { encabezado, subCategorias, titulo } = useParams();
+	const { titulo, encabezado, subCategorias } = useParams();
 	const productos = useProductos();
 
-	// Filtrar dinámicamente los productos según la categoría o el género
+	// Filtrar dinámicamente los productos según la categoría y el género
 	const filtrarProductos = productos.filter((producto) => {
 		return (
 			producto.gender.toLowerCase().trim() === titulo.toLowerCase().trim() &&
@@ -14,13 +14,31 @@ const FiltroPorSubCategoria = () => {
 		);
 	});
 
-	// Si se ha seleccionado una categoría específica, filtrar los productos
+	// Filtrar los productos por la categoría
 	let productosFiltrados;
-	if (subCategorias !== `Todo ${encabezado}`) {
+
+	if (
+		encabezado.toLowerCase() === "novedades para hombre" &&
+		subCategorias.toLowerCase() === "zapatillas"
+	) {
+		productosFiltrados = filtrarProductos;
+	} else if (subCategorias !== `Todo ${encabezado}` && subCategorias !== `Todo Ropa`) {
 		productosFiltrados = filtrarProductos.filter(
 			(producto) =>
 				producto.category.toLowerCase().trim() === subCategorias.toLowerCase().trim(),
 		);
+
+		// if (subCategorias !== `Todo ${encabezado}` && subCategorias !== `Todo Ropa`) {
+		// 	productosFiltrados = filtrarProductos.filter(
+		// 		(producto) =>
+		// 			producto.category.toLowerCase().trim() === subCategorias.toLowerCase().trim(),
+		// 	);
+		// } else if (encabezado.toLowerCase().trim() == "novedades para hombre") {
+		// 	productosFiltrados = filtrarProductos.filter(
+		// 		(producto) =>
+		// 			producto.submenu.toLowerCase().trim() === subCategorias.toLowerCase().trim() &&
+		// 			producto.gender.toLowerCase().trim() === "hombre",
+		// 	);
 	} else {
 		productosFiltrados = filtrarProductos;
 	}
@@ -28,17 +46,20 @@ const FiltroPorSubCategoria = () => {
 	// Verificar si no se encontraron productos con la categoría deseada
 	const categoriaNoEncontrada =
 		subCategorias !== `Todo ${encabezado}` &&
-		!filtrarProductos.some(
+		!productosFiltrados.some(
 			(producto) =>
 				producto.category.toLowerCase().trim() === subCategorias.toLowerCase().trim(),
 		);
+	console.log(productosFiltrados);
+	console.log("Este es titulo -->", titulo);
+	console.log("Este es encabezado -->", encabezado);
+	console.log("Este es subCategorias -->", subCategorias);
 
 	return (
 		<>
 			{productosFiltrados.length > 0 ? (
 				<>
 					<div className="contenedor">
-						{}
 						<h1>
 							{subCategorias} de {titulo}
 						</h1>
