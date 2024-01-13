@@ -1,75 +1,75 @@
 .slider {
-	position: relative;
-	background-color: #f6f6f6;
-	width: 100%;
-	/* max-height: 380px; */
-	/* max-width: 900px; */
-	margin: 0 auto;
+  position: relative;
+  background-color: #f6f6f6;
+  width: 100%;
+  /* max-height: 380px; */
+  /* max-width: 900px; */
+  margin: 0 auto;
 }
 
 .slider-contenedor {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	width: 100%;
-	height: 450px;
-	/* background-color: purple; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 450px;
+  /* background-color: purple; */
 }
 
 .slider-detail {
-	top: 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	/* background-color: green; */
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: green; */
 }
 
 .slider-detail h3 {
-	width: 220px;
-	text-align: center;
+  width: 220px;
+  text-align: center;
 }
 
 .slider-contenedor img {
-	margin-inline: 0.3em;
-	width: 30%;
-	height: auto;
-	max-height: 290px;
-	max-width: 420px;
-	min-width: 288px;
-	cursor: pointer;
-	border-radius: 100%;
-	padding-bottom: 1em;
+  margin-inline: 0.3em;
+  width: 30%;
+  height: auto;
+  max-height: 290px;
+  max-width: 420px;
+  min-width: 288px;
+  cursor: pointer;
+  border-radius: 100%;
+  padding-bottom: 1em;
 }
 
 .slider-contenedor img:hover {
-	transition: transform 0.5s ease;
-	transform: scale(1.1) rotate(-20deg);
+  transition: transform 0.5s ease;
+  transform: scale(1.1) rotate(-20deg);
 }
 
 .button-slider-before,
 .button-slider-next {
-	position: absolute;
-	top: 190px;
-	width: 60px;
-	height: 60px;
-	cursor: pointer;
-	z-index: 20;
-	border-radius: 100%;
-	background-color: rgba(128, 128, 128, 0.3);
+  position: absolute;
+  top: 190px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  z-index: 20;
+  border-radius: 100%;
+  background-color: rgba(128, 128, 128, 0.3);
 }
 
 .button-slider-before:hover,
 .button-slider-next:hover {
-	transform: scale(1.4);
-	transition: transform 0.2s ease;
+  transform: scale(1.4);
+  transition: transform 0.2s ease;
 }
 
 .button-slider-next {
-	right: 197px;
+  right: 197px;
 }
 
 .button-slider-before {
-	left: 197px;
+  left: 197px;
 }

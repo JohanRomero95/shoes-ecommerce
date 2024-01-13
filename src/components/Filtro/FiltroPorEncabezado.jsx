@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import Card from "../Cards/Card";
+import "../Cards/Card.css";
 import { useProductos } from "../Call/useProductos";
 
 const FiltroPorEncabezado = () => {
@@ -19,7 +20,7 @@ const FiltroPorEncabezado = () => {
 			(producto) => producto.gender.toLowerCase().trim() === "mujer",
 		);
 	} else if (encabezado.toLowerCase().includes("novedades para niños")) {
-		// Filtrar productos solo por el género "Ninios"
+		// Filtrar productos solo por el género "Niños"
 		productosFiltradosPorEncabezado = productos.filter(
 			(producto) => producto.gender.toLowerCase().trim() === "niños",
 		);
@@ -34,8 +35,8 @@ const FiltroPorEncabezado = () => {
 
 	return (
 		<>
-			<div className="contenedor">
-				<h1>
+			<div className="container">
+				<h1 className="titulo--paginas">
 					{encabezado.toLowerCase().includes("ropa niño") ||
 					encabezado.toLowerCase().includes("ropa niña")
 						? encabezado.replace("ropa niño", "")
@@ -49,7 +50,6 @@ const FiltroPorEncabezado = () => {
 			</div>
 		</>
 	);
-	// encabezado.toLowerCase().includes("Novedades para hombres")
 };
 
 export default FiltroPorEncabezado;

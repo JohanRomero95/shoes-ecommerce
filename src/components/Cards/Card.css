@@ -1,19 +1,32 @@
-.contenedor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  margin-top: 6em;
-  position: relative;
-}
-
-
-
 .contenedor--titulo-navegacion {
   color: black;
   left: 0;
   top: 3em;
   position: relative;
+}
+
+/* SON PARA MODIFICAR LOS CONTAINER DE FILTROS */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* SON PARA MODIFICAR LOS CONTAINER DE FILTROS */
+.container {
+  display: flex;
+  justify-content: center;
+  padding-inline: 9.3em;
+  /* align-items: start; */
+  height: 100%;
+  margin-top: 6em;
+  position: relative;
+}
+
+.titulo--paginas {
+  display: flex;
+  align-items: start;
 }
 
 .lista-de-productos {
@@ -22,11 +35,12 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   max-width: 100%;
-  gap: 3em;
+  gap: 2em;
   margin-bottom: 6em;
 }
 
 .productos {
+  overflow: hidden;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -36,8 +50,9 @@
   height: 420px;
   cursor: pointer;
   border-radius: 25px;
-  opacity: 90%;
+  opacity: 85%;
   background-color: #f2f2f2;
+  /* background-color: purple; */
 }
 
 .logo-shoes {
@@ -53,19 +68,78 @@
   position: relative;
   display: flex;
   align-items: center;
-  top: 18px;
+  /* top: 18px; */
+  top: 1em;
+  left: -6px;
   width: 210px;
+  overflow: hidden;
   height: 220px;
-  border-radius: 100px 100px 100px 100px;
-  transform: rotate(20deg) scaleX(-1);
+  /* border-radius: 100px 100px 100px 100px; */
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 00px;
+  border-bottom-left-radius: 00px;
+  transform: rotate(30deg) scaleX(-1);
   z-index: 1;
   margin-bottom: 0.7em;
   transition: transform 0.3s ease;
+  /* filter: grayscale(0%) sepia(10%) hue-rotate(260deg) brightness(120%) contrast(90%); */
+}
+
+/* Estilos para las opciones de color */
+.color-options {
+  position: absolute;
+  /* width: 280px; */
+  /* height: 420px; */
+  top: 28px;
+  right: 10px;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.color-option {
+  width: 1em;
+  height: 1em;
+  margin: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: inset 0px 4px 5px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilos adicionales para cada opción de color */
+.color-option.blue {
+  background-color: #fafe2e;
+}
+
+.color-option.green {
+  background-color: #8400ffaf;
+}
+
+.color-option.red {
+  background-color: #ff1900;
+}
+
+/* Cambia la escala (efecto de escala) al pasar el ratón sobre la opción de color */
+.color-option:hover {
+  transform: scale(1.2);
 }
 
 .shoes:hover {
   transform: scale(1.15) rotate(20deg) scaleX(-1);
   transition: transform 0.3s ease;
+}
+
+.ropa-hover img {
+  transform: scaleX(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.ropa-hover img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
 }
 
 .description-shoes {
