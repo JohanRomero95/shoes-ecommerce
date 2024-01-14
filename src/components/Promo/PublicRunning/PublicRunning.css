@@ -1,65 +1,67 @@
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .section-running {
-	background-color: rgb(255, 132, 0);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	/* flex-wrap: wrap; */
-	width: 100vw;
-	border-radius: 40px 0px 0px 0px;
+  background-color: rgb(255, 132, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  width: 100vw;
+  border-radius: 40px 0px 0px 0px;
 }
 
 .publicidad-running {
-	display: flex;
-	height: 100%;
-	justify-content: center;
-	align-items: center;
-	padding-block: 3em;
-	padding-inline: 4.3em;
-	/* background-color: purple; */
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-block: 3em;
+  padding-inline: 4.3em;
+  /* background-color: purple; */
 }
 
 .section-running video {
-	/* width: 700px; */
+  /* width: 700px; */
 }
 
 .texto {
-	display: flex;
-	text-align: start;
-	line-height: 4em;
-	padding-bottom: 3em;
-	/* background-color: blue; */
+  display: flex;
+  text-align: start;
+  line-height: 4em;
+  padding-bottom: 3em;
+  /* background-color: blue; */
 }
 
 .publicidad-text {
-	color: black;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding-inline: 3em;
-	max-width: 480px;
-	/* background-color: red; */
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 3em;
+  max-width: 480px;
+  /* background-color: red; */
 }
 
 .publicidad-text h1 {
-	text-transform: uppercase;
-	font-size: 5em;
+  text-transform: uppercase;
+  font-size: 5em;
 }
 
 .publicidad-text span {
-	text-transform: uppercase;
-	font-size: 0.7em;
+  text-transform: uppercase;
+  font-size: 0.7em;
 }
 
 .publicidad-text p {
-	line-height: 2em;
-	word-spacing: 0.2em;
-	font-weight: 500;
-	padding-bottom: 2em;
+  position: relative;
+  left: 21px;
+  line-height: 2em;
+  word-spacing: 0.2em;
+  font-weight: 500;
+  padding-bottom: 2em;
 }
 
 /* .publicidad-text button {
