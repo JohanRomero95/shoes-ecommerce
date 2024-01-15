@@ -27,7 +27,12 @@
     "items_left": 3,
     "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-5cc7de3b-2afc-49c2-a1e4-0508997d09e6/react-miler-Hombres-Running-shoe-DgF6nr.jpg",
     "slug": "nike-react-miler",
-    "featured": 1
+    "featured": 1,
+    "colors": [
+      "blue",
+      "red",
+      "green"
+    ]
   },
   {
     "id": 3,
@@ -42,7 +47,12 @@
     "items_left": 3,
     "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-33b0a0a5-c171-46cc-ad20-04a768703e47/air-zoom-pegasus-37-Mujers-Running-shoe-Jl0bDf.jpg",
     "slug": "nike-air-zoom-pegasus-37",
-    "featured": 0
+    "featured": 0,
+    "colors": [
+      "red",
+      "purple",
+      "yellow"
+    ]
   },
   {
     "id": 4,
@@ -57,7 +67,12 @@
     "items_left": 3,
     "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/99a7d3cb-e40c-4474-91c2-0f2e6d231fd2/joyride-run-flyknit-Mujers-Running-shoe-HcfnJd.jpg",
     "slug": "nike-joyride-run-flyknit",
-    "featured": 0
+    "featured": 0,
+    "colors": [
+      "blue",
+      "red",
+      "green"
+    ]
   },
   {
     "id": 5,
@@ -72,7 +87,12 @@
     "items_left": 3,
     "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9dda6202-e2ff-4711-9a09-0fcb7d90c164/mercurial-vapor-13-elite-fg-firm-ground-soccer-cleat-14MsF2.jpg",
     "slug": "nike-mercurial-vapor-13-elite-fg",
-    "featured": 0
+    "featured": 0,
+    "colors": [
+      "yellow",
+      "magenta",
+      "green"
+    ]
   },
   {
     "id": 6,
@@ -87,7 +107,11 @@
     "items_left": 3,
     "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/s1amp7uosrn0nqpsxeue/phantom-vision-elite-dynamic-fit-fg-firm-ground-soccer-cleat-19Kv1V.jpg",
     "slug": "nike-phantom-vision-elite-dynamic-fit-fg",
-    "featured": 0
+    "featured": 0,
+    "colors": [
+      "green",
+      "purple"
+    ]
   },
   {
     "id": 7,

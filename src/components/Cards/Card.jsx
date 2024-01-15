@@ -1,10 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { agregarNueves } from "../../helpers/agregarNueves";
 import "./Card.css";
 
 const Card = ({ ...producto }) => {
 	const [hoverEffect, setHoverEffect] = useState(false);
+	const [shoeColor, setShoeColor] = useState(
+		producto.colors && producto.colors.length > 0 ? producto.colors[0] : "",
+	);
+
+	useEffect(() => {
+		if (producto.colors && producto.colors.length > 0) {
+			setShoeColor(producto.colors[0]);
+		}
+	}, [producto.colors]);
 
 	const handleMouseEnter = () => {
 		setHoverEffect(true);
@@ -12,6 +21,10 @@ const Card = ({ ...producto }) => {
 
 	const handleMouseLeave = () => {
 		setHoverEffect(false);
+	};
+
+	const changeColor = (color) => {
+		setShoeColor(color);
 	};
 
 	return (
@@ -29,12 +42,25 @@ const Card = ({ ...producto }) => {
 				src={producto.imageURL}
 				alt={producto.name}
 				title={producto.name}
-			/>{" "}
+				style={{
+					filter: `hue-rotate(${
+						shoeColor
+							? producto.colors.indexOf(shoeColor) * (360 / producto.colors.length)
+							: 0
+					}deg)`,
+				}}
+			/>
 			<div className="color-options">
-				<div className="color-option blue"></div>
-				<div className="color-option green"></div>
-				<div className="color-option red"></div>
-				{/* Agrega más opciones de colores según sea necesario */}
+				{producto.colors &&
+					producto.colors.map((color, index) => (
+						<div
+							key={index}
+							className={`color-option ${color.toLowerCase()}`}
+							onClick={() => changeColor(color)}
+							style={{
+								backgroundColor: color,
+							}}></div>
+					))}
 			</div>
 			<div className="description-shoes">
 				<h3>{producto.name}</h3>

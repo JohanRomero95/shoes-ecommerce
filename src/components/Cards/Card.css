@@ -68,29 +68,25 @@
   position: relative;
   display: flex;
   align-items: center;
-  /* top: 18px; */
   top: 1em;
   left: -6px;
   width: 210px;
   overflow: hidden;
   height: 220px;
-  /* border-radius: 100px 100px 100px 100px; */
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  border-bottom-right-radius: 00px;
-  border-bottom-left-radius: 00px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
   transform: rotate(30deg) scaleX(-1);
   z-index: 1;
   margin-bottom: 0.7em;
-  transition: transform 0.3s ease;
-  /* filter: grayscale(0%) sepia(10%) hue-rotate(260deg) brightness(120%) contrast(90%); */
+  transition: transform 0.3s ease, filter 0.3s ease;
+  /* Agregamos transición para suavizar el cambio de color */
 }
 
 /* Estilos para las opciones de color */
 .color-options {
   position: absolute;
-  /* width: 280px; */
-  /* height: 420px; */
   top: 28px;
   right: 10px;
   display: flex;
@@ -109,19 +105,6 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Estilos adicionales para cada opción de color */
-.color-option.blue {
-  background-color: #fafe2e;
-}
-
-.color-option.green {
-  background-color: #8400ffaf;
-}
-
-.color-option.red {
-  background-color: #ff1900;
-}
-
 /* Cambia la escala (efecto de escala) al pasar el ratón sobre la opción de color */
 .color-option:hover {
   transform: scale(1.2);
@@ -129,7 +112,8 @@
 
 .shoes:hover {
   transform: scale(1.15) rotate(0deg) scaleX(-1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  /* Agregamos filter a la transición del hover */
 }
 
 .ropa-hover img {
