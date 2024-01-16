@@ -45,7 +45,7 @@ const Card = ({ ...producto }) => {
 				style={{
 					filter: `hue-rotate(${
 						shoeColor
-							? producto.colors.indexOf(shoeColor) * (360 / producto.colors.length)
+							? (producto.colors.indexOf(shoeColor) + 2) * (360 / producto.colors.length)
 							: 0
 					}deg)`,
 				}}
