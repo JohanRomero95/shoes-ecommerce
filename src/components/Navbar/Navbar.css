@@ -22,6 +22,10 @@
   transition: transform 0.3s ease;
 }
 
+.title:hover {
+  transform: scale(1.15);
+}
+
 /* Estilos para resaltar parte del título */
 .title span {
   color: rgb(255, 132, 0);

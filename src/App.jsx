@@ -7,6 +7,7 @@ import PromoHeader from "./components/Promo/PromoHeader/PromoHeader";
 import FiltroPorSubCategoria from "./components/Filtro/FiltroPorSubCategoria";
 import FiltroPorEncabezado from "./components/Filtro/FiltroPorEncabezado";
 import ListaPorTitulo from "./components/ListaPorTitulo/ListaPorTitulo";
+import DetalleProducto from "./components/DetalleProducto/DetalleProducto";
 
 function App() {
 	return (
@@ -22,6 +23,7 @@ function App() {
 						path="/:titulo/:encabezado/:subCategorias"
 						element={<FiltroPorSubCategoria />}
 					/>
+					<Route path="/producto/:id" element={<DetalleProducto />} />
 				</Routes>
 				<Footer />
 			</BrowserRouter>

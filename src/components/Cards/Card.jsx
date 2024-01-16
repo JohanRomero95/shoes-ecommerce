@@ -34,62 +34,66 @@ const Card = ({ ...producto }) => {
 	};
 
 	return (
-		<div
-			title={producto.name}
-			className={`productos ${
-				producto.submenu.toLowerCase().includes("ropa") ? "ropa-hover" : ""
-			}`}
-			key={producto.id}
-			onMouseEnter={handleMouseEnter}
-			onMouseLeave={handleMouseLeave}>
-			{/* Logo del producto */}
-			<img className="logo-shoes" src={producto.logo} alt="" />
-
-			{/* Imagen del zapato */}
-			<img
-				className={`shoes ${hoverEffect ? "scale-on-hover" : ""}`}
-				src={producto.imageURL}
-				alt={producto.name}
+		<Link
+			to={`/producto/${producto.id}`}
+			onClick={(e) => {
+				if (e.target.classList.contains("color-option")) {
+					e.preventDefault(); // Evitar la redirección si se hizo clic en una opción de color
+				}
+			}}>
+			<div
 				title={producto.name}
-				style={{
-					filter: `hue-rotate(${
-						shoeColor
-							? (producto.colors.indexOf(shoeColor) + 2) * (360 / producto.colors.length)
-							: 0
-					}deg)`,
-				}}
-			/>
+				className={`productos ${
+					producto.submenu.toLowerCase().includes("ropa") ? "ropa-hover" : ""
+				}`}
+				key={producto.id}
+				onMouseEnter={handleMouseEnter}
+				onMouseLeave={handleMouseLeave}>
+				{/* Logo del producto */}
+				<img className="logo-shoes" src={producto.logo} alt="" />
 
-			{/* Opciones de colores */}
-			<div className="color-options">
-				{producto.colors &&
-					producto.colors.map((color, index) => (
-						<div
-							key={index}
-							className={`color-option ${color.toLowerCase()}`}
-							onClick={() => changeColor(color)}
-							style={{
-								backgroundColor: color,
-							}}></div>
-					))}
-			</div>
+				{/* Imagen del zapato */}
+				<img
+					className={`shoes ${hoverEffect ? "scale-on-hover" : ""}`}
+					src={producto.imageURL}
+					alt={producto.name}
+					title={producto.name}
+					style={{
+						filter: `hue-rotate(${
+							shoeColor
+								? (producto.colors.indexOf(shoeColor) + 2) * (360 / producto.colors.length)
+								: 0
+						}deg)`,
+					}}
+				/>
 
-			{/* Descripción del producto */}
-			<div className="description-shoes">
-				<h3>{producto.name}</h3>
-				<p className="description-shoes-par">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, atque.
-				</p>
-				<p className="description-shoes-price">
-					Price: <span>${agregarNueves(producto.price)}</span>
-				</p>
-				<Link to="/Producto/id">
-					{" "}
-					{/* Agrega la URL del enlace */}
+				{/* Opciones de colores */}
+				<div className="color-options">
+					{producto.colors &&
+						producto.colors.map((color, index) => (
+							<div
+								key={index}
+								className={`color-option ${color.toLowerCase()}`}
+								onClick={() => changeColor(color)}
+								style={{
+									backgroundColor: color,
+								}}></div>
+						))}
+				</div>
+
+				{/* Descripción del producto */}
+				<div className="description-shoes">
+					<h3>{producto.name}</h3>
+					<p className="description-shoes-par">
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, atque.
+					</p>
+					<p className="description-shoes-price">
+						Price: <span>${agregarNueves(producto.price)}</span>
+					</p>
 					<button>Add To Cart</button>
-				</Link>
+				</div>
 			</div>
-		</div>
+		</Link>
 	);
 };
 
