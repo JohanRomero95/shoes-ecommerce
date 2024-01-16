@@ -8,9 +8,10 @@
   justify-content: space-between;
   padding-block: 1.2em;
   padding-inline: 7.2em;
-  background-color: #ffff;
+  background-color: #fff;
   z-index: 100;
-  padding-right: 9em;
+  /* Ajuste del espacio a la derecha del navbar */
+  padding-right: 11em;
 }
 
 /* Estilos para el logo */
@@ -19,12 +20,38 @@
   color: black;
   margin-left: 1em;
   transition: transform 0.3s ease;
-  /* Efecto de escala al hacer hover */
 }
 
-.title:hover {
-  transform: scale(1.2);
-  /* Aumenta el tamaño al hacer hover */
+/* Estilos para resaltar parte del título */
+.title span {
+  color: rgb(255, 132, 0);
+  font-weight: 800;
+  position: relative;
+  display: inline-block;
+  /* Espaciado a la derecha del texto */
+  padding-right: 1em;
+}
+
+/* Estilos para la línea que aparece al hacer hover en el título */
+.title span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(255, 132, 0);
+  height: 3px;
+  /* Punto de origen en la parte inferior del borde */
+  transform-origin: 50% 100%;
+  /* Inicialmente sin altura */
+  transform: scaleY(0);
+  /* Transición suave de 0.3 segundos */
+  transition: transform 0.3s ease;
+}
+
+/* Efecto de línea al hacer hover en el título */
+.title:hover span::before {
+  transform: scaleY(1);
 }
 
 /* Estilos para los elementos de la barra de navegación */
@@ -35,9 +62,10 @@
   justify-content: center;
 }
 
-/* Estilos para dar espaciado al navbar center y tamaño fuente */
+/* Estilos para el área central del navbar y ajuste del tamaño de fuente */
 .navbar-center {
   font-size: 1.3em;
+  /* Espaciado entre elementos */
   gap: 4em;
 }
 
@@ -49,19 +77,20 @@
   cursor: pointer;
   position: relative;
   transition: border 0.1s ease;
-  /* Efecto de cambio de borde al hacer hover */
 }
 
+/* Efecto de cambio de borde al hacer hover en las imágenes */
 .navbar img:hover {
   border: 2px solid rgb(255, 132, 0);
-  /* Aumenta el grosor del borde al hacer hover */
 }
 
-/* Estilos para el área de la derecha del navbar, modifica el navbar-center */
+/* Estilos para el área derecha del navbar y ajuste del navbar-center */
 .navbar-right {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* Ajuste del espacio a la izquierda del área derecha */
   padding-left: 6em;
+  /* Espaciado entre elementos */
   gap: 2em;
 }

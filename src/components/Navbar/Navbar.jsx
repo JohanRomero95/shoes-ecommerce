@@ -11,7 +11,9 @@ const Navbar = () => {
 				{/* Sección izquierda */}
 				<ul className="navbar-left">
 					<Link to="/">
-						<h1 className="title">sneakers</h1>
+						<h1 className="title">
+							trend<span>Elite</span>
+						</h1>
 					</Link>
 				</ul>
 

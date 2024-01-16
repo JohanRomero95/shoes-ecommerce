@@ -4,17 +4,22 @@ import { agregarNueves } from "../../helpers/agregarNueves";
 import "./Card.css";
 
 const Card = ({ ...producto }) => {
+	// Estado para el efecto hover
 	const [hoverEffect, setHoverEffect] = useState(false);
+
+	// Estado para el color seleccionado del zapato
 	const [shoeColor, setShoeColor] = useState(
 		producto.colors && producto.colors.length > 0 ? producto.colors[0] : "",
 	);
 
+	// Efecto para actualizar el color del zapato cuando cambian los colores disponibles
 	useEffect(() => {
 		if (producto.colors && producto.colors.length > 0) {
 			setShoeColor(producto.colors[0]);
 		}
 	}, [producto.colors]);
 
+	// Manejadores de eventos para el efecto hover
 	const handleMouseEnter = () => {
 		setHoverEffect(true);
 	};
@@ -23,6 +28,7 @@ const Card = ({ ...producto }) => {
 		setHoverEffect(false);
 	};
 
+	// Función para cambiar el color del zapato
 	const changeColor = (color) => {
 		setShoeColor(color);
 	};
@@ -36,7 +42,10 @@ const Card = ({ ...producto }) => {
 			key={producto.id}
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}>
+			{/* Logo del producto */}
 			<img className="logo-shoes" src={producto.logo} alt="" />
+
+			{/* Imagen del zapato */}
 			<img
 				className={`shoes ${hoverEffect ? "scale-on-hover" : ""}`}
 				src={producto.imageURL}
@@ -50,6 +59,8 @@ const Card = ({ ...producto }) => {
 					}deg)`,
 				}}
 			/>
+
+			{/* Opciones de colores */}
 			<div className="color-options">
 				{producto.colors &&
 					producto.colors.map((color, index) => (
@@ -62,6 +73,8 @@ const Card = ({ ...producto }) => {
 							}}></div>
 					))}
 			</div>
+
+			{/* Descripción del producto */}
 			<div className="description-shoes">
 				<h3>{producto.name}</h3>
 				<p className="description-shoes-par">
@@ -70,7 +83,9 @@ const Card = ({ ...producto }) => {
 				<p className="description-shoes-price">
 					Price: <span>${agregarNueves(producto.price)}</span>
 				</p>
-				<Link>
+				<Link to="/Producto/id">
+					{" "}
+					{/* Agrega la URL del enlace */}
 					<button>Add To Cart</button>
 				</Link>
 			</div>

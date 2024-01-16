@@ -1,3 +1,4 @@
+/* Estilos para el contenedor de título de navegación */
 .contenedor--titulo-navegacion {
   color: black;
   left: 0;
@@ -5,40 +6,36 @@
   position: relative;
 }
 
-/* SON PARA MODIFICAR LOS CONTAINER DE FILTROS */
+/* Estilos para los contenedores de filtros */
 .container {
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-}
-
-/* SON PARA MODIFICAR LOS CONTAINER DE FILTROS */
-.container {
-  display: flex;
-  justify-content: center;
-  padding-inline: 9.3em;
-  /* align-items: start; */
+  /* width: 100vw; */
   height: 100%;
+  /* Ajuste de espacio entre el borde izquierdo y el contenido */
   margin-top: 6em;
-  position: relative;
+  padding-inline: 9.3em;
+  justify-content: center;
 }
 
+/* Estilos para los títulos de páginas */
 .titulo--paginas {
   display: flex;
   align-items: start;
 }
 
+/* Estilos para la lista de productos */
 .lista-de-productos {
   margin-top: 2em;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-columns: repeat(5, 1fr);
+  /* Usando repeat para la cuadrícula de productos */
   max-width: 100%;
   gap: 2em;
   margin-bottom: 6em;
 }
 
+/* Estilos para los productos individuales */
 .productos {
   overflow: hidden;
   position: relative;
@@ -52,9 +49,9 @@
   border-radius: 25px;
   opacity: 85%;
   background-color: #f2f2f2;
-  /* background-color: purple; */
 }
 
+/* Estilos para el logo de los zapatos */
 .logo-shoes {
   position: absolute;
   left: 30px;
@@ -64,6 +61,7 @@
   height: 60px;
 }
 
+/* Estilos para la imagen de los zapatos */
 .shoes {
   position: relative;
   display: flex;
@@ -73,15 +71,12 @@
   width: 210px;
   overflow: hidden;
   height: 220px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
+  border-radius: 0;
   transform: rotate(30deg) scaleX(-1);
   z-index: 1;
   margin-bottom: 0.7em;
   transition: transform 0.3s ease, filter 0.3s ease;
-  /* Agregamos transición para suavizar el cambio de color */
+  opacity: 94%;
 }
 
 /* Estilos para las opciones de color */
@@ -94,6 +89,7 @@
   flex-direction: column;
 }
 
+/* Estilos para las opciones de color individuales */
 .color-option {
   width: 1em;
   height: 1em;
@@ -106,17 +102,18 @@
   opacity: 85%;
 }
 
-/* Cambia la escala (efecto de escala) al pasar el ratón sobre la opción de color */
+/* Cambia la escala al pasar el ratón sobre la opción de color */
 .color-option:hover {
   transform: scale(1.2);
 }
 
+/* Estilos para el hover de los zapatos */
 .shoes:hover {
   transform: scale(1.15) rotate(0deg) scaleX(-1);
   transition: transform 0.3s ease, filter 0.3s ease;
-  /* Agregamos filter a la transición del hover */
 }
 
+/* Estilos para la sección de ropa en hover */
 .ropa-hover img {
   transform: scaleX(1);
   transition: transform 0.3s ease-in-out;
@@ -127,6 +124,7 @@
   transition: transform 0.3s ease-in-out;
 }
 
+/* Estilos para la descripción de los zapatos */
 .description-shoes {
   position: relative;
   display: flex;
@@ -137,34 +135,39 @@
   padding-bottom: 0.5em;
 }
 
+/* Estilos para el precio en la descripción de los zapatos */
 .description-shoes-price {
   display: flex;
   justify-content: end;
   align-items: center;
   gap: 0.4em;
-  /* padding-bottom: 0.8em; */
 }
 
+/* Estilos para el título en la descripción de los zapatos */
 .description-shoes h3 {
   font-size: 1em;
   text-transform: uppercase;
 }
 
+/* Estilos para el párrafo en la descripción de los zapatos */
 .description-shoes-par {
   font-size: 0.7em;
   color: gray;
 }
 
+/* Estilos para el precio en la descripción de los zapatos */
 .description-shoes-price p {
   text-align: end;
 }
 
+/* Estilos para el precio en la descripción de los zapatos */
 .description-shoes-price span {
   font-size: 1.3em;
   font-weight: bold;
   color: rgb(50, 50, 50);
 }
 
+/* Estilos para el botón en los productos */
 .productos button {
   cursor: pointer;
   font-size: 0.8em;
@@ -177,12 +180,14 @@
   background-color: rgb(255, 132, 0);
 }
 
+/* Estilos para el hover del botón en los productos */
 .productos button:hover {
   background-color: rgba(255, 132, 0, 0.8);
   transform: scale(1.1);
   transition: transform 0.3s ease;
 }
 
+/* Estilos para la sección de no encontrado */
 .not-found {
   display: flex;
   align-items: center;
