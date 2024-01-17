@@ -1,5 +1,5 @@
 import "./Footer.css";
-import "boxicons";
+import { FaMapMarkerAlt, FaFacebookF, FaLinkedinIn, FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
 	return (
@@ -29,17 +29,33 @@ const Footer = () => {
 					<p>NRC Santiago</p>
 				</div>
 				<div className="redes">
-					<a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-						<box-icon name="instagram" type="logo" size="md" color="#7e7e7e"></box-icon>
+					<a
+						href="https://www.instagram.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+						title="Instagram">
+						<FaInstagram />
 					</a>
-					<a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer">
-						<box-icon type="logo" name="whatsapp" size="md" color="#7e7e7e"></box-icon>
+					<a
+						href="https://web.whatsapp.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+						title="Whatsapp">
+						<FaWhatsapp />
 					</a>
-					<a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
-						<box-icon name="linkedin" type="logo" size="md" color="#7e7e7e"></box-icon>
+					<a
+						href="https://linkedin.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+						title="Linkedin">
+						<FaLinkedinIn />
 					</a>
-					<a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-						<box-icon name="facebook" type="logo" size="md" color="#7e7e7e"></box-icon>
+					<a
+						href="https://www.facebook.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+						title="Facebook">
+						<FaFacebookF />
 					</a>
 				</div>
 			</div>
@@ -47,7 +63,7 @@ const Footer = () => {
 			<div className="footer-bottom">
 				<div className="derechos">
 					<h2>
-						<box-icon name="map" type="solid" pull="left" size="sm" color="#ffff"></box-icon>
+						<FaMapMarkerAlt className="icons" />
 						Chile
 					</h2>
 					<p>© 2023 JR Company. Todos los derechos reservados</p>

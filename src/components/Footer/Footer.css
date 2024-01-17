@@ -44,6 +44,11 @@
   padding: 2em 7em 0.6em;
 }
 
+.footer-bottom .icons {
+  font-size: 1.5em;
+  margin-bottom: 2px;
+}
+
 /* Estilos para el título en la sección inferior del footer */
 .footer-bottom h2,
 .footer-bottom p {
@@ -66,18 +71,20 @@
 }
 
 /* Estilos para íconos de redes sociales */
-.redes {
-  cursor: pointer;
-}
+
 
 .redes a {
+  display: inline-flex;
+  cursor: pointer;
+  font-size: 2em;
+  color: #7e7e7e;
   padding-inline: 0.4em;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 /* Estilos para efecto de agrandamiento al pasar el mouse sobre el ícono */
-.redes box-icon:hover {
-  transform: scale(1.5);
-  transition: transform 0.3s ease;
+.redes a:hover {
+  transform: scale(1.4) !important;
 }
 
 .footer-contenedor h3:hover {
