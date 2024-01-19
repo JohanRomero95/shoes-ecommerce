@@ -1,25 +1,25 @@
+// Card.jsx
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { agregarNueves } from "../../helpers/agregarNueves";
 import "./Card.css";
+import { toast } from "react-toastify";
+import { useCarrito } from "../CarritoContext";
 
 const Card = ({ ...producto }) => {
-	// Estado para el efecto hover
 	const [hoverEffect, setHoverEffect] = useState(false);
-
-	// Estado para el color seleccionado del zapato
 	const [shoeColor, setShoeColor] = useState(
 		producto.colors && producto.colors.length > 0 ? producto.colors[0] : "",
 	);
 
-	// Efecto para actualizar el color del zapato cuando cambian los colores disponibles
+	const { addToCarrito } = useCarrito();
+
 	useEffect(() => {
 		if (producto.colors && producto.colors.length > 0) {
 			setShoeColor(producto.colors[0]);
 		}
 	}, [producto.colors]);
 
-	// Manejadores de eventos para el efecto hover
 	const handleMouseEnter = () => {
 		setHoverEffect(true);
 	};
@@ -28,31 +28,40 @@ const Card = ({ ...producto }) => {
 		setHoverEffect(false);
 	};
 
-	// Función para cambiar el color del zapato
 	const changeColor = (color) => {
 		setShoeColor(color);
 	};
 
-	return (
-		<Link
-			to={`/producto/${producto.id}`}
-			onClick={(e) => {
-				if (e.target.classList.contains("color-option")) {
-					e.preventDefault(); // Evitar la redirección si se hizo clic en una opción de color
-				}
-			}}>
-			<div
-				title={producto.name}
-				className={`productos ${
-					producto.submenu.toLowerCase().includes("ropa") ? "ropa-hover" : ""
-				}`}
-				key={producto.id}
-				onMouseEnter={handleMouseEnter}
-				onMouseLeave={handleMouseLeave}>
-				{/* Logo del producto */}
-				<img className="logo-shoes" src={producto.logo} alt="" />
+	const handleAddToCart = (e) => {
+		e.preventDefault();
+		addToCarrito({ ...producto, selectedColor: shoeColor });
+		toast.success("Producto añadido al Carrito!", {
+			position: "bottom-right",
+			autoClose: 1500,
+			hideProgressBar: true,
+			closeOnClick: true,
+			pauseOnHover: true,
+			draggable: true,
+		});
+	};
+	console.log(`${producto.name}`);
 
-				{/* Imagen del zapato */}
+	return (
+		<div
+			title={producto.name}
+			className={`productos ${
+				producto.submenu.toLowerCase().includes("ropa") ? "ropa-hover" : ""
+			}`}
+			onMouseEnter={handleMouseEnter}
+			onMouseLeave={handleMouseLeave}>
+			<Link
+				to={`/producto/${producto.id}`}
+				onClick={(e) => {
+					if (e.target.classList.contains("color-option")) {
+						e.preventDefault();
+					}
+				}}>
+				<img className="logo-shoes" src={producto.logo} alt="" />
 				<img
 					className={`shoes ${hoverEffect ? "scale-on-hover" : ""}`}
 					src={producto.imageURL}
@@ -66,8 +75,6 @@ const Card = ({ ...producto }) => {
 						}deg)`,
 					}}
 				/>
-
-				{/* Opciones de colores */}
 				<div className="color-options">
 					{producto.colors &&
 						producto.colors.map((color, index) => (
@@ -80,20 +87,20 @@ const Card = ({ ...producto }) => {
 								}}></div>
 						))}
 				</div>
-
-				{/* Descripción del producto */}
-				<div className="description-shoes">
-					<h3>{producto.name}</h3>
-					<p className="description-shoes-par">
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, atque.
-					</p>
-					<p className="description-shoes-price">
-						Price: <span>${agregarNueves(producto.price)}</span>
-					</p>
-					<button>Add To Cart</button>
-				</div>
+			</Link>
+			<div className="description-shoes">
+				<h3>{producto.name}</h3>
+				<p className="description-shoes-par">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, atque.
+				</p>
+				<p className="description-shoes-price">
+					Price: <span>${agregarNueves(producto.price)}</span>
+				</p>
+				<button onClick={handleAddToCart} type="button">
+					Add To Cart
+				</button>
 			</div>
-		</Link>
+		</div>
 	);
 };
 

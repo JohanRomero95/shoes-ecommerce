@@ -8,6 +8,8 @@ import FiltroPorSubCategoria from "./components/Filtro/FiltroPorSubCategoria";
 import FiltroPorEncabezado from "./components/Filtro/FiltroPorEncabezado";
 import ListaPorTitulo from "./components/ListaPorTitulo/ListaPorTitulo";
 import DetalleProducto from "./components/DetalleProducto/DetalleProducto";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
 	return (
@@ -27,6 +29,7 @@ function App() {
 				</Routes>
 				<Footer />
 			</BrowserRouter>
+			<ToastContainer />
 		</div>
 	);
 }

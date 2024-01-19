@@ -8,7 +8,6 @@ const OrderIcon = ({
 	handleMenorAMayorChange,
 	handleMayorAMenorChange,
 }) => {
-	console.log("filtroAbierto", filtroAbierto);
 	return (
 		<>
 			<div className="order" onClick={toggleFiltro}>
