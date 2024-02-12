@@ -44,7 +44,6 @@ const Card = ({ ...producto }) => {
 			draggable: true,
 		});
 	};
-	console.log(`${producto.name}`);
 
 	return (
 		<div

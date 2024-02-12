@@ -47,8 +47,8 @@ const ListaPorTitulo = () => {
 				<div className="container--encabezado">
 					<h1 className="titulo--paginas">
 						{titulo.includes("Colección")
-							? "Todo los productos"
-							: `Todo los productos para ${titulo}`}
+							? "Todos los productos"
+							: `Todos los productos para ${titulo}`}
 					</h1>
 					<OrderIcon
 						toggleFiltro={toggleFiltro}

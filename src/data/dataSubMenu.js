@@ -1,35 +1,35 @@
 export const dataSubMenu = [
 	{
 		titulo: "Colección",
-		submenu: [
-			{
-				encabezado: "Novedades para Hombre",
-				subCategorias: [
-					{ nombre: "Zapatillas" },
-					{ nombre: "Ropa" },
-					{ nombre: "Accesorios y Equipo" },
-					{ nombre: "Todo Hombre" },
-				],
-			},
-			{
-				encabezado: "Novedades para Mujer",
-				subCategorias: [
-					{ nombre: "Zapatillas" },
-					{ nombre: "Ropa" },
-					{ nombre: "Accesorios y Equipo" },
-					{ nombre: "Todo Mujer" },
-				],
-			},
-			{
-				encabezado: "Novedades para Niños",
-				subCategorias: [
-					{ nombre: "Zapatillas" },
-					{ nombre: "Ropa" },
-					{ nombre: "Accesorios y Equipo" },
-					{ nombre: "Todo Niños" },
-				],
-			},
-		],
+	// 	submenu: [
+	// 		{
+	// 			encabezado: "Novedades para Hombre",
+	// 			subCategorias: [
+	// 				{ nombre: "Zapatillas" },
+	// 				{ nombre: "Ropa" },
+	// 				{ nombre: "Accesorios y Equipo" },
+	// 				{ nombre: "Todo Hombre" },
+	// 			],
+	// 		},
+	// 		{
+	// 			encabezado: "Novedades para Mujer",
+	// 			subCategorias: [
+	// 				{ nombre: "Zapatillas" },
+	// 				{ nombre: "Ropa" },
+	// 				{ nombre: "Accesorios y Equipo" },
+	// 				{ nombre: "Todo Mujer" },
+	// 			],
+	// 		},
+	// 		{
+	// 			encabezado: "Novedades para Niños",
+	// 			subCategorias: [
+	// 				{ nombre: "Zapatillas" },
+	// 				{ nombre: "Ropa" },
+	// 				{ nombre: "Accesorios y Equipo" },
+	// 				{ nombre: "Todo Niños" },
+	// 			],
+	// 		},
+	// 	],
 	},
 	{
 		titulo: "Hombre",
