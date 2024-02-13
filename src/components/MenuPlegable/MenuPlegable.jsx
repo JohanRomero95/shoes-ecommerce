@@ -6,7 +6,7 @@ const MenuPlegable = () => {
 	return (
 		<>
 			{links.map((menu, index) => (
-				<MenuItem key={index} titulo={menu.titulo} submenu={menu.submenu} />
+				<MenuItem key={index} titulo={menu.titulo} submenu={menu.submenu || []} />
 			))}
 		</>
 	);

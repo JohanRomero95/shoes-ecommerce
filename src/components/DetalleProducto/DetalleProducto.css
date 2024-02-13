@@ -1,0 +1,89 @@
+/* Estilos para los contenedores de filtros */
+.containere {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+  /* Ajuste de espacio entre el borde izquierdo y el contenido */
+  margin-top: 5em;
+  margin-bottom: 5em;
+  padding-inline: 9.3em;
+  justify-content: center;
+}
+
+.producto {
+  display: flex;
+  padding-top: 2em;
+  justify-content: center;
+}
+
+.producto img {
+  display: block;
+  min-width: 320px;
+  max-height: 420px;
+  width: 55%;
+  object-fit: cover;
+  background-position: center;
+  top: 0;
+  position: relative;
+}
+
+.detalle-producto {
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  display: flex;
+  width: 35%;
+  flex-direction: column;
+  align-content: center;
+  background-color: purple;
+  padding-inline: 1rem;
+  padding-block: 3em;
+}
+
+.detalle-producto button {
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 700;
+  width: 250px;
+  height: 50px;
+  border-radius: 30px;
+  border: 0;
+  color: #fff;
+  background-color: rgb(255, 132, 0);
+}
+
+.miniatura {
+  display: flex;
+  justify-content: space-around;
+  width: 55%;
+  background-color: green;
+  margin: 0 4em;
+
+}
+
+.miniatura img {
+  cursor: pointer;
+  width: 100px;
+  background-color: red;
+}
+
+/* Estilos para las opciones de color */
+.color-optiones {
+  display: flex;
+  gap: 1em;
+}
+
+/* Estilos para las opciones de color individuales */
+.color-optione {
+  width: 1em;
+  height: 1em;
+  margin: 3.8px 0px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: inset 0px 4px 5px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 85%;
+}

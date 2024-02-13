@@ -25,7 +25,7 @@ function App() {
 						path="/:titulo/:encabezado/:subCategorias"
 						element={<FiltroPorSubCategoria />}
 					/>
-					<Route path="/producto/:id" element={<DetalleProducto />} />
+					<Route path="/producto/:id/" element={<DetalleProducto />} />
 				</Routes>
 				<Footer />
 			</BrowserRouter>
