@@ -7,26 +7,27 @@
   height: 100%;
   /* Ajuste de espacio entre el borde izquierdo y el contenido */
   margin-top: 5em;
-  margin-bottom: 5em;
+  margin-bottom: 9em;
   padding-inline: 9.3em;
   justify-content: center;
 }
 
 .producto {
   display: flex;
-  padding-top: 2em;
+  padding-top: 4.8em;
   justify-content: center;
 }
 
-.producto img {
+.producto--imagen {
   display: block;
   min-width: 320px;
-  max-height: 420px;
-  width: 55%;
-  object-fit: cover;
+  max-height: 480px;
+  /* width: 55%; */
+  object-fit: scale-down;
   background-position: center;
   top: 0;
   position: relative;
+  border-radius: 2%;
 }
 
 .detalle-producto {
@@ -34,12 +35,13 @@
   align-items: center;
   position: relative;
   display: flex;
-  width: 35%;
+  width: 30%;
   flex-direction: column;
   align-content: center;
-  background-color: purple;
-  padding-inline: 1rem;
-  padding-block: 3em;
+  /* background-color: purple; */
+  padding-inline: 2.5em;
+  /* padding-block: 1em; */
+  flex-wrap: wrap;
 }
 
 .detalle-producto button {
@@ -56,17 +58,20 @@
 
 .miniatura {
   display: flex;
-  justify-content: space-around;
-  width: 55%;
-  background-color: green;
-  margin: 0 4em;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 8%;
+  /* background-color: #f6f6f6; */
+  /* margin: 0 4em; */
+  padding-right: 1em;
 
 }
 
 .miniatura img {
   cursor: pointer;
-  width: 100px;
+  width: 80px;
   background-color: red;
+  border-radius: 10%;
 }
 
 /* Estilos para las opciones de color */
@@ -77,13 +82,43 @@
 
 /* Estilos para las opciones de color individuales */
 .color-optione {
-  width: 1em;
-  height: 1em;
+  width: 1.5em;
+  height: 1.5em;
   margin: 3.8px 0px;
-  border-radius: 50%;
+  border-radius: 10%;
   cursor: pointer;
   z-index: 2;
   box-shadow: inset 0px 4px 5px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   opacity: 85%;
+}
+
+.name {
+  /* background-color: maroon; */
+}
+
+.tallas button {
+  width: 45px;
+  height: 35px;
+  border-radius: 10%;
+  /* margin-right: 8px; */
+  margin-bottom: 8px;
+  margin-top: 8px;
+  background-color: #f6f6f6;
+  border: 1px solid black;
+  color: black;
+
+}
+
+.tallas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  /* grid-gap: 2px */
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

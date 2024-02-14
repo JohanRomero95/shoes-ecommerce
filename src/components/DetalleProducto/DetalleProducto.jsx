@@ -47,9 +47,17 @@ const DetalleProducto = () => {
 	return (
 		<div className="containere">
 			{producto ? (
-				<div>
+				<div className="name">
 					<div className="producto">
+						<div className="miniatura">
+							<img src={producto.imageURL} alt={producto.name} />
+							<img src={producto.imageURL} alt={producto.name} />
+
+							<img src={producto.imageURL} alt={producto.name} />
+							<img src={producto.imageURL} alt={producto.name} />
+						</div>
 						<img
+							className="producto--imagen"
 							src={producto.imageURL}
 							alt={producto.name}
 							style={{
@@ -85,16 +93,22 @@ const DetalleProducto = () => {
 										</div>
 									</>
 								) : null}
+								<p>Selecciona tu talla</p>
+								<div className="tallas">
+									<button className="grid-item">7</button>
+									<button className="grid-item">8</button>
+									<button className="grid-item">9</button>
+									<button className="grid-item">10</button>
+									<button className="grid-item">9</button>
+									<button className="grid-item">10</button> <button>9</button>
+									<button className="grid-item">10</button>
+									<button className="grid-item">9</button>
+									<button className="grid-item">10</button>
+									<button className="grid-item">9</button>
+								</div>
 							</div>
 							<button>Add to cart</button>
 						</div>
-					</div>
-					<div className="miniatura">
-						<img src={producto.imageURL} alt={producto.name} />
-						<img src={producto.imageURL} alt={producto.name} />
-
-						<img src={producto.imageURL} alt={producto.name} />
-						<img src={producto.imageURL} alt={producto.name} />
 					</div>
 				</div>
 			) : (
