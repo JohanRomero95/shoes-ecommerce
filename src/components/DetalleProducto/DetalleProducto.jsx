@@ -10,6 +10,12 @@ const DetalleProducto = () => {
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState(null);
 	const [shoeColor, setShoeColor] = useState("");
+	const [selected, setSelected] = useState(false);
+	const [selectedGalleryImage, setSelectedGalleryImage] = useState(null);
+
+	// const toggleSelected = () => {
+	// 	setSelected(!selected);
+	// };
 
 	useEffect(() => {
 		const obtenerProducto = async () => {
@@ -50,12 +56,24 @@ const DetalleProducto = () => {
 				<div className="name">
 					<div className="producto">
 						<div className="miniatura">
-							<img src={producto.imageURL} alt={producto.name} />
-							<img src={producto.imageURL} alt={producto.name} />
-
-							<img src={producto.imageURL} alt={producto.name} />
-							<img src={producto.imageURL} alt={producto.name} />
+							{producto.gallery &&
+								producto.gallery.map((img, index) => (
+									<div className="contenedor--miniatura">
+										<img
+											key={index}
+											src={img}
+											alt={producto.name}
+											onClick={() => setSelectedGalleryImage(index)}
+											style={{
+												border:
+													selectedGalleryImage === index ? "1px solid red" : "none",
+												filter: selected ? "brightness(70%)" : "none",
+											}}
+										/>
+									</div>
+								))}
 						</div>
+
 						<img
 							className="producto--imagen"
 							src={producto.imageURL}
@@ -72,13 +90,24 @@ const DetalleProducto = () => {
 						<div className="detalle-producto">
 							<div>
 								<h1>{producto.name}</h1>
-								<p>Marca: {producto.brand}</p>
-								<p>Género: {producto.gender}</p>
-								<p>Categoría: {producto.category}</p>
-								<p>Precio: ${agregarNueves(producto.price)}</p>
+								<p>
+									<strong>Marca:</strong> {producto.brand}
+								</p>
+								<p>
+									<strong>Género:</strong> {producto.gender}
+								</p>
+								<p>
+									<strong>Categoría: </strong>
+									{producto.category}
+								</p>
+								<p>
+									<strong>Precio:</strong> ${agregarNueves(producto.price)}
+								</p>
 								{producto.colors && producto.colors.length > 0 ? (
 									<>
-										<p>Colores:</p>
+										<p>
+											<strong>Colores</strong>
+										</p>
 										<div className="color-optiones">
 											{producto.colors &&
 												producto.colors.map((color, index) => (
@@ -93,7 +122,9 @@ const DetalleProducto = () => {
 										</div>
 									</>
 								) : null}
-								<p>Selecciona tu talla</p>
+								<p>
+									<strong>Selecciona tu talla</strong>
+								</p>
 								<div className="tallas">
 									<button className="grid-item">7</button>
 									<button className="grid-item">8</button>

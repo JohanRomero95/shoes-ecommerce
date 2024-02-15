@@ -12,7 +12,11 @@
     "items_left": 3,
     "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-665455a5-45de-40fb-945f-c1852b82400d/react-infinity-run-flyknit-Hombres-Running-shoe-zX42Nc.jpg",
     "slug": "nike-react-infinity-run-flyknit",
-    "featured": 0
+    "featured": 0,
+    "gallery": [
+      "/shoes/nike react infinity/zapatilla-nike-react-infinity-run-fk-mawi-2-23056107503751.jpg",
+      "/shoes/nike react infinity/zapatilla-nike-react-infinity-run-fk-mawi-4.jpg"
+    ]
   },
   {
     "id": 2,
@@ -32,6 +36,14 @@
       "blue",
       "red",
       "green"
+    ],
+    "gallery": [
+      "/shoes/nike react miler/captura-de-pantalla-2020-04-10-a-las-13-41-32_1_1000x575.png",
+      "/shoes/nike react miler/captura-de-pantalla-2020-04-10-a-las-13-41-42_1_1000x575.png",
+      "/shoes/nike react miler/captura-de-pantalla-2020-04-10-a-las-13-41-53-copia_1_1000x575.jpeg",
+      "/shoes/nike react miler/captura-de-pantalla-2020-04-10-a-las-13-41-59-copia_1_1000x575.jpeg",
+      "/shoes/nike react miler/captura-de-pantalla-2020-04-10-a-las-13-42-12-copia_1_1000x575.jpeg",
+      "/shoes/nike react miler/captura-de-pantalla-2020-04-10-a-las-13-42-22-copia_1_1000x575.jpeg"
     ]
   },
   {
@@ -47,7 +59,14 @@
     "items_left": 3,
     "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-33b0a0a5-c171-46cc-ad20-04a768703e47/air-zoom-pegasus-37-Mujers-Running-shoe-Jl0bDf.jpg",
     "slug": "nike-air-zoom-pegasus-37",
-    "featured": 0
+    "featured": 0,
+    "gallery": [
+      "/public/shoes/nike pegasus/Mike-pegasus-37-002-e1588145900709.jpg",
+      "/public/shoes/nike pegasus/Mike-pegasus-37-005.jpg",
+      "/public/shoes/nike pegasus/nike-pegasus-37-002.jpg",
+      "/public/shoes/nike pegasus/nike-pegasus-37-003.jpg",
+      "/public/shoes/nike pegasus/nike-pegasus-37-009.jpg"
+    ]
   },
   {
     "id": 4,

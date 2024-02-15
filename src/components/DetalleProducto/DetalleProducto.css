@@ -7,14 +7,14 @@
   height: 100%;
   /* Ajuste de espacio entre el borde izquierdo y el contenido */
   margin-top: 5em;
-  margin-bottom: 9em;
+  margin-bottom: 10em;
   padding-inline: 9.3em;
   justify-content: center;
 }
 
 .producto {
   display: flex;
-  padding-top: 4.8em;
+  padding-top: 4.9em;
   justify-content: center;
 }
 
@@ -22,8 +22,9 @@
   display: block;
   min-width: 320px;
   max-height: 480px;
-  /* width: 55%; */
+  width: 45%;
   object-fit: scale-down;
+  background-color: #f6f6f6;
   background-position: center;
   top: 0;
   position: relative;
@@ -35,11 +36,11 @@
   align-items: center;
   position: relative;
   display: flex;
-  width: 30%;
+  width: 35%;
   flex-direction: column;
   align-content: center;
   /* background-color: purple; */
-  padding-inline: 2.5em;
+  padding-inline: 4.5em;
   /* padding-block: 1em; */
   flex-wrap: wrap;
 }
@@ -57,22 +58,31 @@
 }
 
 .miniatura {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-content: start;
+  grid-gap: 20.8px;
   width: 8%;
-  /* background-color: #f6f6f6; */
-  /* margin: 0 4em; */
-  padding-right: 1em;
-
 }
+
+/* .contenedor--miniatura {
+  width: 90px;
+  height: 90px;
+} */
 
 .miniatura img {
   cursor: pointer;
-  width: 80px;
-  background-color: red;
+  width: 90px;
+  /* height: 90px; */
+  background-color: #f6f6f6;
+  padding: .8em;
   border-radius: 10%;
+  background-position: center;
 }
+
+
+
 
 /* Estilos para las opciones de color */
 .color-optiones {
@@ -101,9 +111,6 @@
   width: 45px;
   height: 35px;
   border-radius: 10%;
-  /* margin-right: 8px; */
-  margin-bottom: 8px;
-  margin-top: 8px;
   background-color: #f6f6f6;
   border: 1px solid black;
   color: black;
@@ -112,9 +119,10 @@
 
 .tallas {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  /* grid-gap: 2px */
+  grid-gap: 8px;
+  margin-top: 8px
 }
 
 .grid-item {
