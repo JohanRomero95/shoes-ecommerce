@@ -9,6 +9,58 @@
     "price": 160,
     "is_in_inventory": true,
     "submenu": "Zapatillas",
+    "tallas": [
+      {
+        "eu": "36",
+        "us": "5.5",
+        "cm": "22.5"
+      },
+      {
+        "eu": "37",
+        "us": "6.5",
+        "cm": "23.5"
+      },
+      {
+        "eu": "38",
+        "us": "7.5",
+        "cm": "24.5"
+      },
+      {
+        "eu": "39",
+        "us": "8.5",
+        "cm": "25.5"
+      },
+      {
+        "eu": "40",
+        "us": "9.5",
+        "cm": "26.5"
+      },
+      {
+        "eu": "41",
+        "us": "10.5",
+        "cm": "27.5"
+      },
+      {
+        "eu": "42",
+        "us": "11.5",
+        "cm": "28.5"
+      },
+      {
+        "eu": "43",
+        "us": "12.5",
+        "cm": "29.5"
+      },
+      {
+        "eu": "44",
+        "us": "13.5",
+        "cm": "30.5"
+      },
+      {
+        "eu": "45",
+        "us": "14.5",
+        "cm": "31.5"
+      }
+    ],
     "items_left": 3,
     "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-665455a5-45de-40fb-945f-c1852b82400d/react-infinity-run-flyknit-Hombres-Running-shoe-zX42Nc.jpg",
     "slug": "nike-react-infinity-run-flyknit",
@@ -28,6 +80,58 @@
     "price": 130,
     "is_in_inventory": true,
     "submenu": "Zapatillas",
+    "tallas": [
+      {
+        "eu": "36",
+        "us": "5.5",
+        "cm": "22.5"
+      },
+      {
+        "eu": "37",
+        "us": "6.5",
+        "cm": "23.5"
+      },
+      {
+        "eu": "38",
+        "us": "7.5",
+        "cm": "24.5"
+      },
+      {
+        "eu": "39",
+        "us": "8.5",
+        "cm": "25.5"
+      },
+      {
+        "eu": "40",
+        "us": "9.5",
+        "cm": "26.5"
+      },
+      {
+        "eu": "41",
+        "us": "10.5",
+        "cm": "27.5"
+      },
+      {
+        "eu": "42",
+        "us": "11.5",
+        "cm": "28.5"
+      },
+      {
+        "eu": "43",
+        "us": "12.5",
+        "cm": "29.5"
+      },
+      {
+        "eu": "44",
+        "us": "13.5",
+        "cm": "30.5"
+      },
+      {
+        "eu": "45",
+        "us": "14.5",
+        "cm": "31.5"
+      }
+    ],
     "items_left": 3,
     "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-5cc7de3b-2afc-49c2-a1e4-0508997d09e6/react-miler-Hombres-Running-shoe-DgF6nr.jpg",
     "slug": "nike-react-miler",
@@ -56,6 +160,43 @@
     "price": 120,
     "is_in_inventory": true,
     "submenu": "Zapatillas",
+    "tallas": [
+      {
+        "eu": "35",
+        "us": "4.5",
+        "cm": "22.0"
+      },
+      {
+        "eu": "36",
+        "us": "5.5",
+        "cm": "22.5"
+      },
+      {
+        "eu": "37",
+        "us": "6.5",
+        "cm": "23.5"
+      },
+      {
+        "eu": "38",
+        "us": "7.5",
+        "cm": "24.5"
+      },
+      {
+        "eu": "39",
+        "us": "8.5",
+        "cm": "25.5"
+      },
+      {
+        "eu": "40",
+        "us": "9.5",
+        "cm": "26.5"
+      },
+      {
+        "eu": "41",
+        "us": "10.5",
+        "cm": "27.5"
+      }
+    ],
     "items_left": 3,
     "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-33b0a0a5-c171-46cc-ad20-04a768703e47/air-zoom-pegasus-37-Mujers-Running-shoe-Jl0bDf.jpg",
     "slug": "nike-air-zoom-pegasus-37",
@@ -78,6 +219,43 @@
     "price": 180,
     "is_in_inventory": true,
     "submenu": "Zapatillas",
+    "tallas": [
+      {
+        "eu": "35",
+        "us": "4.5",
+        "cm": "22.0"
+      },
+      {
+        "eu": "36",
+        "us": "5.5",
+        "cm": "22.5"
+      },
+      {
+        "eu": "37",
+        "us": "6.5",
+        "cm": "23.5"
+      },
+      {
+        "eu": "38",
+        "us": "7.5",
+        "cm": "24.5"
+      },
+      {
+        "eu": "39",
+        "us": "8.5",
+        "cm": "25.5"
+      },
+      {
+        "eu": "40",
+        "us": "9.5",
+        "cm": "26.5"
+      },
+      {
+        "eu": "41",
+        "us": "10.5",
+        "cm": "27.5"
+      }
+    ],
     "items_left": 3,
     "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/99a7d3cb-e40c-4474-91c2-0f2e6d231fd2/joyride-run-flyknit-Mujers-Running-shoe-HcfnJd.jpg",
     "slug": "nike-joyride-run-flyknit",
@@ -85,6 +263,12 @@
     "colors": [
       "red",
       "aqua"
+    ],
+    "gallery": [
+      "/public/shoes/nike joyride/nike-wmns-joyride-run-flyknit-platinum-violet-aq2731-006-1.jpg.webp",
+      "/public/shoes/nike joyride/nike-wmns-joyride-run-flyknit-platinum-violet-aq2731-006-4.jpg.webp",
+      "/public/shoes/nike joyride/nike-wmns-joyride-run-flyknit-platinum-violet-aq2731-006-5.jpg.webp",
+      "/public/shoes/nike joyride/nike-wmns-joyride-run-flyknit-platinum-violet-aq2731-006-6.jpg.webp"
     ]
   },
   {
@@ -97,6 +281,43 @@
     "price": 250,
     "is_in_inventory": true,
     "submenu": "Zapatillas",
+    "tallas": [
+      {
+        "eu": "35",
+        "us": "4.5",
+        "cm": "22.0"
+      },
+      {
+        "eu": "36",
+        "us": "5.5",
+        "cm": "22.5"
+      },
+      {
+        "eu": "37",
+        "us": "6.5",
+        "cm": "23.5"
+      },
+      {
+        "eu": "38",
+        "us": "7.5",
+        "cm": "24.5"
+      },
+      {
+        "eu": "39",
+        "us": "8.5",
+        "cm": "25.5"
+      },
+      {
+        "eu": "40",
+        "us": "9.5",
+        "cm": "26.5"
+      },
+      {
+        "eu": "41",
+        "us": "10.5",
+        "cm": "27.5"
+      }
+    ],
     "items_left": 3,
     "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9dda6202-e2ff-4711-9a09-0fcb7d90c164/mercurial-vapor-13-elite-fg-firm-ground-soccer-cleat-14MsF2.jpg",
     "slug": "nike-mercurial-vapor-13-elite-fg",
@@ -104,7 +325,8 @@
     "colors": [
       "red",
       "aqua"
-    ]
+    ],
+    "gallery": []
   },
   {
     "id": 6,
@@ -116,6 +338,43 @@
     "price": 150,
     "is_in_inventory": true,
     "submenu": "Zapatillas",
+    "tallas": [
+      {
+        "eu": "35",
+        "us": "4.5",
+        "cm": "22.0"
+      },
+      {
+        "eu": "36",
+        "us": "5.5",
+        "cm": "22.5"
+      },
+      {
+        "eu": "37",
+        "us": "6.5",
+        "cm": "23.5"
+      },
+      {
+        "eu": "38",
+        "us": "7.5",
+        "cm": "24.5"
+      },
+      {
+        "eu": "39",
+        "us": "8.5",
+        "cm": "25.5"
+      },
+      {
+        "eu": "40",
+        "us": "9.5",
+        "cm": "26.5"
+      },
+      {
+        "eu": "41",
+        "us": "10.5",
+        "cm": "27.5"
+      }
+    ],
     "items_left": 3,
     "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/s1amp7uosrn0nqpsxeue/phantom-vision-elite-dynamic-fit-fg-firm-ground-soccer-cleat-19Kv1V.jpg",
     "slug": "nike-phantom-vision-elite-dynamic-fit-fg",
@@ -137,6 +396,43 @@
     "price": 80,
     "is_in_inventory": true,
     "submenu": "Zapatillas",
+    "tallas": [
+      {
+        "eu": "35",
+        "us": "4.5",
+        "cm": "22.0"
+      },
+      {
+        "eu": "36",
+        "us": "5.5",
+        "cm": "22.5"
+      },
+      {
+        "eu": "37",
+        "us": "6.5",
+        "cm": "23.5"
+      },
+      {
+        "eu": "38",
+        "us": "7.5",
+        "cm": "24.5"
+      },
+      {
+        "eu": "39",
+        "us": "8.5",
+        "cm": "25.5"
+      },
+      {
+        "eu": "40",
+        "us": "9.5",
+        "cm": "26.5"
+      },
+      {
+        "eu": "41",
+        "us": "10.5",
+        "cm": "27.5"
+      }
+    ],
     "items_left": 3,
     "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/whegph8z9ornhxklc8rp/phantom-venom-academy-fg-firm-ground-soccer-cleat-6JVNll.jpg",
     "slug": "nike-phantom-venom-academy-fg",
@@ -152,6 +448,58 @@
     "price": 145,
     "is_in_inventory": true,
     "submenu": "Zapatillas",
+    "tallas": [
+      {
+        "eu": "36",
+        "us": "5.5",
+        "cm": "22.5"
+      },
+      {
+        "eu": "37",
+        "us": "6.5",
+        "cm": "23.5"
+      },
+      {
+        "eu": "38",
+        "us": "7.5",
+        "cm": "24.5"
+      },
+      {
+        "eu": "39",
+        "us": "8.5",
+        "cm": "25.5"
+      },
+      {
+        "eu": "40",
+        "us": "9.5",
+        "cm": "26.5"
+      },
+      {
+        "eu": "41",
+        "us": "10.5",
+        "cm": "27.5"
+      },
+      {
+        "eu": "42",
+        "us": "11.5",
+        "cm": "28.5"
+      },
+      {
+        "eu": "43",
+        "us": "12.5",
+        "cm": "29.5"
+      },
+      {
+        "eu": "44",
+        "us": "13.5",
+        "cm": "30.5"
+      },
+      {
+        "eu": "45",
+        "us": "14.5",
+        "cm": "31.5"
+      }
+    ],
     "items_left": 3,
     "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/vhbwnkor8sxt8qtecgia/mercurial-vapor-13-elite-tech-craft-fg-firm-ground-soccer-cleat-l38JPj.jpg",
     "slug": "nike-mercurial-vapor-13-elite-tech-craft-fg",
@@ -167,6 +515,58 @@
     "price": 137,
     "is_in_inventory": true,
     "submenu": "Zapatillas",
+    "tallas": [
+      {
+        "eu": "36",
+        "us": "5.5",
+        "cm": "22.5"
+      },
+      {
+        "eu": "37",
+        "us": "6.5",
+        "cm": "23.5"
+      },
+      {
+        "eu": "38",
+        "us": "7.5",
+        "cm": "24.5"
+      },
+      {
+        "eu": "39",
+        "us": "8.5",
+        "cm": "25.5"
+      },
+      {
+        "eu": "40",
+        "us": "9.5",
+        "cm": "26.5"
+      },
+      {
+        "eu": "41",
+        "us": "10.5",
+        "cm": "27.5"
+      },
+      {
+        "eu": "42",
+        "us": "11.5",
+        "cm": "28.5"
+      },
+      {
+        "eu": "43",
+        "us": "12.5",
+        "cm": "29.5"
+      },
+      {
+        "eu": "44",
+        "us": "13.5",
+        "cm": "30.5"
+      },
+      {
+        "eu": "45",
+        "us": "14.5",
+        "cm": "31.5"
+      }
+    ],
     "items_left": 3,
     "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-a52a8aec-22dc-4982-961b-75c5f4c72805/mercurial-superfly-7-pro-mds-fg-firm-ground-soccer-cleat-mhcpdN.jpg",
     "slug": "nike-mercurial-superfly-7-pro-mds-fg",
@@ -182,10 +582,40 @@
     "price": 90,
     "is_in_inventory": true,
     "submenu": "Zapatillas",
+    "tallas": [
+      {
+        "eu": "1Y"
+      },
+      {
+        "eu": "2Y"
+      },
+      {
+        "eu": "3Y"
+      },
+      {
+        "eu": "4Y"
+      },
+      {
+        "eu": "5Y"
+      },
+      {
+        "eu": "6Y"
+      },
+      {
+        "eu": "7Y"
+      }
+    ],
     "items_left": 3,
-    "imageURL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/178b2a46-3ee4-492b-882e-f71efdd53a36/air-force-1-big-Niños-shoe-2zqp8D.jpg",
+    "imageURL": "https://nikeclprod.vtexassets.com/arquivos/ids/613119-1200-1200?v=638022223824600000&width=1200&height=1200&aspect=true",
     "slug": "nike-air-force-1",
-    "featured": 0
+    "featured": 0,
+    "gallery": [
+      "https://nikeclprod.vtexassets.com/arquivos/ids/615800-1200-1200?v=638022298640770000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/617128-1200-1200?v=638022343897500000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/618230-1200-1200?v=638022366186400000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/619216-1200-1200?v=638022382875230000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/619850-1200-1200?v=638022393060830000&width=1200&height=1200&aspect=true"
+    ]
   },
   {
     "id": 11,
@@ -194,11 +624,34 @@
     "logo": "https://nikeclprod.vtexassets.com/assets/vtex/assets-builder/nikeclprod.store/2.0.60/icons/Assets_for_off%20platform/swoosh___33f7ffaf2fc124733c2c4a60a12a1160.svg",
     "gender": "Niños",
     "category": "Casual",
-    "price": 100,
+    "price": 110,
     "is_in_inventory": true,
     "submenu": "Zapatillas",
+    "tallas": [
+      {
+        "eu": "1Y"
+      },
+      {
+        "eu": "2Y"
+      },
+      {
+        "eu": "3Y"
+      },
+      {
+        "eu": "4Y"
+      },
+      {
+        "eu": "5Y"
+      },
+      {
+        "eu": "6Y"
+      },
+      {
+        "eu": "7Y"
+      }
+    ],
     "items_left": 3,
-    "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8439f823-86cf-4086-81d2-4f9ff9a66866/air-max-90-big-Niños-shoe-1wzwJM.jpg",
+    "imageURL": "https://nikeclprod.vtexassets.com/arquivos/ids/835099-1200-1200?v=638327398362600000&width=1200&height=1200&aspect=true",
     "slug": "nike-air-max-90",
     "featured": 0,
     "colors": [
@@ -206,37 +659,15 @@
       "purple",
       "red",
       "green"
+    ],
+    "gallery": [
+      "https://nikeclprod.vtexassets.com/arquivos/ids/839791-1200-1200?v=638327491900800000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/852192-1200-1200?v=638328048437430000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/848172-1200-1200?v=638327627255800000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/856241-1200-1200?v=638328128811770000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/863834-1200-1200?v=638328406417600000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/860489-1200-1200?v=638328320063200000&width=1200&height=1200&aspect=true"
     ]
-  },
-  {
-    "id": 12,
-    "name": "Nike Air Max 90 LTR",
-    "brand": "NIKE",
-    "logo": "https://nikeclprod.vtexassets.com/assets/vtex/assets-builder/nikeclprod.store/2.0.60/icons/Assets_for_off%20platform/swoosh___33f7ffaf2fc124733c2c4a60a12a1160.svg",
-    "gender": "Niños",
-    "category": "Casual",
-    "price": 110,
-    "is_in_inventory": true,
-    "submenu": "Zapatillas",
-    "items_left": 3,
-    "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-620aeb37-1b28-44b0-9b14-5572f8cbc948/air-max-90-ltr-big-Niños-shoe-hdNLQ5.jpg",
-    "slug": "nike-air-max-90-ltr",
-    "featured": 0
-  },
-  {
-    "id": 13,
-    "name": "Nike Joyride Dual Run",
-    "brand": "NIKE",
-    "logo": "https://nikeclprod.vtexassets.com/assets/vtex/assets-builder/nikeclprod.store/2.0.60/icons/Assets_for_off%20platform/swoosh___33f7ffaf2fc124733c2c4a60a12a1160.svg",
-    "gender": "Niños",
-    "category": "Running",
-    "price": 110,
-    "is_in_inventory": false,
-    "submenu": "Zapatillas",
-    "items_left": 3,
-    "imageURL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/33888130-0320-41a1-ba53-a026decd8aa2/joyride-dual-run-big-Niños-Running-shoe-1HDJF8.jpg",
-    "slug": "nike-joyride-dual-run",
-    "featured": 0
   },
   {
     "id": 14,
@@ -248,10 +679,70 @@
     "price": 113,
     "is_in_inventory": true,
     "submenu": "Zapatillas",
+    "tallas": [
+      {
+        "eu": "36",
+        "us": "5.5",
+        "cm": "22.5"
+      },
+      {
+        "eu": "37",
+        "us": "6.5",
+        "cm": "23.5"
+      },
+      {
+        "eu": "38",
+        "us": "7.5",
+        "cm": "24.5"
+      },
+      {
+        "eu": "39",
+        "us": "8.5",
+        "cm": "25.5"
+      },
+      {
+        "eu": "40",
+        "us": "9.5",
+        "cm": "26.5"
+      },
+      {
+        "eu": "41",
+        "us": "10.5",
+        "cm": "27.5"
+      },
+      {
+        "eu": "42",
+        "us": "11.5",
+        "cm": "28.5"
+      },
+      {
+        "eu": "43",
+        "us": "12.5",
+        "cm": "29.5"
+      },
+      {
+        "eu": "44",
+        "us": "13.5",
+        "cm": "30.5"
+      },
+      {
+        "eu": "45",
+        "us": "14.5",
+        "cm": "31.5"
+      }
+    ],
     "items_left": 3,
     "imageURL": "https://nikeclprod.vtexassets.com/arquivos/ids/723987-1400-1400?v=638241055839800000&width=1400&height=1400&aspect=true",
     "slug": "nike-air-force-1",
-    "featured": 0
+    "featured": 0,
+    "gallery": [
+      "https://nikeclprod.vtexassets.com/arquivos/ids/729519-1200-1200?v=638241659089730000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/736843-1200-1200?v=638241864096700000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/736865-1200-1200?v=638241864409700000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/736887-1200-1200?v=638241864705430000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/736909-1200-1200?v=638241865021100000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/736931-1200-1200?v=638241865389800000&width=1200&height=1200&aspect=true"
+    ]
   },
   {
     "id": 26,
@@ -263,10 +754,41 @@
     "price": 110,
     "is_in_inventory": true,
     "submenu": "Zapatillas",
+    "tallas": [
+      {
+        "eu": "1Y"
+      },
+      {
+        "eu": "2Y"
+      },
+      {
+        "eu": "3Y"
+      },
+      {
+        "eu": "4Y"
+      },
+      {
+        "eu": "5Y"
+      },
+      {
+        "eu": "6Y"
+      },
+      {
+        "eu": "7Y"
+      }
+    ],
     "items_left": 6,
     "imageURL": "https://nikeclprod.vtexassets.com/arquivos/ids/920628-1200-1200?v=638385058339300000&width=1200&height=1200&aspect=true",
     "slug": "nike-air-max-1",
-    "featured": 0
+    "featured": 0,
+    "gallery": [
+      "https://nikeclprod.vtexassets.com/arquivos/ids/918011-1200-1200?v=638382630653370000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/922981-1200-1200?v=638385105599200000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/925434-1200-1200?v=638385149744630000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/927825-1200-1200?v=638385189233700000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/930469-1200-1200?v=638385236338000000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/932512-1200-1200?v=638385271918600000&width=1200&height=1200&aspect=true"
+    ]
   },
   {
     "id": 27,
@@ -278,10 +800,39 @@
     "price": 54,
     "is_in_inventory": true,
     "submenu": "Zapatillas",
+    "tallas": [
+      {
+        "eu": "2C"
+      },
+      {
+        "eu": "3C"
+      },
+      {
+        "eu": "4C"
+      },
+      {
+        "eu": "5C"
+      },
+      {
+        "eu": "6C"
+      },
+      {
+        "eu": "7C"
+      }
+    ],
     "items_left": 5,
     "imageURL": "https://nikeclprod.vtexassets.com/arquivos/ids/836519-800-800?v=638327417268700000&width=800&height=800&aspect=true",
     "slug": "nike-team-hustle-d11",
-    "featured": 1
+    "featured": 1,
+    "gallery": [
+      "https://nikeclprod.vtexassets.com/arquivos/ids/841206-1200-1200?v=638327511077370000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/853576-1200-1200?v=638328072111400000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/849578-1200-1200?v=638327646444930000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/857484-1200-1200?v=638328146218200000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/867680-1200-1200?v=638330573482100000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/861651-1200-1200?v=638328341461970000&width=1200&height=1200&aspect=true"
+    ],
+    "other": "https://nikeclprod.vtexassets.com/arquivos/ids/845426-1200-1200?v=638327586253900000&width=1200&height=1200&aspect=true"
   },
   {
     "id": 28,
@@ -293,10 +844,41 @@
     "price": 56,
     "is_in_inventory": true,
     "submenu": "Zapatillas",
+    "tallas": [
+      {
+        "eu": "1Y"
+      },
+      {
+        "eu": "2Y"
+      },
+      {
+        "eu": "3Y"
+      },
+      {
+        "eu": "4Y"
+      },
+      {
+        "eu": "5Y"
+      },
+      {
+        "eu": "6Y"
+      },
+      {
+        "eu": "7Y"
+      }
+    ],
     "items_left": 3,
     "imageURL": "https://nikeclprod.vtexassets.com/arquivos/ids/836412-800-800?v=638327415895400000&width=800&height=800&aspect=true",
     "slug": "nike-court-borough-low-recraft",
-    "featured": 0
+    "featured": 0,
+    "gallery": [
+      "https://nikeclprod.vtexassets.com/arquivos/ids/841099-1200-1200?v=638327509706930000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/849471-1200-1200?v=638327645058330000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/853469-1200-1200?v=638328070449670000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/857377-1200-1200?v=638328144763470000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/861545-1200-1200?v=638328339482800000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/864763-1200-1200?v=638328421606430000&width=1200&height=1200&aspect=true"
+    ]
   },
   {
     "id": 29,
@@ -308,10 +890,41 @@
     "price": 42,
     "is_in_inventory": true,
     "submenu": "Zapatillas",
+    "tallas": [
+      {
+        "eu": "1Y"
+      },
+      {
+        "eu": "2Y"
+      },
+      {
+        "eu": "3Y"
+      },
+      {
+        "eu": "4Y"
+      },
+      {
+        "eu": "5Y"
+      },
+      {
+        "eu": "6Y"
+      },
+      {
+        "eu": "7Y"
+      }
+    ],
     "items_left": 3,
-    "imageURL": "https://nikeclprod.vtexassets.com/arquivos/ids/835615-800-800?v=638327405245100000&width=800&height=800&aspect=true",
+    "imageURL": "https://nikeclprod.vtexassets.com/arquivos/ids/835607-1200-1200?v=638327405146170000&width=1200&height=1200&aspect=true",
     "slug": "nike-flex-runner-2",
-    "featured": 0
+    "featured": 0,
+    "gallery": [
+      "https://nikeclprod.vtexassets.com/arquivos/ids/840299-1200-1200?v=638327498629400000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/848678-1200-1200?v=638327634095170000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/852674-1200-1200?v=638328056524700000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/856666-1200-1200?v=638328134684800000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/860911-1200-1200?v=638328327727570000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/864209-1200-1200?v=638328412570130000&width=1200&height=1200&aspect=true"
+    ]
   },
   {
     "id": 20,
@@ -326,7 +939,13 @@
     "items_left": 3,
     "imageURL": "https://nikeclprod.vtexassets.com/arquivos/ids/886310-1000-1000?v=638356795204000000&width=1000&height=1000&aspect=true",
     "slug": "nike-react-miler",
-    "featured": 1
+    "featured": 1,
+    "gallery": [
+      "https://nikeclprod.vtexassets.com/arquivos/ids/888054-1200-1200?v=638357391023030000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/889789-1200-1200?v=638357436209200000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/891385-1200-1200?v=638357680304600000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/893012-1200-1200?v=638357703056900000&width=1200&height=1200&aspect=true"
+    ]
   },
   {
     "id": 22,
@@ -341,7 +960,15 @@
     "items_left": 3,
     "imageURL": "https://nikeclprod.vtexassets.com/arquivos/ids/719551-1400-1400?v=638240936438430000&width=1400&height=1400&aspect=true",
     "slug": "nike-paris",
-    "featured": 1
+    "featured": 1,
+    "gallery": [
+      "https://nikeclprod.vtexassets.com/arquivos/ids/719668-1200-1200?v=638240940264070000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/720127-1200-1200?v=638240951276330000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/719783-1200-1200?v=638240946260800000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/719898-1200-1200?v=638240947953000000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/720013-1200-1200?v=638240949645570000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/720441-1200-1200?v=638240956071670000&width=1200&height=1200&aspect=true"
+    ]
   },
   {
     "id": 23,
@@ -356,7 +983,13 @@
     "items_left": 3,
     "imageURL": "https://nikeclprod.vtexassets.com/arquivos/ids/721587-1400-1400?v=638241027411730000&width=1400&height=1400&aspect=true",
     "slug": "nike-react-miler",
-    "featured": 1
+    "featured": 1,
+    "gallery": [
+      "https://nikeclprod.vtexassets.com/arquivos/ids/727122-1200-1200?v=638241620080670000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/733009-1200-1200?v=638241722060930000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/738621-1200-1200?v=638241903334830000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/743889-1200-1200?v=638242627227700000&width=1200&height=1200&aspect=true"
+    ]
   },
   {
     "id": 24,
@@ -371,7 +1004,13 @@
     "items_left": 3,
     "imageURL": "https://nikeclprod.vtexassets.com/arquivos/ids/703279-1400-1400?v=638177063075870000&width=1400&height=1400&aspect=true",
     "slug": "nike-react-miler",
-    "featured": 1
+    "featured": 1,
+    "gallery": [
+      "https://nikeclprod.vtexassets.com/arquivos/ids/703414-1200-1200?v=638177065585370000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/703546-1200-1200?v=638177067506630000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/703665-1200-1200?v=638177067890970000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/703762-1200-1200?v=638177068163000000&width=1200&height=1200&aspect=true"
+    ]
   },
   {
     "id": 25,
@@ -386,7 +1025,12 @@
     "items_left": 3,
     "imageURL": "https://nikeclprod.vtexassets.com/arquivos/ids/703291-1400-1400?v=638177063107500000&width=1400&height=1400&aspect=true",
     "slug": "nike-react-miler",
-    "featured": 1
+    "featured": 1,
+    "gallery": [
+      "https://nikeclprod.vtexassets.com/arquivos/ids/703426-1200-1200?v=638177065615470000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/703558-1200-1200?v=638177067543930000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/703677-1200-1200?v=638177067925730000&width=1200&height=1200&aspect=true"
+    ]
   },
   {
     "id": 30,
@@ -408,6 +1052,10 @@
       "purple",
       "red",
       "maroon"
+    ],
+    "gallery": [
+      "https://nikeclprod.vtexassets.com/arquivos/ids/703384-1200-1200?v=638177065508100000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/703516-1200-1200?v=638177067376600000&width=1200&height=1200&aspect=true"
     ]
   },
   {
@@ -423,7 +1071,14 @@
     "items_left": 3,
     "imageURL": "https://nikeclprod.vtexassets.com/arquivos/ids/703264-1400-1400?v=638177063042570000&width=1400&height=1400&aspect=true",
     "slug": "nike-react-miler",
-    "featured": 1
+    "featured": 1,
+    "gallery": [
+      "https://nikeclprod.vtexassets.com/arquivos/ids/703399-1200-1200?v=638177065548970000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/703531-1200-1200?v=638177067431900000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/703650-1200-1200?v=638177067857030000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/703747-1200-1200?v=638177068124370000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/703819-1200-1200?v=638177068307600000&width=1200&height=1200&aspect=true"
+    ]
   },
   {
     "id": 32,
@@ -438,7 +1093,12 @@
     "items_left": 3,
     "imageURL": "https://nikeclprod.vtexassets.com/arquivos/ids/832562-1000-1000?v=638315354703470000&width=1000&height=1000&aspect=true",
     "slug": "nike-react-miler",
-    "featured": 1
+    "featured": 1,
+    "gallery": [
+      "https://nikeclprod.vtexassets.com/arquivos/ids/832829-1200-1200?v=638315360145370000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/833094-1200-1200?v=638315372008330000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/833343-1200-1200?v=638315376074300000&width=1200&height=1200&aspect=true"
+    ]
   },
   {
     "id": 33,
@@ -453,7 +1113,12 @@
     "items_left": 3,
     "imageURL": "https://nikeclprod.vtexassets.com/arquivos/ids/835531-1000-1000?v=638327404124000000&width=1000&height=1000&aspect=true",
     "slug": "nike-react-miler",
-    "featured": 1
+    "featured": 1,
+    "gallery": [
+      "https://nikeclprod.vtexassets.com/arquivos/ids/840223-1200-1200?v=638327497668630000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/844445-1200-1200?v=638327572782400000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/848602-1200-1200?v=638327633070900000&width=1200&height=1200&aspect=true"
+    ]
   },
   {
     "id": 34,
@@ -468,7 +1133,14 @@
     "items_left": 3,
     "imageURL": "https://nikeclprod.vtexassets.com/arquivos/ids/820599-1000-1000?v=638309940174570000&width=1000&height=1000&aspect=true",
     "slug": "nike-react-miler",
-    "featured": 1
+    "featured": 1,
+    "gallery": [
+      "https://nikeclprod.vtexassets.com/arquivos/ids/822296-1200-1200?v=638309970289200000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/823900-1200-1200?v=638310031905530000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/825518-1200-1200?v=638310059186170000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/827036-1200-1200?v=638310081713830000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/828501-1200-1200?v=638310123715730000&width=1200&height=1200&aspect=true"
+    ]
   },
   {
     "id": 35,
@@ -483,7 +1155,14 @@
     "items_left": 3,
     "imageURL": "https://nikeclprod.vtexassets.com/arquivos/ids/820634-1000-1000?v=638309940744800000&width=1000&height=1000&aspect=true",
     "slug": "nike-react-miler",
-    "featured": 1
+    "featured": 1,
+    "gallery": [
+      "https://nikeclprod.vtexassets.com/arquivos/ids/822332-1200-1200?v=638309970948330000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/823936-1200-1200?v=638310032566430000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/825554-1200-1200?v=638310059895400000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/827072-1200-1200?v=638310082559300000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/828532-1200-1200?v=638310124180330000&width=1200&height=1200&aspect=true"
+    ]
   },
   {
     "id": 36,
@@ -503,6 +1182,9 @@
       "blue",
       "red",
       "green"
+    ],
+    "gallery": [
+      "https://nikeclprod.vtexassets.com/arquivos/ids/900664-1200-1200?v=638363564947670000&width=1200&height=1200&aspect=true"
     ]
   },
   {
@@ -519,7 +1201,15 @@
     "items_left": 3,
     "imageURL": "https://nikeclprod.vtexassets.com/arquivos/ids/471897-1000-1000?v=637915073765300000&width=1000&height=1000&aspect=true",
     "slug": "nike-react-miler",
-    "featured": 1
+    "featured": 1,
+    "gallery": [
+      "https://nikeclprod.vtexassets.com/arquivos/ids/348945-1200-1200?v=637812218085470000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/354656-1200-1200?v=637812367984630000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/364161-1200-1200?v=637812997565030000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/368516-1200-1200?v=637813070595800000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/376778-1200-1200?v=637813389966000000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/372770-1200-1200?v=637813303754530000&width=1200&height=1200&aspect=true"
+    ]
   },
   {
     "id": 38,
@@ -535,7 +1225,14 @@
     "items_left": 3,
     "imageURL": "https://nikeclprod.vtexassets.com/arquivos/ids/820164-1000-1000?v=638309934228700000&width=1000&height=1000&aspect=true",
     "slug": "nike-react-miler",
-    "featured": 1
+    "featured": 1,
+    "gallery": [
+      "https://nikeclprod.vtexassets.com/arquivos/ids/821861-1200-1200?v=638309964137530000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/823523-1200-1200?v=638310026101000000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/825141-1200-1200?v=638310053011900000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/826713-1200-1200?v=638310076705000000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/828195-1200-1200?v=638310118744900000&width=1200&height=1200&aspect=true"
+    ]
   },
   {
     "id": 39,
@@ -551,7 +1248,15 @@
     "items_left": 3,
     "imageURL": "https://nikeclprod.vtexassets.com/arquivos/ids/873342-1000-1000?v=638338528303700000&width=1000&height=1000&aspect=true",
     "slug": "nike-react-miler",
-    "featured": 1
+    "featured": 1,
+    "gallery": [
+      "https://nikeclprod.vtexassets.com/arquivos/ids/873608-1200-1200?v=638338535367330000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/873874-1200-1200?v=638338540642570000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/874134-1200-1200?v=638338544135900000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/874394-1200-1200?v=638338547796330000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/874654-1200-1200?v=638338551220900000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/874818-1200-1200?v=638338553307370000&width=1200&height=1200&aspect=true"
+    ]
   },
   {
     "id": 40,
@@ -567,7 +1272,13 @@
     "items_left": 3,
     "imageURL": "https://nikeclprod.vtexassets.com/arquivos/ids/913492-1000-1000?v=638382547283200000&width=1000&height=1000&aspect=true",
     "slug": "nike-react-miler",
-    "featured": 1
+    "featured": 1,
+    "gallery": [
+      "https://nikeclprod.vtexassets.com/arquivos/ids/916137-1200-1200?v=638382602940600000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/918782-1200-1200?v=638385030173730000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/923715-1200-1200?v=638385119921200000&width=1200&height=1200&aspect=true",
+      "https://nikeclprod.vtexassets.com/arquivos/ids/926176-1200-1200?v=638385160268700000&width=1200&height=1200&aspect=true"
+    ]
   },
   {
     "id": 21,

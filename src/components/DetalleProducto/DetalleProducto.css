@@ -45,7 +45,7 @@
   flex-wrap: wrap;
 }
 
-.detalle-producto button {
+.btn--carrito {
   cursor: pointer;
   font-size: 1em;
   font-weight: 700;
@@ -55,6 +55,11 @@
   border: 0;
   color: #fff;
   background-color: rgb(255, 132, 0);
+  transition: all 0.3s;
+}
+
+.btn--carrito:hover {
+  transform: scale(1.1);
 }
 
 .miniatura {
@@ -63,22 +68,30 @@
   justify-items: center;
   align-content: start;
   grid-gap: 20.8px;
-  width: 8%;
+  /* background-color: red; */
+  width: 7%;
 }
 
-/* .contenedor--miniatura {
-  width: 90px;
-  height: 90px;
-} */
+.contenedor--miniatura {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /* background-color: purple; */
+  /* background-position: top; */
+}
+
+
+
 
 .miniatura img {
   cursor: pointer;
-  width: 90px;
-  /* height: 90px; */
+  width: 60px;
+  height: 60px;
   background-color: #f6f6f6;
-  padding: .8em;
+  padding: .3em;
   border-radius: 10%;
-  background-position: center;
+  object-fit: contain;
+  /* background-position: center; */
 }
 
 
@@ -107,22 +120,29 @@
   /* background-color: maroon; */
 }
 
-.tallas button {
-  width: 45px;
-  height: 35px;
-  border-radius: 10%;
-  background-color: #f6f6f6;
-  border: 1px solid black;
-  color: black;
-
-}
-
 .tallas {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 8px;
-  margin-top: 8px
+  margin-top: 8px;
+}
+
+.tallas button {
+  width: 60px;
+  height: 40px;
+  border-radius: 8%;
+  background-color: #ffff;
+  border: 1px solid rgba(0, 0, 0, 0.20);
+  color: black;
+  cursor: pointer;
+}
+
+
+.tallas button.selected-button {
+
+  color: black;
+  border: 1px solid rgba(0, 0, 0);
+
 }
 
 .grid-item {

@@ -10,12 +10,12 @@ const DetalleProducto = () => {
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState(null);
 	const [shoeColor, setShoeColor] = useState("");
-	const [selected, setSelected] = useState(false);
 	const [selectedGalleryImage, setSelectedGalleryImage] = useState(null);
+	const [selectedButtons, setSelectedButtons] = useState({});
 
-	// const toggleSelected = () => {
-	// 	setSelected(!selected);
-	// };
+	const handleClick = (index) => {
+		setSelectedButtons({ [index]: true });
+	};
 
 	useEffect(() => {
 		const obtenerProducto = async () => {
@@ -63,11 +63,17 @@ const DetalleProducto = () => {
 											key={index}
 											src={img}
 											alt={producto.name}
+											title={producto.name}
 											onClick={() => setSelectedGalleryImage(index)}
 											style={{
 												border:
-													selectedGalleryImage === index ? "1px solid red" : "none",
-												filter: selected ? "brightness(70%)" : "none",
+													selectedGalleryImage === index ? "1px solid black" : "none",
+												filter: `hue-rotate(${
+													shoeColor
+														? (producto.colors.indexOf(shoeColor) + 2) *
+														  (360 / producto.colors.length)
+														: 0
+												}deg)`,
 											}}
 										/>
 									</div>
@@ -78,6 +84,7 @@ const DetalleProducto = () => {
 							className="producto--imagen"
 							src={producto.imageURL}
 							alt={producto.name}
+							title={producto.name}
 							style={{
 								filter: `hue-rotate(${
 									shoeColor
@@ -91,17 +98,14 @@ const DetalleProducto = () => {
 							<div>
 								<h1>{producto.name}</h1>
 								<p>
-									<strong>Marca:</strong> {producto.brand}
+									{producto.submenu} para {producto.gender}
 								</p>
 								<p>
-									<strong>Género:</strong> {producto.gender}
+									<strong>Marca:</strong> {producto.brand}
 								</p>
 								<p>
 									<strong>Categoría: </strong>
 									{producto.category}
-								</p>
-								<p>
-									<strong>Precio:</strong> ${agregarNueves(producto.price)}
 								</p>
 								{producto.colors && producto.colors.length > 0 ? (
 									<>
@@ -126,19 +130,25 @@ const DetalleProducto = () => {
 									<strong>Selecciona tu talla</strong>
 								</p>
 								<div className="tallas">
-									<button className="grid-item">7</button>
-									<button className="grid-item">8</button>
-									<button className="grid-item">9</button>
-									<button className="grid-item">10</button>
-									<button className="grid-item">9</button>
-									<button className="grid-item">10</button> <button>9</button>
-									<button className="grid-item">10</button>
-									<button className="grid-item">9</button>
-									<button className="grid-item">10</button>
-									<button className="grid-item">9</button>
+									{producto.tallas &&
+										producto.tallas.map((talla, index) => (
+											<button
+												key={index}
+												className={
+													selectedButtons[index]
+														? "selected-button grid-item"
+														: "grid-item"
+												}
+												onClick={() => handleClick(index)}>
+												{talla.eu}
+											</button>
+										))}
 								</div>
+								<p>
+									<strong>Precio:</strong> ${agregarNueves(producto.price)}
+								</p>
 							</div>
-							<button>Add to cart</button>
+							<button className="btn--carrito">Add to cart</button>
 						</div>
 					</div>
 				</div>
