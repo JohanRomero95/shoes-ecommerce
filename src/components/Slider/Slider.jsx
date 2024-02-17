@@ -3,6 +3,7 @@ import "./Slider.css";
 import { useProductos } from "../Call/useProductos";
 import next from "../../assets/svg/next.svg";
 import before from "../../assets/svg/before.svg";
+import { Link } from "react-router-dom";
 
 const Slider = () => {
 	const [currentSlide, setCurrentSlide] = useState(0);
@@ -31,7 +32,14 @@ const Slider = () => {
 			<div className="slider-contenedor">
 				{slidesToShow.map((producto) => (
 					<div className="slider-detail" key={producto.id}>
-						<img src={producto.imageURL} alt={`Slide ${producto.id}`} />
+						<Link to={`/producto/${producto.id}`}>
+							{" "}
+							<img
+								src={producto.imageURL}
+								alt={`${producto.name}`}
+								title={`${producto.name}`}
+							/>
+						</Link>
 						<h3>{producto.name}</h3>
 					</div>
 				))}

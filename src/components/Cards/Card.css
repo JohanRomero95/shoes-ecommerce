@@ -106,7 +106,7 @@
   width: 280px;
   height: 420px;
   cursor: pointer;
-  border-radius: 25px;
+  border-radius: 10px;
   opacity: 85%;
   background-color: #f2f2f2;
   color: black;
@@ -153,10 +153,10 @@
 
 /* Estilos para las opciones de color individuales */
 .color-option {
-  width: 1em;
-  height: 1em;
+  width: 1.2em;
+  height: 1.2em;
   margin: 0 10px;
-  border-radius: 50%;
+  border-radius: 20%;
   cursor: pointer;
   z-index: 2;
   box-shadow: inset 0px 4px 5px rgba(0, 0, 0, 0.25);
@@ -233,15 +233,24 @@
 /* Estilos para el botón en los productos */
 .productos button {
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 0.8em;
   font-weight: 800;
   width: 225px;
   height: 35px;
-  border-radius: 30px;
+  border-radius: 8px;
   border: 0;
   color: #fff;
   background-color: rgb(255, 132, 0);
   z-index: 100;
+}
+
+.productos button span {
+  font-size: 1.8em;
+  padding-right: .5em;
+  /* font-weight: 700; */
 }
 
 /* Estilos para el hover del botón en los productos */

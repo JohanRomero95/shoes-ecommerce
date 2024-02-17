@@ -19,7 +19,9 @@
 
 .slider-detail {
   top: 0;
+  text-decoration: none;
   display: flex;
+  color: black;
   flex-direction: column;
   justify-content: center;
   align-items: center;

@@ -5,7 +5,7 @@ import { agregarNueves } from "../../helpers/agregarNueves";
 import "./Card.css";
 import { toast } from "react-toastify";
 import { useCarrito } from "../CarritoContext";
-
+import { LiaCartArrowDownSolid } from "react-icons/lia";
 const Card = ({ ...producto }) => {
 	const [hoverEffect, setHoverEffect] = useState(false);
 	const [shoeColor, setShoeColor] = useState(
@@ -96,6 +96,9 @@ const Card = ({ ...producto }) => {
 					Price: <span>${agregarNueves(producto.price)}</span>
 				</p>
 				<button onClick={handleAddToCart} type="button">
+					<span>
+						<LiaCartArrowDownSolid />
+					</span>{" "}
 					Add To Cart
 				</button>
 			</div>

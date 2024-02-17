@@ -9,6 +9,7 @@ import FiltroPorEncabezado from "./components/Filtro/FiltroPorEncabezado";
 import ListaPorTitulo from "./components/ListaPorTitulo/ListaPorTitulo";
 import DetalleProducto from "./components/DetalleProducto/DetalleProducto";
 import { ToastContainer } from "react-toastify";
+import ScrollToTop from "./helpers/ScrollToTop";
 import "react-toastify/dist/ReactToastify.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
 			<BrowserRouter>
 				<PromoHeader />
 				<Navbar />
+				<ScrollToTop />
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/:titulo" element={<ListaPorTitulo />} />

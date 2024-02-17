@@ -18,17 +18,23 @@
   justify-content: center;
 }
 
-.producto--imagen {
-  display: block;
+.producto--contenedor {
   min-width: 320px;
-  max-height: 480px;
+  max-width: 480px;
+  height: 460px;
   width: 45%;
+}
+
+.producto--imagen {
+  /* display: block; */
+  width: 100%;
+  height: 100%;
   object-fit: scale-down;
   background-color: #f6f6f6;
   background-position: center;
   top: 0;
   position: relative;
-  border-radius: 2%;
+  border-radius: 5px;
 }
 
 .detalle-producto {
@@ -37,6 +43,7 @@
   position: relative;
   display: flex;
   width: 35%;
+  height: 460px;
   flex-direction: column;
   align-content: center;
   /* background-color: purple; */
@@ -45,13 +52,43 @@
   flex-wrap: wrap;
 }
 
+.detalle-producto h1 {
+  margin-bottom: -5px;
+}
+
+.detalle-producto--genero {
+  opacity: 70%;
+  font-size: .9em;
+}
+
+.detalle-producto--description {
+  line-height: 1.4em;
+}
+
+.detalle-producto--description---credito {
+  font-size: .9em;
+  padding-bottom: 1em;
+  font-weight: 700;
+  opacity: 90%;
+}
+
+.detalle-producto--description---colores {
+  padding-bottom: 1em;
+}
+
+/* .detalle-producto--description---colores img {
+  width: 100px;
+  margin-inline: 3em;
+} */
+
+
 .btn--carrito {
   cursor: pointer;
   font-size: 1em;
   font-weight: 700;
   width: 250px;
   height: 50px;
-  border-radius: 30px;
+  border-radius: 10px;
   border: 0;
   color: #fff;
   background-color: rgb(255, 132, 0);
@@ -67,7 +104,7 @@
   grid-template-columns: 1fr;
   justify-items: center;
   align-content: start;
-  grid-gap: 20.8px;
+  grid-gap: 20px;
   /* background-color: red; */
   width: 7%;
 }
@@ -103,6 +140,11 @@
   gap: 1em;
 }
 
+.color-optiones img {
+  width: 60px;
+  height: 60px;
+}
+
 /* Estilos para las opciones de color individuales */
 .color-optione {
   width: 1.5em;
@@ -111,14 +153,13 @@
   border-radius: 10%;
   cursor: pointer;
   z-index: 2;
-  box-shadow: inset 0px 4px 5px rgba(0, 0, 0, 0.25);
+  background-color: #f6f6f6;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   opacity: 85%;
 }
 
-.name {
-  /* background-color: maroon; */
-}
+
 
 .tallas {
   display: grid;
@@ -149,4 +190,66 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.precio {
+  position: absolute;
+  right: 15%;
+  font-size: 2em;
+  bottom: 15%;
+}
+
+.talla-container {
+  position: relative;
+}
+
+.talla-info {
+  position: absolute;
+  bottom: 100%;
+  width: 120px;
+  left: 0;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  padding: 5px;
+  display: none;
+  background-color: #1c1c1c;
+  color: white;
+  z-index: 10;
+}
+
+.talla-info--division {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 40px;
+  line-height: 1em;
+}
+
+.talla-info--nacional {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 60;
+  margin-inline: .3em;
+}
+
+.talla-info--nacional span {
+  font-size: .4em;
+}
+
+.talla-info--internacional {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: start;
+  font-size: .7em;
+  line-height: 1.7em;
+}
+
+.talla-info--internacional p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.talla-container:hover .talla-info {
+  display: block;
 }
