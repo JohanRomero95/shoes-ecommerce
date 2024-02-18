@@ -15,7 +15,7 @@ const CarritoModal = ({ isOpen, onClose }) => {
 				<button className="close-btn" onClick={onClose}>
 					<FontAwesomeIcon icon={faTimes} />
 				</button>
-				<h2>Carrito de Compras</h2>
+				<h2>Carrito de Compras Y</h2>
 			</div>
 		</div>
 	);

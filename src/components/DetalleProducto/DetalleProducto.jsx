@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { pedirItemPorId } from "../../helpers/datos";
 import "./DetalleProducto.css";
 import { agregarNueves } from "../../helpers/agregarNueves";
+import { CarritoContext } from "../../context/CarritoContext";
 
 const DetalleProducto = () => {
 	const { id } = useParams();
@@ -12,12 +13,18 @@ const DetalleProducto = () => {
 	const [shoeColor, setShoeColor] = useState("");
 	const [selectedGalleryImage, setSelectedGalleryImage] = useState(null);
 	const [selectedButtons, setSelectedButtons] = useState({});
-	const [hoveredSize, setHoveredSize] = useState(null);
+	const [cantidad, setCantidad] = useState(1);
+	const { carrito, agregarAlCarrito } = useContext(CarritoContext);
 
-	// Hover tallas
-	// const handleSizeHover = (size) => {
-	// 	setHoveredSize(size);
-	// };
+	console.log(carrito);
+
+	const handleSumar = () => {
+		cantidad < producto.stock && setCantidad(cantidad + 1);
+	};
+
+	const handleRestar = () => {
+		cantidad > 1 && setCantidad(cantidad - 1);
+	};
 
 	// Galeria
 	const handleClick = (index) => {
@@ -189,7 +196,20 @@ const DetalleProducto = () => {
 									<strong>${agregarNueves(producto.price)}</strong>
 								</p>
 							</div>
-							<button className="btn--carrito">Add to cart</button>
+							<button
+								className="btn--carrito"
+								onClick={() => {
+									agregarAlCarrito(producto, cantidad);
+								}}>
+								Add to cart
+							</button>
+						</div>
+						<div>
+							<div className="contador">
+								<button onClick={handleRestar}>-</button>
+								<p>{cantidad}</p>
+								<button onClick={handleSumar}>+</button>
+							</div>
 						</div>
 					</div>
 				</div>

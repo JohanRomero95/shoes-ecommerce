@@ -4,15 +4,12 @@ import { Link } from "react-router-dom";
 import { agregarNueves } from "../../helpers/agregarNueves";
 import "./Card.css";
 import { toast } from "react-toastify";
-import { useCarrito } from "../CarritoContext";
 import { LiaCartArrowDownSolid } from "react-icons/lia";
 const Card = ({ ...producto }) => {
 	const [hoverEffect, setHoverEffect] = useState(false);
 	const [shoeColor, setShoeColor] = useState(
 		producto.colors && producto.colors.length > 0 ? producto.colors[0] : "",
 	);
-
-	const { addToCarrito } = useCarrito();
 
 	useEffect(() => {
 		if (producto.colors && producto.colors.length > 0) {

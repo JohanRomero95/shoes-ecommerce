@@ -11,28 +11,36 @@ import DetalleProducto from "./components/DetalleProducto/DetalleProducto";
 import { ToastContainer } from "react-toastify";
 import ScrollToTop from "./helpers/ScrollToTop";
 import "react-toastify/dist/ReactToastify.css";
+import { useState } from "react";
+import CarritoProvider from "./context/CarritoContext";
 
 function App() {
+	const [carrito, setCarrito] = useState([]);
+
+	// const user = "Carpi";
+
 	return (
-		<div>
+		<>
 			<BrowserRouter>
-				<PromoHeader />
-				<Navbar />
-				<ScrollToTop />
-				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/:titulo" element={<ListaPorTitulo />} />
-					<Route path="/:titulo/:encabezado" element={<FiltroPorEncabezado />} />
-					<Route
-						path="/:titulo/:encabezado/:subCategorias"
-						element={<FiltroPorSubCategoria />}
-					/>
-					<Route path="/producto/:id/" element={<DetalleProducto />} />
-				</Routes>
-				<Footer />
+				<CarritoProvider>
+					<PromoHeader />
+					<Navbar />
+					<ScrollToTop />
+					<Routes>
+						<Route path="/" element={<Home />} />
+						<Route path="/:titulo" element={<ListaPorTitulo />} />
+						<Route path="/:titulo/:encabezado" element={<FiltroPorEncabezado />} />
+						<Route
+							path="/:titulo/:encabezado/:subCategorias"
+							element={<FiltroPorSubCategoria />}
+						/>
+						<Route path="/producto/:id/" element={<DetalleProducto />} />
+					</Routes>
+					<Footer />
+				</CarritoProvider>
 			</BrowserRouter>
 			<ToastContainer />
-		</div>
+		</>
 	);
 }
 

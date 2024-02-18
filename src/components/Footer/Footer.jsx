@@ -6,22 +6,23 @@ const Footer = () => {
 		<footer className="footer-contenedor">
 			<div className="footer-top">
 				<div className="ubicacion">
+					<h2>Ubicación</h2>
 					<h3>Buscar Tienda</h3>
 					<h3>Hazte Miembro</h3>
 				</div>
 				<div className="ayuda">
-					<h3>Ayuda</h3>
+					<h2>Ayuda</h2>
 					<p>Centro de ayuda</p>
 				</div>
 				<div className="acerca">
-					<h3>Acerca de Nosotros</h3>
+					<h2>Acerca de Nosotros</h2>
 					<p>Noticias</p>
 					<p>Empleos</p>
 					<p>Inversionistas</p>
 					<p>Sustentabilidad</p>
 				</div>
 				<div className="eventos">
-					<h3>Eventos sneakers</h3>
+					<h2>Eventos sneakers</h2>
 					<p>Live Shopping</p>
 					<p>Cyber Monday</p>
 					<p>Black Friday</p>
@@ -33,28 +34,32 @@ const Footer = () => {
 						href="https://www.instagram.com/"
 						target="_blank"
 						rel="noopener noreferrer"
-						title="Instagram">
+						title="Instagram"
+						aria-label="Instagram">
 						<FaInstagram />
 					</a>
 					<a
 						href="https://web.whatsapp.com/"
 						target="_blank"
 						rel="noopener noreferrer"
-						title="Whatsapp">
+						title="Whatsapp"
+						aria-label="Whatsapp">
 						<FaWhatsapp />
 					</a>
 					<a
 						href="https://linkedin.com/"
 						target="_blank"
 						rel="noopener noreferrer"
-						title="Linkedin">
+						title="Linkedin"
+						aria-label="Linkedin">
 						<FaLinkedinIn />
 					</a>
 					<a
 						href="https://www.facebook.com/"
 						target="_blank"
 						rel="noopener noreferrer"
-						title="Facebook">
+						title="Facebook"
+						aria-label="Facebook">
 						<FaFacebookF />
 					</a>
 				</div>
@@ -66,13 +71,16 @@ const Footer = () => {
 						<FaMapMarkerAlt className="icons" />
 						Chile
 					</h2>
-					<p>© 2023 JR Company. Todos los derechos reservados</p>
+					<a href="https://johanromero.vercel.app">
+						© 2023 JR Company. Todos los derechos reservados
+					</a>
 				</div>
 				<div className="terminos">
+					<p>Términos y Condiciones</p>
 					<p>Terminos Cyber Monday</p>
 					<p>Terminos de uso</p>
 					<p>Terminos de venta</p>
-					<p>Politica de privacidad y cookies</p>
+					<p>Política de privacidad y cookies</p>
 				</div>
 			</div>
 		</footer>

@@ -1,4 +1,3 @@
-/* Estilos para el contenedor de título de navegación */
 .contenedor--titulo-navegacion {
   color: black;
   left: 0;
@@ -6,13 +5,10 @@
   position: relative;
 }
 
-/* Estilos para los contenedores de filtros */
 .container {
   display: flex;
   flex-direction: column;
-  /* width: 100vw; */
   height: 100%;
-  /* Ajuste de espacio entre el borde izquierdo y el contenido */
   margin-top: 6em;
   padding-inline: 9.3em;
   justify-content: center;
@@ -22,14 +18,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 1em;
+  margin-right: 1.8em;
 }
 
 .container--encabezado .order {
   font-size: 1.4em;
 }
 
-/* Estilos para los títulos de páginas */
 .titulo--paginas {
   display: flex;
   align-items: start;
@@ -48,16 +43,15 @@
   padding-block: 1.8em;
   min-width: 160px;
   margin-top: 130px;
-  right: 11em;
+  right: 13em;
   position: absolute;
-  background-color: rgba(128, 128, 128, 0.4);
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: rgba(128, 128, 128, 0.3);
+  /* border: 1px solid rgba(0, 0, 0, 0.5); */
   border-radius: 6px;
   z-index: 10;
   font-size: .8em;
 }
 
-/* Estilo base del checkbox */
 .checkbox-container {
   display: flex;
   align-items: center;
@@ -84,18 +78,15 @@
 
 
 
-/* Estilos para la lista de productos */
 .lista-de-productos {
   margin-top: 2em;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  /* Usando repeat para la cuadrícula de productos */
   max-width: 100%;
   gap: 2em;
   margin-bottom: 6em;
 }
 
-/* Estilos para los productos individuales */
 .productos {
   overflow: hidden;
   position: relative;
@@ -113,7 +104,6 @@
   text-decoration: none;
 }
 
-/* Estilos para el logo de los zapatos */
 .logo-shoes {
   position: absolute;
   left: 30px;
@@ -123,7 +113,6 @@
   height: 60px;
 }
 
-/* Estilos para la imagen de los zapatos */
 .shoes {
   position: relative;
   display: flex;
@@ -141,7 +130,6 @@
   opacity: 94%;
 }
 
-/* Estilos para las opciones de color */
 .color-options {
   position: absolute;
   top: 28px;
@@ -151,7 +139,6 @@
   flex-direction: column;
 }
 
-/* Estilos para las opciones de color individuales */
 .color-option {
   width: 1.2em;
   height: 1.2em;
@@ -164,18 +151,15 @@
   opacity: 85%;
 }
 
-/* Cambia la escala al pasar el ratón sobre la opción de color */
 .color-option:hover {
   transform: scale(1.3);
 }
 
-/* Estilos para el hover de los zapatos */
 .shoes:hover {
   transform: scale(1.15) rotate(0deg) scaleX(-1);
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* Estilos para la sección de ropa en hover */
 .ropa-hover img {
   transform: scaleX(1);
   transition: transform 0.3s ease-in-out;
@@ -186,7 +170,6 @@
   transition: transform 0.3s ease-in-out;
 }
 
-/* Estilos para la descripción de los zapatos */
 .description-shoes {
   position: relative;
   display: flex;
@@ -198,7 +181,6 @@
 }
 
 
-/* Estilos para el precio en la descripción de los zapatos */
 .description-shoes-price {
   display: flex;
   justify-content: end;
@@ -206,31 +188,26 @@
   gap: 0.4em;
 }
 
-/* Estilos para el título en la descripción de los zapatos */
 .description-shoes h3 {
   font-size: 1em;
   text-transform: uppercase;
 }
 
-/* Estilos para el párrafo en la descripción de los zapatos */
 .description-shoes-par {
   font-size: 0.7em;
   color: gray;
 }
 
-/* Estilos para el precio en la descripción de los zapatos */
 .description-shoes-price p {
   text-align: end;
 }
 
-/* Estilos para el precio en la descripción de los zapatos */
 .description-shoes-price span {
   font-size: 1.3em;
   font-weight: bold;
   color: rgb(50, 50, 50);
 }
 
-/* Estilos para el botón en los productos */
 .productos button {
   cursor: pointer;
   display: flex;
@@ -253,14 +230,12 @@
   /* font-weight: 700; */
 }
 
-/* Estilos para el hover del botón en los productos */
 .productos button:hover {
   background-color: rgba(255, 132, 0, 0.8);
   transform: scale(1.1);
   transition: transform 0.3s ease;
 }
 
-/* Estilos para la sección de no encontrado */
 .not-found {
   display: flex;
   align-items: center;
