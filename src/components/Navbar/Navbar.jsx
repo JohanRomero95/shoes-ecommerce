@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import IconoCarrito from "../Carrito";
+import IconoCarrito from "../Carrito/Carrito";
 import Usuario from "../Usuario/Usuario";
 import "./Navbar.css";
 import MenuPlegable from "../MenuPlegable/MenuPlegable";

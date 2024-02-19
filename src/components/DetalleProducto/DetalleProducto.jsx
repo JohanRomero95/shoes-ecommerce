@@ -16,8 +16,6 @@ const DetalleProducto = () => {
 	const [cantidad, setCantidad] = useState(1);
 	const { carrito, agregarAlCarrito } = useContext(CarritoContext);
 
-	console.log(carrito);
-
 	const handleSumar = () => {
 		cantidad < producto.stock && setCantidad(cantidad + 1);
 	};

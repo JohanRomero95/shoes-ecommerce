@@ -61,9 +61,9 @@ const ListaPorTitulo = () => {
 				</div>
 				<div className="lista-de-productos">
 					{productosOrdenados.map((producto) => (
-						<Link key={producto.id} to={`/producto/${producto.id}`}>
-							<Card {...producto} />
-						</Link>
+						// <Link key={producto.id} to={`/producto/${producto.id}`}>
+						<Card key={producto.id} {...producto} />
+						// </Link>
 					))}
 				</div>
 			</div>

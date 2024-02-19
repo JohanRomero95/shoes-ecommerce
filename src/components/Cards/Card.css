@@ -95,11 +95,12 @@
   align-items: center;
   padding-inline: 3em;
   width: 280px;
-  height: 420px;
+  /* height: 420px; */
   cursor: pointer;
+  padding-block: 1.2em;
   border-radius: 10px;
-  opacity: 85%;
-  background-color: #f2f2f2;
+  /* opacity: 100%; */
+  background-color: #f6f6f6;
   color: black;
   text-decoration: none;
 }
@@ -127,7 +128,7 @@
   z-index: 1;
   margin-bottom: 0.7em;
   transition: transform 0.3s ease, filter 0.3s ease;
-  opacity: 94%;
+  opacity: 85%;
 }
 
 .color-options {
@@ -172,12 +173,14 @@
 
 .description-shoes {
   position: relative;
+  text-decoration: none;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   z-index: 3;
-  height: 180px;
-  padding-bottom: 0.5em;
+  height: 135px;
+  margin-bottom: .8em;
+  padding-top: .5em;
 }
 
 
@@ -191,6 +194,7 @@
 .description-shoes h3 {
   font-size: 1em;
   text-transform: uppercase;
+  color: black;
 }
 
 .description-shoes-par {
@@ -221,7 +225,7 @@
   border: 0;
   color: #fff;
   background-color: rgb(255, 132, 0);
-  z-index: 100;
+  z-index: 4;
 }
 
 .productos button span {
