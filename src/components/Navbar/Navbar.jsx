@@ -24,7 +24,7 @@ const Navbar = () => {
 
 				{/* Sección derecha */}
 				<ul className="navbar-right">
-					<li>
+					<li className="carrito-contenedor">
 						<IconoCarrito />
 					</li>
 					<li>

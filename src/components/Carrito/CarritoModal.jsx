@@ -1,11 +1,12 @@
 // CarritoModal.js
 import React, { useContext } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import "./Carrito.css";
 import { CarritoContext } from "../../context/CarritoContext";
 import { agregarNueves } from "../../helpers/agregarNueves";
 import { FaRegTrashCan } from "react-icons/fa6";
+import { SlArrowRight } from "react-icons/sl";
+import { GrClose } from "react-icons/gr";
+import { Link } from "react-router-dom";
 
 const CarritoModal = ({ isOpen, onClose }) => {
 	const { carrito, precioTotal, eliminarDelCarrito } = useContext(CarritoContext);
@@ -21,26 +22,51 @@ const CarritoModal = ({ isOpen, onClose }) => {
 	return (
 		<div className="carrito-modal">
 			<div className="carrito-content">
-				<button className="close-btn" onClick={onClose}>
-					<FontAwesomeIcon icon={faTimes} />
-				</button>
-				<h2>Carrito de Compras Y</h2>
+				<div className="carrito-modal--header">
+					<p>Mi Compra</p>
+					<button className="carrito-modal--button--close" onClick={onClose}>
+						<GrClose />
+					</button>
+				</div>
 
-				{carrito.map((prod) => (
-					<div key={prod.id}>
-						<h1>{prod.name}</h1>
-						<button onClick={() => eliminarDelCarrito(prod.id)}>
-							<FaRegTrashCan />
-						</button>
-						<p>{prod.cantidad}</p>
-						<p>
-							<strong>${`${(agregarNueves(prod.price) * prod.cantidad).toFixed(3)}`}</strong>
-						</p>
-					</div>
-				))}
+				<div className="carrito-contenedor--productos">
+					{carrito.map((prod) => (
+						<div className="carrito--contenedor--detalles" key={prod.id}>
+							<img
+								className="carrito-contenedor--productos--imagenes"
+								src={prod.imageURL}
+								alt={prod.name}
+							/>
+							<div className="carrito-contenedor--productos--description">
+								<h1 className="carrito-contenedor--productos--description---titulo">
+									{prod.name}
+								</h1>
+
+								<p>{prod.cantidad}</p>
+								<p>
+									<strong>
+										${`${(agregarNueves(prod.price) * prod.cantidad).toFixed(3)}`}
+									</strong>
+								</p>
+							</div>
+							<div>
+								<button onClick={() => eliminarDelCarrito(prod.id)}>
+									<FaRegTrashCan />
+								</button>
+							</div>
+						</div>
+					))}
+				</div>
 
 				<h3>Total</h3>
 				<h3>${precioTotal().toFixed(3)}</h3>
+
+				<section className="finalizar-compra">
+					<button className="finalizar-compra--btn">Finalizar compra</button>
+					<Link to={"/Colección"} className="finalizar-compra--enlace" onClick={onClose}>
+						Seguir comprando <SlArrowRight />
+					</Link>
+				</section>
 			</div>
 		</div>
 	);

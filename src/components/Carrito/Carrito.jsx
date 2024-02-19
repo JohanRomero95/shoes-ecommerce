@@ -1,6 +1,5 @@
 import { useContext, useState } from "react";
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { TbShoppingCartFilled } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import CarritoModal from "./CarritoModal";
 import "../Carrito/Carrito.css";
@@ -23,9 +22,10 @@ const IconoCarrito = () => {
 	return (
 		<>
 			<Link to="#" onClick={handleOpenModal}>
-				<FontAwesomeIcon icon={faCartShopping} style={{ color: "#000000" }} />
+				<TbShoppingCartFilled className="carrito" />
+				<span className="carrito-number">{cantidadEnCarrito}</span>
 			</Link>
-			<CarritoModal isOpen={modalOpen} onClose={handleCloseModal} /> {cantidadEnCarrito}
+			<CarritoModal isOpen={modalOpen} onClose={handleCloseModal} />
 		</>
 	);
 };

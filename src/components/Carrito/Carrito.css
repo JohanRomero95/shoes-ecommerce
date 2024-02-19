@@ -2,25 +2,125 @@
 .carrito-modal {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-start;
+  transition: right 0.3s ease;
+  z-index: 1000;
 }
 
 .carrito-content {
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
   position: relative;
+  /* top: 35px; */
+  height: 100%;
+  width: 400px;
+  background: #ffff;
+  padding-block: 2em;
+  padding-inline: 1em;
+  /* border-radius: 8px; */
+  z-index: 100;
 }
 
-.close-btn {
+/* Estilo para mostrar el modal */
+.carrito-modal.open {
+  right: 0;
+  /* Muestra el modal cuando está abierto */
+}
+
+.carrito-modal--header {
+  width: 100%;
+  text-align: center;
+  left: 0;
+  top: 0;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  padding-block: .3em;
+  background-color: black;
+  opacity: 95%;
+  color: #ffff;
+}
+
+.carrito-modal--button--close {
+  position: absolute;
+  top: 25%;
+  right: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  color: #ffff;
+  border: none;
   cursor: pointer;
+  font-size: 1em;
+}
+
+.carrito-contenedor--productos {
+  background-color: rgba(255, 0, 0, 0.279);
+  margin-block: 1em;
+  scroll-behavior: smooth;
+  height: 80%;
+  /* overflow: scroll; */
+}
+
+.carrito-contenedor--productos--imagenes {
+  width: 80px;
+  height: 80px;
+  border-radius: 0;
+}
+
+.carrito--contenedor--detalles {
+  margin-bottom: 1em;
+  width: 360px;
+  max-height: 100px;
+  background-color: green;
+  display: grid;
+  grid-template-columns: 80px 240px 20px;
+  grid-template-rows: 1fr;
+}
+
+.carrito-contenedor--productos--description {
+  font-size: .8em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: magenta;
+  margin-left: 1em;
+}
+
+.carrito-contenedor--productos--description---titulo {
+  display: flex;
+  gap: 1em;
+}
+
+
+
+
+
+
+
+
+/* NO TOCAR */
+.carrito {
+  position: relative;
+  color: #000000;
+  font-size: 1.6em
+}
+
+.carrito-number {
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fd0101;
+  width: 19px;
+  height: 19px;
+  font-size: 1em;
+  bottom: 1.3em;
+  left: .8em;
 }
