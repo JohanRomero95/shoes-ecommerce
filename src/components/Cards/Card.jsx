@@ -32,8 +32,6 @@ const Card = ({ ...producto }) => {
 		setShoeColor(color);
 	};
 
-
-
 	return (
 		<div
 			title={producto.name}
@@ -88,7 +86,7 @@ const Card = ({ ...producto }) => {
 			</Link>
 			<button onClick={() => agregarAlCarrito(producto, 1)}>
 				<span>
-					<LiaCartArrowDownSolid />
+					<LiaCartArrowDownSolid strokeWidth=".7" />
 				</span>
 				Add To Cart
 			</button>

@@ -23,7 +23,7 @@ const IconoCarrito = () => {
 		<>
 			<Link to="#" onClick={handleOpenModal}>
 				<TbShoppingCartFilled className="carrito" />
-				<span className="carrito-number">{cantidadEnCarrito}</span>
+				{cantidadEnCarrito >= 1 && <span className="carrito-number">{cantidadEnCarrito}</span>}
 			</Link>
 			<CarritoModal isOpen={modalOpen} onClose={handleCloseModal} />
 		</>

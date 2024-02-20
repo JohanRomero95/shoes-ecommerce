@@ -13,16 +13,8 @@ const DetalleProducto = () => {
 	const [shoeColor, setShoeColor] = useState("");
 	const [selectedGalleryImage, setSelectedGalleryImage] = useState(null);
 	const [selectedButtons, setSelectedButtons] = useState({});
-	const [cantidad, setCantidad] = useState(1);
-	const { carrito, agregarAlCarrito } = useContext(CarritoContext);
-
-	const handleSumar = () => {
-		cantidad < producto.stock && setCantidad(cantidad + 1);
-	};
-
-	const handleRestar = () => {
-		cantidad > 1 && setCantidad(cantidad - 1);
-	};
+	const [cantidadSeleccionada, setCantidadSeleccionada] = useState(1);
+	const { agregarAlCarrito, cantidadEnCarrito, carrito } = useContext(CarritoContext);
 
 	// Galeria
 	const handleClick = (index) => {
@@ -197,16 +189,47 @@ const DetalleProducto = () => {
 							<button
 								className="btn--carrito"
 								onClick={() => {
-									agregarAlCarrito(producto, cantidad);
+									agregarAlCarrito(producto, cantidadSeleccionada);
 								}}>
 								Add to cart
 							</button>
 						</div>
 						<div>
 							<div className="contador">
-								<button onClick={handleRestar}>-</button>
-								<p>{cantidad}</p>
-								<button onClick={handleSumar}>+</button>
+								<button
+									onClick={() =>
+										setCantidadSeleccionada(Math.max(cantidadSeleccionada - 1, 1))
+									}>
+									-
+								</button>
+								<p>{cantidadSeleccionada}</p>
+								<button
+									onClick={() =>
+										setCantidadSeleccionada((prevCantidad) => {
+											const cantidadEnCarritoDelProducto = carrito.reduce(
+												(total, item) => {
+													if (item.id === producto.id) {
+														return total + item.cantidad;
+													}
+													return total;
+												},
+												0,
+											);
+
+											if (
+												prevCantidad + 1 >
+												producto.stock - cantidadEnCarritoDelProducto
+											) {
+												// AGREGAR AQUI EL TOAST DE NO HAY STOCK
+
+												return prevCantidad;
+											} else {
+												return prevCantidad + 1;
+											}
+										})
+									}>
+									+
+								</button>
 							</div>
 						</div>
 					</div>

@@ -6,6 +6,7 @@ import Slider from "../Slider/Slider";
 import PublicMid from "../Promo/PublicHoliday/PublicMid";
 import PublicRunning from "../Promo/PublicRunning/PublicRunning";
 import VideoRihanna from "../../assets/videos/videoPumaRihanna.webm";
+import ButtonPrimary from "../Button/ButtonPrimary/ButtonPrimary";
 
 const Home = () => {
 	const videoRef = useRef(null);
@@ -41,7 +42,7 @@ const Home = () => {
 							SNEAKERS <br /> NEW COLLECTION
 						</h2>
 						<Link to="/Colección">
-							<button>Press Here</button>
+							<ButtonPrimary title="Press Here " />
 						</Link>
 					</article>
 				</div>
