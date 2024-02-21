@@ -10,13 +10,18 @@ const MenuItem = ({ titulo, submenu }) => {
 		setShowSubMenu(!showSubMenu);
 	};
 
+	const hasColeccion = titulo.includes("Colección");
+	const tituloClass = `contenedor--menu ${hasColeccion ? "coleccioon" : ""}`;
+
 	return (
 		<div onMouseEnter={toggleSubMenu} onMouseLeave={toggleSubMenu}>
 			<Link className="navbar--center-titulo" to={`/${titulo}`}>
+				{/* 			<Link className={tituloClass} to={`/${titulo}`}>
+				 */}{" "}
 				{titulo}
 			</Link>
 			{showSubMenu && submenu && (
-				<div className="contenedor--menu">
+				<div className={tituloClass}>
 					<div className="contenedor--menu-articulo">
 						{submenu.map((submenuItem, subIndex) => (
 							<div key={subIndex} className="contenedor--menu-articulo-inicio">

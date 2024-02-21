@@ -1,14 +1,10 @@
-.section-mid {
-	width: 100vw;
+.publicidad-mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #13312c;
 }
 
-.publicidad-img {
-	width: 42%;
-}
-
-.background-public-img {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #13312c;
+.publicidad-mid img {
+  width: 42%;
 }

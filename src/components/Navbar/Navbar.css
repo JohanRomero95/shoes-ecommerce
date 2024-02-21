@@ -7,18 +7,18 @@
   align-items: center;
   justify-content: space-between;
   padding-block: 1.2em;
-  padding-inline: 7.2em;
+  /* padding-inline: 7.2em; */
   background-color: #fff;
   z-index: 100;
-  /* Ajuste del espacio a la derecha del navbar */
-  padding-right: 11em;
+  /* padding-right: 11em; */
+  margin: 0 auto;
 }
 
 /* Estilos para el logo */
 .title {
   font-size: 2.1em;
   color: black;
-  margin-left: 1em;
+  /* margin-left: 1em; */
   transition: transform 0.3s ease;
 }
 
@@ -33,7 +33,7 @@
   position: relative;
   display: inline-block;
   /* Espaciado a la derecha del texto */
-  padding-right: 1em;
+  /* padding-right: 1em; */
 }
 
 /* Estilos para la línea que aparece al hacer hover en el título */
@@ -94,7 +94,7 @@
   justify-content: center;
   align-items: center;
   /* Ajuste del espacio a la izquierda del área derecha */
-  padding-left: 6em;
+  /* padding-left: 6em; */
   /* Espaciado entre elementos */
   gap: 2em;
 }

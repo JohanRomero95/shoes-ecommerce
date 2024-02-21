@@ -1,9 +1,11 @@
 import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { pedirItemPorId } from "../../helpers/datos";
-import "./DetalleProducto.css";
 import { agregarNueves } from "../../helpers/agregarNueves";
 import { CarritoContext } from "../../context/CarritoContext";
+import ButtonSecondary from "../Button/ButtonSecondary/ButtonSecondary";
+import "./DetalleProducto.css";
+import { LiaCartArrowDownSolid } from "react-icons/lia";
 
 const DetalleProducto = () => {
 	const { id } = useParams();
@@ -14,7 +16,7 @@ const DetalleProducto = () => {
 	const [selectedGalleryImage, setSelectedGalleryImage] = useState(null);
 	const [selectedButtons, setSelectedButtons] = useState({});
 	const [cantidadSeleccionada, setCantidadSeleccionada] = useState(1);
-	const { agregarAlCarrito, cantidadEnCarrito, carrito } = useContext(CarritoContext);
+	const { agregarAlCarrito, carrito } = useContext(CarritoContext);
 
 	// Galeria
 	const handleClick = (index) => {
@@ -31,6 +33,29 @@ const DetalleProducto = () => {
 	const changeColor = (color) => {
 		setShoeColor(color);
 		setSelectedButtons({ [color]: true });
+	};
+
+	const handleClickSumar = () => {
+		setCantidadSeleccionada((prevCantidad) => {
+			const cantidadEnCarritoDelProducto = carrito.reduce((total, item) => {
+				if (item.id === producto.id) {
+					return total + item.cantidad;
+				}
+				return total;
+			}, 0);
+
+			if (prevCantidad + 1 > producto.stock - cantidadEnCarritoDelProducto) {
+				// AGREGAR AQUI EL TOAST DE NO HAY STOCK
+
+				return prevCantidad;
+			} else {
+				return prevCantidad + 1;
+			}
+		});
+	};
+
+	const handleClickRestar = () => {
+		setCantidadSeleccionada(Math.max(cantidadSeleccionada - 1, 1));
 	};
 
 	useEffect(() => {
@@ -63,33 +88,34 @@ const DetalleProducto = () => {
 	}
 
 	return (
-		<div className="containere">
+		<main className="containere">
 			{producto ? (
-				<div className="name">
-					<div className="producto">
-						<div className="miniatura">
+				<section className="condicion">
+					<article className="producto">
+						<section className="miniatura">
 							{[producto.imageURL || [], ...producto.gallery].map((img, index) => (
-								<div className="contenedor--miniatura" key={index}>
-									<img
-										src={img}
-										alt={producto.name}
-										title={producto.name}
-										onClick={() => handleClick(index)}
-										style={{
-											border:
-												selectedGalleryImage === index - 1 ? "1px solid black" : "none",
-											filter: `hue-rotate(${
-												shoeColor
-													? (producto.colors.indexOf(shoeColor) + 2) *
-													  (360 / producto.colors.length)
-													: 0
-											}deg)`,
-										}}
-									/>
-								</div>
+								<img
+									className="contenedor--miniatura"
+									key={index}
+									src={img}
+									alt={producto.name}
+									title={producto.name}
+									onClick={() => handleClick(index)}
+									style={{
+										border:
+											selectedGalleryImage === index - 1 ? "1px solid black" : "none",
+										filter: `hue-rotate(${
+											shoeColor
+												? (producto.colors.indexOf(shoeColor) + 2) *
+												  (360 / producto.colors.length)
+												: 0
+										}deg)`,
+									}}
+								/>
 							))}
-						</div>
-						<div className="producto--contenedor">
+						</section>
+
+						<section className="producto--contenedor">
 							<img
 								className="producto--imagen"
 								src={producto.gallery[selectedGalleryImage] || producto.imageURL}
@@ -104,19 +130,17 @@ const DetalleProducto = () => {
 									}deg)`,
 								}}
 							/>
-						</div>
-						<div className="detalle-producto">
-							<div>
-								<h1>{producto.name}</h1>
-								<p className="detalle-producto--genero">
-									{producto.submenu} para {producto.gender}
-								</p>
-								<div className="detalle-producto--description">
-									<p className="detalle-producto--description---credito">
-										Hasta 3 x ${(agregarNueves(producto.price) / 3).toFixed(3)} sin
-										interés
-									</p>
+						</section>
 
+						<section className="detalle-producto">
+							<div className="contenedor-detalle-producto">
+								<header className="detalle-producto--titulo">
+									<h1>{producto.name}</h1>
+									<p className="detalle-producto--genero">
+										{producto.submenu} para {producto.gender}
+									</p>
+								</header>
+								<div className="detalle-producto--description">
 									{producto.colors && producto.colors.length > 0 ? (
 										<div className="detalle-producto--description---colores">
 											<p>
@@ -180,64 +204,43 @@ const DetalleProducto = () => {
 												</div>
 											))}
 									</div>
+									<p className="detalle-producto--description---credito">
+										Hasta 3 x ${(agregarNueves(producto.price) / 3).toFixed(3)} sin
+										interés
+									</p>
 								</div>
 
-								<p className="precio">
-									<strong>${agregarNueves(producto.price)}</strong>
-								</p>
+								<div className="contenedor-contador-precio">
+									<div className="contador">
+										<button onClick={handleClickRestar}>-</button>
+										<p>{cantidadSeleccionada}</p>
+										<button onClick={handleClickSumar}>+</button>
+									</div>
+									<p className="precio">
+										<strong>${agregarNueves(producto.price)}</strong>
+									</p>
+								</div>
+								<ButtonSecondary
+									title={
+										<div className="extra">
+											<span className="icon">
+												<LiaCartArrowDownSolid strokeWidth=".7" size={20} />
+											</span>
+											<span>Add to cart</span>
+										</div>
+									}
+									isSpecial
+									onClick={() => {
+										agregarAlCarrito(producto, cantidadSeleccionada);
+									}}></ButtonSecondary>
 							</div>
-							<button
-								className="btn--carrito"
-								onClick={() => {
-									agregarAlCarrito(producto, cantidadSeleccionada);
-								}}>
-								Add to cart
-							</button>
-						</div>
-						<div>
-							<div className="contador">
-								<button
-									onClick={() =>
-										setCantidadSeleccionada(Math.max(cantidadSeleccionada - 1, 1))
-									}>
-									-
-								</button>
-								<p>{cantidadSeleccionada}</p>
-								<button
-									onClick={() =>
-										setCantidadSeleccionada((prevCantidad) => {
-											const cantidadEnCarritoDelProducto = carrito.reduce(
-												(total, item) => {
-													if (item.id === producto.id) {
-														return total + item.cantidad;
-													}
-													return total;
-												},
-												0,
-											);
-
-											if (
-												prevCantidad + 1 >
-												producto.stock - cantidadEnCarritoDelProducto
-											) {
-												// AGREGAR AQUI EL TOAST DE NO HAY STOCK
-
-												return prevCantidad;
-											} else {
-												return prevCantidad + 1;
-											}
-										})
-									}>
-									+
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
+						</section>
+					</article>
+				</section>
 			) : (
 				<div>No se encontró el producto.</div>
 			)}
-		</div>
+		</main>
 	);
 };
 

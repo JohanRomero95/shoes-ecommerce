@@ -6,33 +6,31 @@ import MenuPlegable from "../MenuPlegable/MenuPlegable";
 
 const Navbar = () => {
 	return (
-		<header>
-			<nav className="navbar">
-				{/* Sección izquierda */}
-				<ul className="navbar-left">
-					<Link to="/">
-						<h1 className="title">
-							trend<span>Elite</span>
-						</h1>
-					</Link>
-				</ul>
+		<nav className="navbar">
+			{/* Sección izquierda */}
+			<ul className="navbar-left">
+				<Link to="/">
+					<h1 className="title">
+						trend<span>Elite</span>
+					</h1>
+				</Link>
+			</ul>
 
-				{/* Sección central */}
-				<ul className="navbar-center">
-					<MenuPlegable className="navbar-link" />
-				</ul>
+			{/* Sección central */}
+			<ul className="navbar-center">
+				<MenuPlegable className="navbar-link" />
+			</ul>
 
-				{/* Sección derecha */}
-				<ul className="navbar-right">
-					<li className="carrito-contenedor">
-						<IconoCarrito />
-					</li>
-					<li>
-						<Usuario />
-					</li>
-				</ul>
-			</nav>
-		</header>
+			{/* Sección derecha */}
+			<ul className="navbar-right">
+				<li className="carrito-contenedor">
+					<IconoCarrito />
+				</li>
+				<li>
+					<Usuario />
+				</li>
+			</ul>
+		</nav>
 	);
 };
 

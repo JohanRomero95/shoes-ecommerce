@@ -8,7 +8,6 @@
 .navbar--center-titulo:hover {
   border-bottom: 2em solid rgb(255, 132, 0);
   padding-bottom: 1.3em;
-  /* color: rgb(255, 132, 0); */
   border-width: 4px;
   transition: border-bottom 0.3s ease, padding-bottom 0.3s ease;
 }
@@ -21,9 +20,9 @@
   z-index: 1;
   display: flex;
   flex-direction: column;
-  margin-block: 1.4em;
+  margin-block: 1.45em;
   padding-bottom: 2.3em;
-  padding-top: 1em;
+  padding-top: .5em;
   background-color: #ffff;
 }
 
@@ -74,4 +73,10 @@
   opacity: 80%;
   font-weight: 700;
   font-size: 1.2em;
+}
+
+.coleccioon {
+  /* background-color: red; */
+  margin-block: 0;
+  padding-bottom: 0;
 }

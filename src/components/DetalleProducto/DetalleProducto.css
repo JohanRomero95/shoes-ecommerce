@@ -1,11 +1,9 @@
-/* Estilos para los contenedores de filtros */
 .containere {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   width: 90%;
   height: 100%;
-  /* Ajuste de espacio entre el borde izquierdo y el contenido */
   margin-top: 5em;
   margin-bottom: 10em;
   padding-inline: 9.3em;
@@ -26,7 +24,6 @@
 }
 
 .producto--imagen {
-  /* display: block; */
   width: 100%;
   height: 100%;
   object-fit: scale-down;
@@ -40,19 +37,21 @@
 .detalle-producto {
   justify-content: space-between;
   align-items: center;
-  position: relative;
   display: flex;
-  width: 35%;
-  height: 460px;
+  width: 25%;
   flex-direction: column;
-  align-content: center;
-  /* background-color: purple; */
-  padding-inline: 4.5em;
-  /* padding-block: 1em; */
-  flex-wrap: wrap;
+  margin-inline: 4em;
 }
 
-.detalle-producto h1 {
+.contenedor-detalle-producto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.detalle-producto--titulo h1 {
+  font-size: 2em;
   margin-bottom: -5px;
 }
 
@@ -61,51 +60,23 @@
   font-size: .9em;
 }
 
-.detalle-producto--description {
-  line-height: 1.4em;
-}
-
 .detalle-producto--description---credito {
+  text-align: end;
   font-size: .9em;
-  padding-bottom: 1em;
   font-weight: 700;
   opacity: 90%;
+  padding-block: 1em;
 }
 
 .detalle-producto--description---colores {
   padding-bottom: 1em;
 }
 
-/* .detalle-producto--description---colores img {
-  width: 100px;
-  margin-inline: 3em;
-} */
-
-
-.btn--carrito {
-  cursor: pointer;
-  font-size: 1em;
-  font-weight: 700;
-  width: 250px;
-  height: 50px;
-  border-radius: 10px;
-  border: 0;
-  color: #fff;
-  background-color: rgb(255, 132, 0);
-  transition: all 0.3s;
-}
-
-.btn--carrito:hover {
-  transform: scale(1.1);
-}
-
 .miniatura {
   display: grid;
-  grid-template-columns: 1fr;
   justify-items: center;
   align-content: start;
   grid-gap: 20px;
-  /* background-color: red; */
   width: 7%;
 }
 
@@ -113,12 +84,7 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  /* background-color: purple; */
-  /* background-position: top; */
 }
-
-
-
 
 .miniatura img {
   cursor: pointer;
@@ -128,13 +94,16 @@
   padding: .3em;
   border-radius: 10%;
   object-fit: contain;
-  /* background-position: center; */
 }
 
+.extra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5em;
+  padding-block: .5em;
+}
 
-
-
-/* Estilos para las opciones de color */
 .color-optiones {
   display: flex;
   gap: 1em;
@@ -145,7 +114,6 @@
   height: 60px;
 }
 
-/* Estilos para las opciones de color individuales */
 .color-optione {
   width: 1.5em;
   height: 1.5em;
@@ -158,8 +126,6 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   opacity: 85%;
 }
-
-
 
 .tallas {
   display: grid;
@@ -178,12 +144,9 @@
   cursor: pointer;
 }
 
-
 .tallas button.selected-button {
-
   color: black;
   border: 1px solid rgba(0, 0, 0);
-
 }
 
 .grid-item {
@@ -193,10 +156,7 @@
 }
 
 .precio {
-  position: absolute;
-  right: 15%;
   font-size: 2em;
-  bottom: 15%;
 }
 
 .talla-container {
@@ -252,4 +212,30 @@
 
 .talla-container:hover .talla-info {
   display: block;
+}
+
+.contenedor-contador-precio {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 1em;
+}
+
+.contador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.contador p {
+  font-weight: 700;
+}
+
+.contador button {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding-block: .2em;
+  padding-inline: .6em;
 }

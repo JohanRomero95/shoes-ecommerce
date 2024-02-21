@@ -5,6 +5,7 @@ import { agregarNueves } from "../../helpers/agregarNueves";
 import "./Card.css";
 import { LiaCartArrowDownSolid } from "react-icons/lia";
 import { CarritoContext } from "../../context/CarritoContext";
+import ButtonSecondary from "../Button/ButtonSecondary/ButtonSecondary";
 
 const Card = ({ ...producto }) => {
 	const [hoverEffect, setHoverEffect] = useState(false);
@@ -84,12 +85,19 @@ const Card = ({ ...producto }) => {
 					</p>
 				</div>
 			</Link>
-			<button onClick={() => agregarAlCarrito(producto, 1)}>
-				<span>
-					<LiaCartArrowDownSolid strokeWidth=".7" />
-				</span>
-				Add To Cart
-			</button>
+			<ButtonSecondary
+				title={
+					<div className="flex">
+						<span className="icon">
+							<LiaCartArrowDownSolid strokeWidth=".7" size={20} />
+						</span>
+						<span>Add to cart</span>
+					</div>
+				}
+				isSpecial
+				onClick={() => agregarAlCarrito(producto, 1)}>
+				Hey
+			</ButtonSecondary>
 		</div>
 	);
 };

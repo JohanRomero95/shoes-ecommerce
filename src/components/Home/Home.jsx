@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useRef, useState } from "react";
 import "./Home.css";
 import pauseImg from "../../assets/svg/pause.svg";
@@ -23,29 +22,27 @@ const Home = () => {
 	return (
 		<main className="contenedor">
 			<section className="section-top">
-				<div className="publicidad-top">
-					<div
-						className="video"
-						onMouseEnter={() => setMostrarBoton(true)}
-						onMouseLeave={() => setMostrarBoton(false)}>
-						<video ref={videoRef} autoPlay loop muted playsInline src={VideoRihanna}></video>
-						{mostrarBoton && (
-							<img
-								src={pauseImg}
-								className="button-pause"
-								onClick={pausarReproducir}
-								alt="Pause"></img>
-						)}
-					</div>
-					<article className="publicidad-video">
-						<h2>
-							SNEAKERS <br /> NEW COLLECTION
-						</h2>
-						<Link to="/Colección">
-							<ButtonPrimary title="Press Here " />
-						</Link>
-					</article>
-				</div>
+				{/* <div className="publicidad-top"> */}
+				{/* <div
+					className="video"
+					onMouseEnter={() => setMostrarBoton(true)}
+					onMouseLeave={() => setMostrarBoton(false)}> */}
+				<video className="section-top--video" ref={videoRef} autoPlay loop muted playsInline src={VideoRihanna} />
+				{mostrarBoton && (
+					<img
+						src={pauseImg}
+						className="button-pause"
+						onClick={pausarReproducir}
+						alt="Pause"></img>
+				)}
+				{/* </div> */}
+				<article className="publicidad-video">
+					<h2>
+						SNEAKERS <br /> NEW COLLECTION
+					</h2>
+					<ButtonPrimary title="Press Here" url="/Colección" />
+				</article>
+				{/* </div> */}
 			</section>
 
 			<Slider />
