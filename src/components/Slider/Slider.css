@@ -4,7 +4,6 @@
   align-content: space-between;
   justify-content: center;
   min-height: 570px;
-  /* flex-wrap: wrap; */
   gap: 1.1em;
   padding-block: 1em;
   background-color: #f6f6f6;
@@ -64,9 +63,7 @@
 }
 
 /* MOBILE */
-@media (min-width: 320px)
-/* and (max-width: 767px) */
-  {
+@media (min-width: 320px) {
   .slider {
     min-height: 340px;
   }
@@ -94,7 +91,4 @@
     left: 15px;
   }
 
-  /* .slider-detail img {
-    max-width: 220px;
-  } */
 }

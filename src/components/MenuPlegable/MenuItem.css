@@ -19,13 +19,14 @@
   flex-direction: column;
   margin-block: 1.35em;
   padding-bottom: 2.3em;
+  align-items: center;
+  padding-left: 10em;
   padding-top: .5em;
   background-color: #ffff;
 }
 
 .contenedor--menu-articulo {
   display: flex;
-  justify-content: space-evenly;
 }
 
 .contenedor--menu-articulo-inicio {
@@ -34,7 +35,6 @@
 }
 
 .contenedor--menu-articulo-lista {
-  display: flex;
   flex-direction: column;
   font-size: 0.8em;
 }
@@ -45,7 +45,6 @@
   height: 45px;
   display: flex;
   align-items: center;
-  text-align: start;
   color: gray;
   font-weight: 600;
   transition: color 0.3s;
