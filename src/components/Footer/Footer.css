@@ -2,7 +2,7 @@
   background-color: #1c1c1c;
   position: relative;
   color: #fff;
-  top: 5.5em;
+  top: 5.4em;
 }
 
 .footer-top {
@@ -14,6 +14,7 @@
 
 .footer-contenedor h2,
 .footer-contenedor h3 {
+  font-size: 1em;
   cursor: pointer;
 }
 
@@ -23,7 +24,7 @@
 
 .footer-contenedor p {
   color: #7e7e7e;
-  font-size: 0.8em;
+  font-size: 12px;
   word-spacing: 0.2em;
   line-height: 2em;
   cursor: pointer;
@@ -32,13 +33,13 @@
 
 .footer-bottom {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
   padding: 1em 5.5em 0.6em;
 }
 
 .footer-bottom .icons {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   margin-bottom: 2px;
 }
 
@@ -50,14 +51,14 @@
 }
 
 .footer-bottom p {
-  font-size: 0.7em;
+  font-size: 0.7rem;
   text-decoration: none;
 }
 
 .derechos {
   display: flex;
   gap: 1em;
-  padding-right: 1.3em;
+  /* padding-right: 1.3em; */
 }
 
 
@@ -67,7 +68,7 @@
 }
 
 .derechos a {
-  font-size: .7em;
+  font-size: .7rem;
   color: #7e7e7e;
 }
 
@@ -75,12 +76,17 @@
   text-decoration: underline;
 }
 
+.redes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .redes a {
   display: inline-flex;
   cursor: pointer;
   font-size: 2em;
   color: #7e7e7e;
-  padding-inline: 0.4em;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -97,10 +103,73 @@
   text-decoration: underline;
 }
 
-@media (max-width: 880px) and (min-width: 1024px) {
-  .ayuda p {
-    width: 114px;
+/* MOBILE */
+
+@media (min-width: 320px)
+/* and (max-width: 767px) */
+  {
+  .footer-top {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3em;
   }
+
+  .ayuda-title,
+  .acerca-title,
+  .eventos-title {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .ayuda-title span,
+  .acerca-title span,
+  .eventos-title span {
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+
+  .footer-bottom {
+    padding: 3em 2em 6em;
+  }
+
+
+  .derechos {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .terminos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-block: 2rem;
+  }
+
+  .footer-bottom {
+    padding: 3em;
+  }
+
+  @media (min-width: 425px) {
+    .redes {
+      justify-content: flex-start;
+      gap: 1rem;
+    }
+  }
+
+  /* TABLET */
+  /* 
+  @media (min-width: 880px) and (max-width: 1023px) {
+    .ayuda p {
+      width: 114px;
+    }
+  }
+
 
   .acerca h2 {
     width: 125px;
@@ -121,7 +190,7 @@
   }
 
   .footer-bottom {
-    padding: 1em 3.5em 0.6em;
+    padding: 1.6em 3.5em 1.6em;
   }
 
   .footer-bottom p {
@@ -130,7 +199,11 @@
 }
 
 @media (max-width: 879px) {
-  /* .footer-contenedor {
-    background-color: purple;
+
+}
+
+@media (min-width: 1024px) {
+  .footer-bottom {
+    padding-block: 2em;
   } */
 }

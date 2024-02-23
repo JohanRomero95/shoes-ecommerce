@@ -1,33 +1,82 @@
+import { useState } from "react";
 import "./Footer.css";
-import { FaMapMarkerAlt, FaFacebookF, FaLinkedinIn, FaWhatsapp, FaInstagram } from "react-icons/fa";
+import {
+	FaMapMarkerAlt,
+	FaFacebookF,
+	FaLinkedinIn,
+	FaWhatsapp,
+	FaInstagram,
+	FaPlus,
+} from "react-icons/fa";
 
 const Footer = () => {
+	const [ayudaExpanded, setAyudaExpanded] = useState(false);
+	const [acercaExpanded, setAcercaExpanded] = useState(false);
+	const [eventosExpanded, setEventosExpanded] = useState(false);
+
+	const toggleAyuda = () => {
+		setAyudaExpanded(!ayudaExpanded);
+	};
+
+	const toggleAcerca = () => {
+		setAcercaExpanded(!acercaExpanded);
+	};
+
+	const toggleEventos = () => {
+		setEventosExpanded(!eventosExpanded);
+	};
+
 	return (
 		<footer className="footer-contenedor">
 			<div className="footer-top">
 				<div className="ubicacion">
-					<h2>Ubicación</h2>
+					<h2>Ubicacines</h2>
 					<h3>Buscar Tienda</h3>
 					<h3>Hazte Miembro</h3>
 				</div>
 				<div className="ayuda">
-					<h2>Ayuda</h2>
-					<p>Centro de ayuda</p>
+					<div className="ayuda-title">
+						<h2>Ayuda </h2>
+						<span onClick={toggleAyuda}>
+							<FaPlus />
+						</span>
+					</div>
+					{ayudaExpanded && <p>Centro de ayuda</p>}
 				</div>
+
 				<div className="acerca">
-					<h2>Acerca de Nosotros</h2>
-					<p>Noticias</p>
-					<p>Empleos</p>
-					<p>Inversionistas</p>
-					<p>Sustentabilidad</p>
+					<div className="acerca-title">
+						<h2>Acerca de Nosotros</h2>
+						<span onClick={toggleAcerca}>
+							<FaPlus />
+						</span>
+					</div>
+					{acercaExpanded && (
+						<>
+							<p>Noticias</p>
+							<p>Empleos</p>
+							<p>Inversionistas</p>
+							<p>Sustentabilidad</p>
+						</>
+					)}
 				</div>
+
 				<div className="eventos">
-					<h2>Eventos sneakers</h2>
-					<p>Live Shopping</p>
-					<p>Cyber Monday</p>
-					<p>Black Friday</p>
-					<p>Members Days</p>
-					<p>NRC Santiago</p>
+					<div className="eventos-title">
+						<h2>Eventos sneakers</h2>
+						<span onClick={toggleEventos}>
+							<FaPlus />
+						</span>
+					</div>
+					{eventosExpanded && (
+						<>
+							<p>Live Shopping</p>
+							<p>Cyber Monday</p>
+							<p>Black Friday</p>
+							<p>Members Days</p>
+							<p>NRC Santiago</p>
+						</>
+					)}
 				</div>
 				<div className="redes">
 					<a

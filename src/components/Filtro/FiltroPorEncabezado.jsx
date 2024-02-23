@@ -58,7 +58,7 @@ const FiltroPorEncabezado = () => {
 
 	return (
 		<>
-			<div className="container">
+			<main className="container">
 				<div className="container--encabezado">
 					<h1 className="titulo--paginas">
 						{encabezado.toLowerCase().includes("ropa niño") ||
@@ -80,7 +80,7 @@ const FiltroPorEncabezado = () => {
 						<Card key={producto.id} {...producto} />
 					))}
 				</div>
-			</div>
+			</main>
 		</>
 	);
 };

@@ -4,14 +4,11 @@ import { useProductos } from "../Call/useProductos";
 import next from "../../assets/svg/next.svg";
 import before from "../../assets/svg/before.svg";
 import { Link } from "react-router-dom";
+import { useMediaQuery } from "@react-hook/media-query";
 
 const Slider = () => {
-	const [currentSlide, setCurrentSlide] = useState(0);
 	const productos = useProductos();
-
-	if (!productos || productos.length === 0) {
-		return null;
-	}
+	const [currentSlide, setCurrentSlide] = useState(0);
 
 	const totalSlides = Math.ceil(productos.length / 4);
 
@@ -23,15 +20,24 @@ const Slider = () => {
 		setCurrentSlide((prevSlide) => (prevSlide === 0 ? totalSlides - 1 : prevSlide - 1));
 	};
 
-	const startIndex = currentSlide * 4;
-	const slidesToShow = productos.slice(startIndex, startIndex + 4);
+	const isMobile = useMediaQuery("(max-width: 550px)");
+	const isTablet = useMediaQuery("(min-width: 551px) and (max-width: 790px)");
+	const isDesktop = useMediaQuery("(min-width: 791px) and (max-width: 1034px) ");
+
+	const slidesToShow = isMobile ? 1 : isTablet ? 2 : isDesktop ? 3 : 4;
+
+	const startIndex = currentSlide * slidesToShow;
+	const slidesToRender = productos.slice(startIndex, startIndex + slidesToShow);
+
+	if (!productos || productos.length === 0) {
+		return null;
+	}
 
 	return (
 		<>
-			{/* <section className="slider"> */}
 			<section className="slider">
 				<img className="button-slider-before" src={before} onClick={prevSlide} />
-				{slidesToShow.map((producto) => (
+				{slidesToRender.map((producto) => (
 					<div className="slider-detail" key={producto.id}>
 						<Link to={`/producto/${producto.id}`}>
 							<img
@@ -45,7 +51,6 @@ const Slider = () => {
 				))}
 				<img className="button-slider-next" src={next} onClick={nextSlide} />
 			</section>
-			{/* </section> */}
 		</>
 	);
 };

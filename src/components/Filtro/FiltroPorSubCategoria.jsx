@@ -68,7 +68,7 @@ const FiltroPorSubCategoria = () => {
 		<>
 			{productosFiltrados.length > 0 ? (
 				<>
-					<div className="container">
+					<main className="container">
 						<div className="container--encabezado">
 							<h1 className="titulo--paginas">
 								{encabezado.toLowerCase().includes("ropa niña")
@@ -89,7 +89,7 @@ const FiltroPorSubCategoria = () => {
 								<Card key={producto.id} {...producto} />
 							))}
 						</div>
-					</div>
+					</main>
 				</>
 			) : categoriaNoEncontrada ? (
 				<div className="contenedor">

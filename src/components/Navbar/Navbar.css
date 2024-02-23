@@ -1,4 +1,3 @@
-/* Estilos generales del navbar */
 .navbar {
   display: flex;
   position: fixed;
@@ -12,9 +11,8 @@
   background-color: #fff;
 }
 
-/* Estilos para el logo */
 .title {
-  font-size: 2.1em;
+  font-size: 2em;
   color: black;
   transition: transform 0.3s ease;
 }
@@ -23,17 +21,15 @@
   transform: scale(1.15);
 }
 
-/* Estilos para resaltar parte del título */
+
 .title span {
   color: rgb(255, 132, 0);
   font-weight: 800;
   position: relative;
   display: inline-block;
-  /* Espaciado a la derecha del texto */
-  /* padding-right: 1em; */
+
 }
 
-/* Estilos para la línea que aparece al hacer hover en el título */
 .title span::before {
   content: "";
   position: absolute;
@@ -42,35 +38,29 @@
   bottom: 0;
   background-color: rgb(255, 132, 0);
   height: 3px;
-  /* Punto de origen en la parte inferior del borde */
   transform-origin: 50% 100%;
-  /* Inicialmente sin altura */
   transform: scaleY(0);
-  /* Transición suave de 0.3 segundos */
   transition: transform 0.3s ease;
 }
 
-/* Efecto de línea al hacer hover en el título */
+
 .title:hover span::before {
   transform: scaleY(1);
 }
 
-/* Estilos para los elementos de la barra de navegación */
+
 .navbar ul {
   display: flex;
   list-style: none;
   align-items: center;
-  /* justify-content: center; */
 }
 
-/* Estilos para el área central del navbar y ajuste del tamaño de fuente */
+
 .navbar-center {
   font-size: 1.3em;
-  /* Espaciado entre elementos */
   gap: 3em;
 }
 
-/* Estilos para las imágenes en el navbar */
 .navbar--imagenUsuario {
   width: 45px;
   border: 1px solid rgba(0, 0, 0, 0.3);
@@ -80,23 +70,19 @@
   transition: border 0.1s ease;
 }
 
-/* Efecto de cambio de borde al hacer hover en las imágenes */
 .navbar img:hover {
   border: 2px solid rgb(255, 132, 0);
 }
 
-/* Estilos para el área derecha del navbar y ajuste del navbar-center */
 .navbar-right {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Ajuste del espacio a la izquierda del área derecha */
-  /* padding-left: 6em; */
-  /* Espaciado entre elementos */
-  gap: 2em;
+  gap: 1em;
 }
 
 .carrito-contenedor {
+  display: flex;
   position: relative;
 }
 
@@ -104,30 +90,17 @@
 
 .navbar-hamburguesa {
   display: none;
-  /* Ocultar por defecto en pantallas grandes */
   cursor: pointer;
 }
 
 .linea {
   width: 25px;
   height: 3px;
-  background-color: red;
+  background-color: #000;
   margin: 5px;
   transition: transform 0.3s, opacity 0.3s;
 }
 
-/* Estilos para el menú abierto en pantallas pequeñas */
-/* .navbar-center.abierto {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background-color: #333;
-  padding: 1rem;
-  transition: top 0.3s;
-} */
 
 .abierto .linea-1 {
   transform: rotate(45deg) translate(5px, 5px);
@@ -141,36 +114,40 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
+/* MOBILE */
+@media (min-width: 320px)
+/* and (max-width: 767px) */
+  {
+  .navbar {
+    padding-inline: 2em;
+  }
+
+  .navbar--imagenUsuario {
+    position: absolute;
+    top: -10em;
+  }
+}
+
+@media (min-width: 375px) {
+  .navbar {
+    padding-inline: 3em;
+  }
+
+}
+
+/* TABLET */
 @media (max-width: 1023px) {
-  /* .navbar { */
-  /* width: 100%; */
-  /* padding-inline: 3em; */
-  /* } */
+
 
   .navbar-hamburguesa {
     display: block;
-    /* right: 0; */
-    /* position: fixed; */
-    z-index: 1001;
-    /* Mostrar solo en pantallas pequeñas */
+    z-index: 100;
   }
 
   .navbar-center {
     position: absolute;
     opacity: 0;
     top: -6em;
-    /* display: ; */
-    /* display: block; */
-    /* opacity: 0; */
-    /* overflow: hidden; */
-    /* Ocultar por defecto en pantallas pequeñas */
-    /* position: absolute; */
-    /* top: 0; */
-    /* left: 0; */
-    /* right: 0; */
-    /* background-color: #333; */
-    /* padding: 1rem; */
-    /* transition: top 0.3s; */
   }
 
   .navbar-center.abierto {
@@ -180,18 +157,10 @@
     top: 0;
     bottom: 0;
     right: 0;
-    /* justify-content: center; */
     background-color: #333;
     width: 60%;
     flex-direction: column;
-    z-index: 1000;
+    z-index: 100;
 
   }
-
-
-
-  /* .navbar-right { */
-  /* display: none; */
-  /* Ocultar por defecto en pantallas pequeñas */
-  /* } */
 }

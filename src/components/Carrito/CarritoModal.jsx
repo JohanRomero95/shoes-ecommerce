@@ -8,6 +8,7 @@ import { GrClose } from "react-icons/gr";
 import { Link } from "react-router-dom";
 import { CiShoppingBasket } from "react-icons/ci";
 import ButtonPrimary from "../Button/ButtonPrimary/ButtonPrimary";
+import useModalScrollLock from "../../context/useModalScrollLock";
 
 const CarritoModal = ({ isOpen, onClose }) => {
 	const {
@@ -26,17 +27,19 @@ const CarritoModal = ({ isOpen, onClose }) => {
 		}
 	};
 
-	useEffect(() => {
-		if (isOpen) {
-			document.body.classList.add("modal-open");
-		} else {
-			document.body.classList.remove("modal-open");
-		}
+	// useEffect(() => {
+	// 	if (isOpen) {
+	// 		document.body.style.overflow = "hidden";
+	// 	} else {
+	// 		document.body.style.overflow = "unset";
+	// 	}
 
-		return () => {
-			document.body.classList.remove("modal-open");
-		};
-	}, [isOpen]);
+	// 	return () => {
+	// 		document.body.style.overflow = "unset";
+	// 	};
+	// }, [isOpen]);
+
+	useModalScrollLock(isOpen);
 
 	if (!isOpen) {
 		return null;
@@ -86,10 +89,10 @@ const CarritoModal = ({ isOpen, onClose }) => {
 								</div>
 								<div className="carrito-contenedor--basura">
 									{/* <button
-										className="carrito-contenedor--productos--description---basura"
-										onClick={() => eliminarDelCarritoPorItem(prod.id)}>
-										<FaRegTrashCan />
-									</button> */}
+                                        className="carrito-contenedor--productos--description---basura"
+                                        onClick={() => eliminarDelCarritoPorItem(prod.id)}>
+                                        <FaRegTrashCan />
+                                    </button> */}
 									<div className="contador">
 										<button onClick={() => eliminarDelCarritoPorItem(prod.id)}>-</button>
 										<p>{prod.cantidad}</p>

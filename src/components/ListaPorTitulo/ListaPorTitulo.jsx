@@ -43,7 +43,7 @@ const ListaPorTitulo = () => {
 
 	return (
 		<>
-			<div className="container">
+			<main className="container">
 				<div className="container--encabezado">
 					<h1 className="titulo--paginas">
 						{titulo.includes("Colección")
@@ -66,7 +66,7 @@ const ListaPorTitulo = () => {
 						// </Link>
 					))}
 				</div>
-			</div>
+			</main>
 		</>
 	);
 };

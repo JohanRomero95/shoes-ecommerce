@@ -213,7 +213,7 @@
   width: 19px;
   height: 19px;
   /* font-size: 1em; */
-  bottom: 1.3em;
+  bottom: 1em;
   left: .8em;
 }
 
@@ -234,4 +234,10 @@
 
 .modal-open {
   overflow: hidden;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .carrito-modal--header p {
+    font-size: .8rem;
+  }
 }

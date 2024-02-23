@@ -8,3 +8,9 @@
 .publicidad-mid img {
   width: 45%;
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .publicidad-mid img {
+    width: 100%;
+  }
+}
