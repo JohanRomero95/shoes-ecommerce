@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import videoRunning from "../../../assets/videos/Nike Running - Spec Ad (video-converter.com).webm";
+import videoRunning from "../../../assets/videos/Nike Running - Spec Ad (video-converter.com).mp4";
 import "./PublicRunning.css";
 
 const PublicRunning = () => {
