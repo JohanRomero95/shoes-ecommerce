@@ -1,10 +1,10 @@
 .publicidad-mid {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   background-color: #13312c;
 }
 
 .publicidad-mid img {
-  width: 42%;
+  width: 45%;
 }

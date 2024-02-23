@@ -1,6 +1,5 @@
 import { useContext, useState } from "react";
 import { TbShoppingCartFilled } from "react-icons/tb";
-import { Link } from "react-router-dom";
 import CarritoModal from "./CarritoModal";
 import "../Carrito/Carrito.css";
 import { CarritoContext } from "../../context/CarritoContext";
@@ -21,10 +20,8 @@ const IconoCarrito = () => {
 
 	return (
 		<>
-			<Link to="#" onClick={handleOpenModal}>
-				<TbShoppingCartFilled className="carrito" />
-				{cantidadEnCarrito >= 1 && <span className="carrito-number">{cantidadEnCarrito}</span>}
-			</Link>
+			<TbShoppingCartFilled className="carrito" onClick={handleOpenModal} />
+			{cantidadEnCarrito >= 1 && <span className="carrito-number">{cantidadEnCarrito}</span>}
 			<CarritoModal isOpen={modalOpen} onClose={handleCloseModal} />
 		</>
 	);

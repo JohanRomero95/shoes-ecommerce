@@ -2,23 +2,20 @@
 .navbar {
   display: flex;
   position: fixed;
-  left: 0;
-  width: 100vw;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   padding-block: 1.2em;
-  /* padding-inline: 7.2em; */
-  background-color: #fff;
+  padding-inline: 3em;
   z-index: 100;
-  /* padding-right: 11em; */
   margin: 0 auto;
+  background-color: #fff;
 }
 
 /* Estilos para el logo */
 .title {
   font-size: 2.1em;
   color: black;
-  /* margin-left: 1em; */
   transition: transform 0.3s ease;
 }
 
@@ -63,14 +60,14 @@
   display: flex;
   list-style: none;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 /* Estilos para el área central del navbar y ajuste del tamaño de fuente */
 .navbar-center {
   font-size: 1.3em;
   /* Espaciado entre elementos */
-  gap: 4em;
+  gap: 3em;
 }
 
 /* Estilos para las imágenes en el navbar */
@@ -101,4 +98,100 @@
 
 .carrito-contenedor {
   position: relative;
+}
+
+/* RESPNSIVE */
+
+.navbar-hamburguesa {
+  display: none;
+  /* Ocultar por defecto en pantallas grandes */
+  cursor: pointer;
+}
+
+.linea {
+  width: 25px;
+  height: 3px;
+  background-color: red;
+  margin: 5px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Estilos para el menú abierto en pantallas pequeñas */
+/* .navbar-center.abierto {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  padding: 1rem;
+  transition: top 0.3s;
+} */
+
+.abierto .linea-1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.abierto .linea-2 {
+  opacity: 0;
+}
+
+.abierto .linea-3 {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media (max-width: 1023px) {
+  /* .navbar { */
+  /* width: 100%; */
+  /* padding-inline: 3em; */
+  /* } */
+
+  .navbar-hamburguesa {
+    display: block;
+    /* right: 0; */
+    /* position: fixed; */
+    z-index: 1001;
+    /* Mostrar solo en pantallas pequeñas */
+  }
+
+  .navbar-center {
+    position: absolute;
+    opacity: 0;
+    top: -6em;
+    /* display: ; */
+    /* display: block; */
+    /* opacity: 0; */
+    /* overflow: hidden; */
+    /* Ocultar por defecto en pantallas pequeñas */
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* background-color: #333; */
+    /* padding: 1rem; */
+    /* transition: top 0.3s; */
+  }
+
+  .navbar-center.abierto {
+    opacity: 1;
+    position: fixed;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    /* justify-content: center; */
+    background-color: #333;
+    width: 60%;
+    flex-direction: column;
+    z-index: 1000;
+
+  }
+
+
+
+  /* .navbar-right { */
+  /* display: none; */
+  /* Ocultar por defecto en pantallas pequeñas */
+  /* } */
 }

@@ -2,10 +2,14 @@
   background-color: #1c1c1c;
   position: relative;
   color: #fff;
+  top: 5.5em;
+}
+
+.footer-top {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0.4em 0;
+  justify-content: space-around;
+  padding: 3em 4em 7em;
+  gap: 5em;
 }
 
 .footer-contenedor h2,
@@ -25,17 +29,12 @@
   cursor: pointer;
 }
 
-.footer-top {
-  display: flex;
-  justify-content: space-around;
-  padding: 3em 0 7em;
-}
 
 .footer-bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2em 5.5em 0.6em;
+  padding: 1em 5.5em 0.6em;
 }
 
 .footer-bottom .icons {
@@ -55,11 +54,16 @@
   text-decoration: none;
 }
 
-.derechos,
-.terminos {
+.derechos {
   display: flex;
   gap: 1em;
   padding-right: 1.3em;
+}
+
+
+.terminos {
+  display: flex;
+  gap: 1em;
 }
 
 .derechos a {
@@ -81,7 +85,7 @@
 }
 
 .redes a:hover {
-  transform: scale(1.4) !important;
+  transform: scale(1.1) !important;
 }
 
 .footer-contenedor h2:hover {
@@ -91,4 +95,42 @@
 
 .footer-contenedor p:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 880px) and (min-width: 1024px) {
+  .ayuda p {
+    width: 114px;
+  }
+
+  .acerca h2 {
+    width: 125px;
+  }
+
+  .redes {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .redes a {
+    padding-inline: .25em;
+  }
+
+  .footer-top {
+    padding: 3em 4em 4em;
+  }
+
+  .footer-bottom {
+    padding: 1em 3.5em 0.6em;
+  }
+
+  .footer-bottom p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 879px) {
+  /* .footer-contenedor {
+    background-color: purple;
+  } */
 }

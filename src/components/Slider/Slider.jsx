@@ -27,13 +27,13 @@ const Slider = () => {
 	const slidesToShow = productos.slice(startIndex, startIndex + 4);
 
 	return (
-		<section className="slider">
-			<img className="button-slider-before" src={before} onClick={prevSlide} />
-			<div className="slider-contenedor">
+		<>
+			{/* <section className="slider"> */}
+			<section className="slider">
+				<img className="button-slider-before" src={before} onClick={prevSlide} />
 				{slidesToShow.map((producto) => (
 					<div className="slider-detail" key={producto.id}>
 						<Link to={`/producto/${producto.id}`}>
-							{" "}
 							<img
 								src={producto.imageURL}
 								alt={`${producto.name}`}
@@ -43,9 +43,10 @@ const Slider = () => {
 						<h3>{producto.name}</h3>
 					</div>
 				))}
-			</div>
-			<img className="button-slider-next" src={next} onClick={nextSlide} />
-		</section>
+				<img className="button-slider-next" src={next} onClick={nextSlide} />
+			</section>
+			{/* </section> */}
+		</>
 	);
 };
 

@@ -195,6 +195,7 @@
 }
 
 .carrito {
+  cursor: pointer;
   position: relative;
   color: #000000;
   font-size: 1.6em

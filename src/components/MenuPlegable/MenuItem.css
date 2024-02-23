@@ -2,7 +2,7 @@
 .navbar--center-titulo {
   color: gray;
   font-weight: 500;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 .navbar--center-titulo:hover {
