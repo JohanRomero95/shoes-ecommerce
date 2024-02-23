@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Footer.css";
 import {
 	FaMapMarkerAlt,
@@ -8,6 +8,7 @@ import {
 	FaInstagram,
 	FaPlus,
 } from "react-icons/fa";
+import { useMediaQuery } from "@react-hook/media-query";
 
 const Footer = () => {
 	const [ayudaExpanded, setAyudaExpanded] = useState(false);
@@ -26,20 +27,32 @@ const Footer = () => {
 		setEventosExpanded(!eventosExpanded);
 	};
 
+	const isWideScreen = useMediaQuery("(min-width: 791px)");
+
+	useEffect(() => {
+		if (isWideScreen) {
+			setAyudaExpanded(true);
+			setAcercaExpanded(true);
+			setEventosExpanded(true);
+		}
+	}, [isWideScreen]);
+
 	return (
 		<footer className="footer-contenedor">
 			<div className="footer-top">
 				<div className="ubicacion">
-					<h2>Ubicacines</h2>
+					<h2>Ubicaciones</h2>
 					<h3>Buscar Tienda</h3>
 					<h3>Hazte Miembro</h3>
 				</div>
 				<div className="ayuda">
 					<div className="ayuda-title">
 						<h2>Ayuda </h2>
-						<span onClick={toggleAyuda}>
-							<FaPlus />
-						</span>
+						{!isWideScreen && (
+							<span onClick={toggleAyuda}>
+								<FaPlus />
+							</span>
+						)}
 					</div>
 					{ayudaExpanded && <p>Centro de ayuda</p>}
 				</div>
@@ -47,9 +60,11 @@ const Footer = () => {
 				<div className="acerca">
 					<div className="acerca-title">
 						<h2>Acerca de Nosotros</h2>
-						<span onClick={toggleAcerca}>
-							<FaPlus />
-						</span>
+						{!isWideScreen && (
+							<span onClick={toggleAcerca}>
+								<FaPlus />
+							</span>
+						)}
 					</div>
 					{acercaExpanded && (
 						<>
@@ -64,9 +79,11 @@ const Footer = () => {
 				<div className="eventos">
 					<div className="eventos-title">
 						<h2>Eventos sneakers</h2>
-						<span onClick={toggleEventos}>
-							<FaPlus />
-						</span>
+						{!isWideScreen && (
+							<span onClick={toggleEventos}>
+								<FaPlus />
+							</span>
+						)}
 					</div>
 					{eventosExpanded && (
 						<>

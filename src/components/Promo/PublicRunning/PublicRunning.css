@@ -120,4 +120,23 @@ a {
   .texto {
     padding-block: 6rem;
   }
+
+  .texto h1 {
+    font-size: 4.6rem;
+  }
+
+  .texto p {
+    max-width: 500px;
+  }
+}
+
+@media (min-width:1440px) {
+  .texto h1 {
+    font-size: 7rem;
+    line-height: 6rem;
+  }
+
+  .texto p {
+    font-size: 1em;
+  }
 }
