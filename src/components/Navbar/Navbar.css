@@ -113,7 +113,7 @@
 /* MOBILE */
 @media (min-width: 320px) {
   .navbar {
-    padding-inline: 2em;
+    padding-inline: 1em;
   }
 
   .navbar--imagenUsuario {
@@ -124,12 +124,20 @@
 
 @media (min-width: 375px) {
   .navbar {
-    padding-inline: 3em;
+    padding-inline: 1em;
+  }
+}
+
+@media (min-width: 791px) {
+  .navbar {
+    padding-inline: 3rem;
   }
 }
 
 /* TABLET */
 @media (max-width: 1023px) {
+
+
   .navbar-hamburguesa {
     display: block;
     z-index: 100;

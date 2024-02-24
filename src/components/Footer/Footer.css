@@ -107,7 +107,7 @@
   .footer-top {
     flex-direction: column;
     gap: 1rem;
-    padding: 3em;
+    padding: 3em 1rem;
   }
 
   .ayuda-title,
@@ -142,7 +142,7 @@
   }
 
   .footer-bottom {
-    padding: 3em;
+    padding: 3em 1rem;
   }
 
   @media (min-width: 425px) {
@@ -157,6 +157,7 @@
   @media (min-width: 791px) {
     .footer-top {
       flex-direction: row;
+      padding-inline: 3rem;
     }
 
     .redes {

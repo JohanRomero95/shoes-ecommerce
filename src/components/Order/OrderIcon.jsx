@@ -8,11 +8,10 @@ const OrderIcon = ({
 	handleMenorAMayorChange,
 	handleMayorAMenorChange,
 }) => {
+  
 	return (
 		<>
-			<div className="order" onClick={toggleFiltro}>
-				<FaSliders />
-			</div>
+			<FaSliders onClick={toggleFiltro} />
 			{filtroAbierto && (
 				<div className="filtro-contenedor">
 					<div className="checkbox-container">

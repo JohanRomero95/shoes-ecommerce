@@ -44,7 +44,7 @@ const ListaPorTitulo = () => {
 	return (
 		<>
 			<main className="contenedor">
-				<div className="container--encabezado">
+				<div className="contenedor--encabezado">
 					<h1 className="titulo--paginas">
 						{titulo.includes("Colección")
 							? "Todos los productos"

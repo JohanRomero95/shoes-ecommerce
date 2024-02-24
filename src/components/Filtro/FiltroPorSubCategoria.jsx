@@ -68,8 +68,8 @@ const FiltroPorSubCategoria = () => {
 		<>
 			{productosFiltrados.length > 0 ? (
 				<>
-					<main className="container">
-						<div className="container--encabezado">
+					<main className="contenedor">
+						<div className="contenedor--encabezado">
 							<h1 className="titulo--paginas">
 								{encabezado.toLowerCase().includes("ropa niña")
 									? `${subCategorias} de ${titulo.replace("Niños", "Niñas")}`

@@ -62,7 +62,8 @@ const Card = ({ ...producto }) => {
 						}deg)`,
 					}}
 				/>
-				<div className="color-options">
+				{/* en mobile no mostrar */}
+				{/* <div className="color-options">
 					{producto.colors &&
 						producto.colors.map((color, index) => (
 							<div
@@ -73,31 +74,35 @@ const Card = ({ ...producto }) => {
 									backgroundColor: color,
 								}}></div>
 						))}
-				</div>
+				</div> */}
 				<div className="description-shoes">
 					<h3>{producto.name}</h3>
-					<p className="description-shoes-par">
+					{/* <p className="description-shoes-par">
 						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, atque.
-					</p>
+					</p> */}
 					<p className="description-shoes-price">
 						{/* Oferta */}
-						<span>${agregarNueves(producto.price)}</span>
+						{/* <span>${agregarNueves(producto.price)}</span> */}
 					</p>
 				</div>
 			</Link>
-			<ButtonSecondary
-				title={
-					<div className="flex">
-						<span className="icon">
-							<LiaCartArrowDownSolid strokeWidth=".7" size={20} />
-						</span>
-						<span>Add to cart</span>
-					</div>
-				}
-				isSpecial
-				onClick={() => agregarAlCarrito(producto, 1)}>
-				Hey
-			</ButtonSecondary>
+			<div className="contenedor-button">
+				<ButtonSecondary
+					title={
+						<div className="flex">
+							<span className="icon">
+								<LiaCartArrowDownSolid strokeWidth=".7" size={20} />
+							</span>
+							{/* <span>Add to cart</span> */}
+						</div>
+					}
+					isSpecial
+					onClick={() => agregarAlCarrito(producto, 1)}></ButtonSecondary>
+				<div className="contenedor-button-precios">
+					<p className="contenedor-button-precios--oferta">${agregarNueves(producto.price)}</p>
+					<p>${agregarNueves(producto.price)}</p>
+				</div>
+			</div>
 		</div>
 	);
 };
