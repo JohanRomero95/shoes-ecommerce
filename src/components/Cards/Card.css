@@ -5,20 +5,21 @@
   position: relative;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  /* height: 100%; */
-  /* margin-top: 6em; */
-  /* padding-inline: 9.3em; */
-  justify-content: center;
-  margin: 5em auto;
-}
+/* .container { */
+/* display: flex; */
+/* flex-direction: column; */
+/* height: 100%; */
+/* margin-top: 6em; */
+/* padding-inline: 9.3em; */
+/* justify-content: center; */
+/* margin: 5em auto; */
+/* } */
 
 .container--encabezado {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-inline: 3rem;
   /* margin-right: 1.8em; */
 }
 
@@ -26,10 +27,10 @@
   font-size: 1.4em;
 }
 
-.titulo--paginas {
-  display: flex;
-  align-items: start;
-}
+/* .titulo--paginas { */
+/* display: flex; */
+/* align-items: start; */
+/* } */
 
 .order {
   cursor: pointer;
@@ -81,7 +82,7 @@
   margin-top: 2em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  max-width: 100vw;
+  /* max-width: 100vw; */
   gap: 2em;
   margin-bottom: 6em;
 }
@@ -91,12 +92,12 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-inline: 3em;
-  width: 280px;
+  /* align-items: center; */
+  /* padding-inline: 3em; */
+  /* min-width: 280px; */
   /* height: 420px; */
   cursor: pointer;
-  padding-block: 1.2em;
+  /* padding-block: 1.2em; */
   border-radius: 10px;
   /* opacity: 100%; */
   background-color: #f6f6f6;
@@ -114,25 +115,25 @@
 }
 
 .shoes {
-  position: relative;
+  /* position: relative; */
   display: flex;
-  align-items: center;
-  top: 1em;
-  left: -6px;
+  /* align-items: center; */
+  /* top: 1em; */
+  /* left: -6px; */
   width: 210px;
-  overflow: hidden;
-  height: 220px;
-  border-radius: 0;
+  /* overflow: hidden; */
+  /* height: 220px; */
+  /* border-radius: 0; */
   transform: rotate(30deg) scaleX(-1);
   z-index: 1;
-  margin-bottom: 0.7em;
+  /* margin-bottom: 0.7em; */
   transition: transform 0.3s ease, filter 0.3s ease;
   opacity: 85%;
 }
 
 .color-options {
   position: absolute;
-  top: 28px;
+  top: 30px;
   right: 10px;
   display: flex;
   gap: 8px;
@@ -172,22 +173,22 @@
 
 .description-shoes {
   position: relative;
-  text-decoration: none;
+  /* text-decoration: none; */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   z-index: 3;
-  height: 135px;
-  margin-bottom: .8em;
-  padding-top: .5em;
+  /* height: 135px; */
+  /* margin-bottom: .8em; */
+  /* padding-top: .5em; */
 }
 
 
 .description-shoes-price {
   display: flex;
   justify-content: end;
-  align-items: center;
-  gap: 0.4em;
+  /* align-items: center; */
+  /* gap: 0.4em; */
 }
 
 .description-shoes h3 {
@@ -233,3 +234,23 @@
   align-items: center;
   gap: .5em;
 }
+
+@media(min-width:320px) {
+  .lista-de-productos {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+  }
+}
+
+@media (min-width: 375px) {}
+
+@media (min-width: 425px) {}
+
+@media (min-width: 791px) {}
+
+@media (max-width: 1023px) {}
+
+@media (min-width: 1300px) {}
+
+@media (min-width:1440px) {}

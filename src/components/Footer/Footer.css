@@ -33,7 +33,6 @@
 
 .footer-bottom {
   display: flex;
-  /* align-items: center; */
   justify-content: space-between;
   padding: 1em 5.5em 0.6em;
 }
@@ -58,7 +57,6 @@
 .derechos {
   display: flex;
   gap: 1em;
-  /* padding-right: 1.3em; */
 }
 
 
@@ -105,9 +103,7 @@
 
 /* MOBILE */
 
-@media (min-width: 320px)
-/* and (max-width: 767px) */
-  {
+@media (min-width: 320px) {
   .footer-top {
     flex-direction: column;
     gap: 1rem;
@@ -133,15 +129,9 @@
     flex-direction: column;
   }
 
-  .footer-bottom {
-    padding: 3em 2em 6em;
-  }
-
-
   .derechos {
     display: flex;
     flex-direction: column;
-
   }
 
   .terminos {
@@ -186,7 +176,6 @@
       flex-direction: row;
       gap: .5rem;
       padding-block: 1rem;
-      /* text-align: center; */
     }
   }
 
@@ -221,48 +210,4 @@
       padding: 3em 9em;
     }
   }
-
-  /* 
-  @media (min-width: 880px) and (max-width: 1023px) {
-    .ayuda p {
-      width: 114px;
-    }
-  }
-
-
-  .acerca h2 {
-    width: 125px;
-  }
-
-  .redes {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .redes a {
-    padding-inline: .25em;
-  }
-
-  .footer-top {
-    padding: 3em 4em 4em;
-  }
-
-  .footer-bottom {
-    padding: 1.6em 3.5em 1.6em;
-  }
-
-  .footer-bottom p {
-    text-align: center;
-  }
-}
-
-@media (max-width: 879px) {
-
-}
-
-@media (min-width: 1024px) {
-  .footer-bottom {
-    padding-block: 2em;
-  } */
 }

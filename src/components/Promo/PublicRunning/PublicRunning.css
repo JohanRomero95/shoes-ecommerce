@@ -2,7 +2,6 @@
   background-color: rgb(255, 132, 0);
   color: black;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   min-height: 450px;
   border-radius: 40px 0px 0px 0px;
 }
@@ -12,11 +11,9 @@
   flex-direction: column;
   align-items: center;
   padding-block: 5em;
-
 }
 
 .texto h1 {
-  font-size: 4.2rem;
   word-spacing: .1em;
   text-transform: uppercase;
   line-height: .9em;
@@ -47,7 +44,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 a {

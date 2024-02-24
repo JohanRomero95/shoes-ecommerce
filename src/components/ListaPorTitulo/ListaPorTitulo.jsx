@@ -43,7 +43,7 @@ const ListaPorTitulo = () => {
 
 	return (
 		<>
-			<main className="container">
+			<main className="contenedor">
 				<div className="container--encabezado">
 					<h1 className="titulo--paginas">
 						{titulo.includes("Colección")
