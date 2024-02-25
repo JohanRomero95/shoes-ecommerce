@@ -50,6 +50,7 @@ a {
 
   .texto {
     padding-block: 3rem;
+    /* aspect-ratio: 1/1; */
   }
 
   .texto h1 {
@@ -58,6 +59,10 @@ a {
 
   .texto p {
     font-size: 12px;
+  }
+
+  .section-running video {
+    aspect-ratio: 32/18;
   }
 }
 

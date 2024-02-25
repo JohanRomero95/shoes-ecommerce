@@ -41,13 +41,13 @@ const Footer = () => {
 		<footer className="footer-contenedor">
 			<div className="footer-top">
 				<div className="ubicacion">
-					<h2>Ubicaciones</h2>
-					<h3>Buscar Tienda</h3>
-					<h3>Hazte Miembro</h3>
+					<h4>Ubicaciones</h4>
+					<h4>Buscar Tienda</h4>
+					<h4>Hazte Miembro</h4>
 				</div>
 				<div className="ayuda">
 					<div className="ayuda-title">
-						<h2>Ayuda </h2>
+						<h4>Ayuda </h4>
 						{!isWideScreen && (
 							<span onClick={toggleAyuda}>
 								<FaPlus />
@@ -59,7 +59,7 @@ const Footer = () => {
 
 				<div className="acerca">
 					<div className="acerca-title">
-						<h2>Acerca de Nosotros</h2>
+						<h4>Acerca de Nosotros</h4>
 						{!isWideScreen && (
 							<span onClick={toggleAcerca}>
 								<FaPlus />
@@ -78,7 +78,7 @@ const Footer = () => {
 
 				<div className="eventos">
 					<div className="eventos-title">
-						<h2>Eventos sneakers</h2>
+						<h4>Eventos sneakers</h4>
 						{!isWideScreen && (
 							<span onClick={toggleEventos}>
 								<FaPlus />
@@ -133,10 +133,10 @@ const Footer = () => {
 			<hr />
 			<div className="footer-bottom">
 				<div className="derechos">
-					<h2>
+					<h5>
 						<FaMapMarkerAlt className="icons" />
 						Chile
-					</h2>
+					</h5>
 					<a href="https://johanromero.vercel.app" target="_blank">
 						© 2023 JR Company. Todos los derechos reservados
 					</a>
