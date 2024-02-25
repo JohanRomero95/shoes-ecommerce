@@ -46,7 +46,7 @@ const Slider = () => {
 				/>
 				{slidesToRender.map((producto) => (
 					<div className="slider-detail" key={producto.id}>
-						<Link to={`/producto/${producto.id}`}>
+						<Link to={`/producto/${producto.id}`} title={`${producto.name}`}>
 							<img
 								src={producto.imageURL}
 								alt={` Ver Detalle acerca de: ${producto.name}`}
