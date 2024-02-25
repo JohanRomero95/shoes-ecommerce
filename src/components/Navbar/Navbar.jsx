@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import IconoCarrito from "../Carrito/Carrito";
-import Usuario from "../Usuario/Usuario";
 import "./Navbar.css";
 import MenuPlegable from "../MenuPlegable/MenuPlegable";
 import { useEffect, useRef, useState } from "react";
@@ -56,9 +55,6 @@ const Navbar = () => {
 			</section>
 
 			<section className="navbar-right">
-				<div>
-					<Usuario />
-				</div>
 				<div className="carrito-contenedor">
 					<IconoCarrito
 						title="Carrito de compras"
