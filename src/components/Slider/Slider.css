@@ -21,7 +21,7 @@
 }
 
 .slider-detail img {
-  min-width: 250px;
+  width: 250px;
   cursor: pointer;
   border-radius: 100%;
   aspect-ratio: 1/1;
@@ -54,7 +54,7 @@
 /* MOBILE */
 @media (min-width: 320px) {
   .slider {
-    min-height: 340px;
+    height: 340px;
   }
 
   .button-slider-before,
