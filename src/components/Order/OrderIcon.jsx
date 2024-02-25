@@ -8,10 +8,9 @@ const OrderIcon = ({
 	handleMenorAMayorChange,
 	handleMayorAMenorChange,
 }) => {
-  
 	return (
 		<>
-			<FaSliders onClick={toggleFiltro} />
+			<FaSliders onClick={toggleFiltro} title="Mostrar filtros" aria-label="Mostrar filtros" />
 			{filtroAbierto && (
 				<div className="filtro-contenedor">
 					<div className="checkbox-container">

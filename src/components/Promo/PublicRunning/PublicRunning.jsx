@@ -4,7 +4,7 @@ import "./PublicRunning.css";
 
 const PublicRunning = () => {
 	return (
-		<Link to="/Colección">
+		<Link to="/Colección" alt="Ir a Colección" title="Ir a Colección" aria-label="Ir a Colección">
 			<section className="section-running">
 				<article className="texto">
 					<h1>
@@ -17,7 +17,15 @@ const PublicRunning = () => {
 						el mundo del running!
 					</p>
 				</article>
-				<video autoPlay loop muted playsInline src={videoRunning} loading="lazy"></video>
+				<video
+					autoPlay
+					loop
+					muted
+					playsInline
+					src={videoRunning}
+					loading="lazy"
+					alt="Video running nike"
+				/>
 			</section>
 		</Link>
 	);

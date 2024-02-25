@@ -21,7 +21,8 @@
 .button-pause {
   cursor: pointer;
   position: absolute;
-  width: 100px;
+  color: #fff;
+  font-size: 5rem;
   z-index: 99;
 }
 
@@ -36,10 +37,6 @@
   .publicidad-video {
     font-size: 1.3rem;
     padding-inline: .8em;
-  }
-
-  .button-pause {
-    width: 70px;
   }
 
   .section-top--video {

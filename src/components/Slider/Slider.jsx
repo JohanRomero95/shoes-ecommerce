@@ -36,21 +36,34 @@ const Slider = () => {
 	return (
 		<>
 			<section className="slider">
-				<img className="button-slider-before" loading="lazy" src={before} onClick={prevSlide} />
+				<img
+					className="button-slider-before"
+					loading="lazy"
+					src={before}
+					onClick={prevSlide}
+					alt="Anterior Imagen"
+				/>
 				{slidesToRender.map((producto) => (
 					<div className="slider-detail" key={producto.id}>
 						<Link to={`/producto/${producto.id}`}>
 							<img
 								src={producto.imageURL}
-								alt={`${producto.name}`}
-								title={`${producto.name}`}
+								alt={` Ver Detalle acerca de: ${producto.name}`}
+								title={` Ver Detalle acerca de: ${producto.name}`}
+								aria-label={` Ver Detalle acerca de: ${producto.name}`}
 								loading="lazy"
 							/>
 						</Link>
 						<h3>{producto.name}</h3>
 					</div>
 				))}
-				<img className="button-slider-next" loading="lazy" src={next} onClick={nextSlide} />
+				<img
+					className="button-slider-next"
+					loading="lazy"
+					src={next}
+					onClick={nextSlide}
+					alt="Siguiente Imagen"
+				/>
 			</section>
 		</>
 	);

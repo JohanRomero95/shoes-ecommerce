@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import Card from "../Cards/Card";
 import "../Cards/Card.css";
-import OrderIcon from "../Order/OrderIcon"; // Ajusta la ruta según tu estructura de carpetas
+import OrderIcon from "../Order/OrderIcon";
 import { useProductos } from "../Call/useProductos";
 
 const ListaPorTitulo = () => {
@@ -20,7 +20,6 @@ const ListaPorTitulo = () => {
 					(producto) => producto.gender.toLowerCase().trim() === titulo.toLowerCase().trim(),
 			  );
 
-	// Aplicar ordenamiento según el estado
 	const productosOrdenados = ordenMenorAMayor
 		? [...productosFiltradosPorTitulo].sort((a, b) => a.price - b.price)
 		: ordenMayorAMenor
@@ -57,13 +56,19 @@ const ListaPorTitulo = () => {
 						ordenMayorAMenor={ordenMayorAMenor}
 						handleMenorAMayorChange={handleMenorAMayorChange}
 						handleMayorAMenorChange={handleMayorAMenorChange}
+						title="Ordenar productos"
+						aria-label="Ordenar productos"
 					/>
 				</header>
 				<section className="lista-de-productos">
 					{productosOrdenados.map((producto) => (
-						// <Link key={producto.id} to={`/producto/${producto.id}`}>
-						<Card key={producto.id} {...producto} />
-						// </Link>
+						<Card
+							key={producto.id}
+							{...producto}
+							alt={`Imagen de ${producto.name}`}
+							title={`Ver detalles de ${producto.name}`}
+							aria-label={`Ver detalles de ${producto.name}`}
+						/>
 					))}
 				</section>
 			</main>

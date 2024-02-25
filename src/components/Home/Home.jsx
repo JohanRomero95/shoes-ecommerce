@@ -1,11 +1,11 @@
 import { useRef, useState } from "react";
 import "./Home.css";
-import pauseImg from "../../assets/svg/pause.svg";
 import Slider from "../Slider/Slider";
 import PublicMid from "../Promo/PublicHoliday/PublicMid";
 import PublicRunning from "../Promo/PublicRunning/PublicRunning";
 import VideoRihanna from "../../assets/videos/videoPumaRihanna (video-converter.com).mp4";
 import ButtonPrimary from "../Button/ButtonPrimary/ButtonPrimary";
+import { MdOutlinePauseCircleOutline } from "react-icons/md";
 
 const Home = () => {
 	const videoRef = useRef(null);
@@ -33,22 +33,33 @@ const Home = () => {
 						loop
 						muted
 						playsInline
-						src={VideoRihanna}
-					/>
+						title="Video publicitario Puma Rihanna"
+						aria-label="Video publicitario Puma Rihanna"
+						alt="Video publicitario Puma Rihanna"
+						src={VideoRihanna}>
+						<track src="subtitles.vtt" kind="captions" srcLang="es" label="Spanish" default />
+					</video>
 					{mostrarBoton && (
-						<img
-							src={pauseImg}
+						<MdOutlinePauseCircleOutline
 							className="button-pause"
 							onClick={pausarReproducir}
-							alt="Pause"
-							loading="lazy"></img>
+							alt="Pausar reproducción"
+							aria-label="Pausar reproducción"
+							title="Pausar reproducción"
+							loading="lazy"></MdOutlinePauseCircleOutline>
 					)}
 				</div>
 				<article className="publicidad-video">
 					<h2>
-						SNEAKERS <br /> NEW COLLECTION
+						ZAPATILLAS <br /> NUEVA COLECCIÓN
 					</h2>
-					<ButtonPrimary title="Press Here" url="/Colección" />
+					<ButtonPrimary
+						titulo="Ver Colección"
+						url="/Colección"
+						alt="Ver Colección"
+						aria-label="Ver Colección"
+						title="Ver Colección"
+					/>
 				</article>
 			</section>
 

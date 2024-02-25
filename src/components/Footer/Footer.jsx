@@ -39,7 +39,7 @@ const Footer = () => {
 
 	return (
 		<footer className="footer-contenedor">
-			<div className="footer-top">
+			<section className="footer-top">
 				<div className="ubicacion">
 					<h4>Ubicaciones</h4>
 					<h4>Buscar Tienda</h4>
@@ -129,9 +129,9 @@ const Footer = () => {
 						<FaFacebookF />
 					</a>
 				</div>
-			</div>
+			</section>
 			<hr />
-			<div className="footer-bottom">
+			<section className="footer-bottom">
 				<div className="derechos">
 					<h5>
 						<FaMapMarkerAlt className="icons" />
@@ -148,7 +148,7 @@ const Footer = () => {
 					<p>Terminos de venta</p>
 					<p>Política de privacidad y cookies</p>
 				</div>
-			</div>
+			</section>
 		</footer>
 	);
 };

@@ -14,10 +14,13 @@ const MenuItem = ({ titulo, submenu }) => {
 	const tituloClass = `contenedor--menu ${hasColeccion ? "coleccioon" : ""}`;
 
 	return (
-		<div onMouseEnter={toggleSubMenu} onMouseLeave={toggleSubMenu}>
+		<header
+			onMouseEnter={toggleSubMenu}
+			onMouseLeave={toggleSubMenu}
+			aria-label={`Menú de ${titulo}`}
+			role="button"
+			aria-expanded={showSubMenu ? "true" : "false"}>
 			<Link className="navbar--center-titulo" to={`/${titulo}`}>
-				{/* 			<Link className={tituloClass} to={`/${titulo}`}>
-				 */}{" "}
 				{titulo}
 			</Link>
 			{showSubMenu && submenu && (
@@ -45,7 +48,7 @@ const MenuItem = ({ titulo, submenu }) => {
 					</div>
 				</div>
 			)}
-		</div>
+		</header>
 	);
 };
 

@@ -34,20 +34,23 @@ const Card = ({ ...producto }) => {
 	};
 
 	return (
-		<div
+		<article
 			title={producto.name}
 			className={`productos ${
 				producto.submenu.toLowerCase().includes("ropa") ? "ropa-hover" : ""
 			}`}
 			onMouseEnter={handleMouseEnter}
-			onMouseLeave={handleMouseLeave}>
+			onMouseLeave={handleMouseLeave}
+			aria-labelledby={`product-${producto.id}`}>
 			<Link
 				to={`/producto/${producto.id}`}
 				onClick={(e) => {
 					if (e.target.classList.contains("color-option")) {
 						e.preventDefault();
 					}
-				}}>
+				}}
+				aria-label={`Ver detalles de ${producto.name}`}
+				role="button">
 				<img className="logo-shoes" src={producto.logo} alt="" />
 				<img
 					className={`shoes ${hoverEffect ? "scale-on-hover" : ""}`}
@@ -71,7 +74,9 @@ const Card = ({ ...producto }) => {
 								onClick={() => changeColor(color)}
 								style={{
 									backgroundColor: color,
-								}}></div>
+								}}
+								aria-label={`Seleccionar color ${color}`}
+								role="button"></div>
 						))}
 				</div>
 				<div className="description-shoes">
@@ -79,10 +84,7 @@ const Card = ({ ...producto }) => {
 					<p className="description-shoes-par">
 						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, atque.
 					</p>
-					<p className="description-shoes-price">
-						{/* Oferta */}
-						{/* <span>${agregarNueves(producto.price)}</span> */}
-					</p>
+					<p className="description-shoes-price"></p>
 				</div>
 			</Link>
 			<div className="contenedor-button">
@@ -92,17 +94,23 @@ const Card = ({ ...producto }) => {
 							<span className="icon">
 								<LiaCartArrowDownSolid strokeWidth=".7" size={20} />
 							</span>
-							<span className="anade--carrito">Add to cart</span>
+							<span
+								className="anade--carrito"
+								aria-label={`Añadir ${producto.name} al carrito`}>
+								Add to cart
+							</span>
 						</div>
 					}
 					isSpecial
-					onClick={() => agregarAlCarrito(producto, 1)}></ButtonSecondary>
+					onClick={() => agregarAlCarrito(producto, 1)}
+					aria-label={`Añadir ${producto.name} al carrito`}
+					role="button"></ButtonSecondary>
 				<div className="contenedor-button-precios">
 					<p className="contenedor-button-precios--oferta">${agregarNueves(producto.price)}</p>
 					<p>${agregarNueves(producto.price)}</p>
 				</div>
 			</div>
-		</div>
+		</article>
 	);
 };
 

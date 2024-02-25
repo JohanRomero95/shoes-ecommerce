@@ -30,7 +30,6 @@ const Navbar = () => {
 	}, []);
 
 	useEffect(() => {
-		// Bloquear el scroll cuando el menú está abierto
 		if (menuAbierto) {
 			document.body.style.overflow = "hidden";
 		} else {
@@ -40,35 +39,45 @@ const Navbar = () => {
 
 	return (
 		<nav className={`navbar ${menuAbierto ? "abierto" : ""}`} onClick={handleClickOutsideModal}>
-			{/* Sección izquierda */}
-			<ul className="navbar-left">
-				<Link to="/">
+			<section className="navbar-left">
+				<Link
+					to="/"
+					title="Ir a la página de inicio"
+					aria-label="Ir a la página de inicio"
+					alt="Ir a la página de inicio">
 					<h1 className="title">
 						trend<span>Elite</span>
 					</h1>
 				</Link>
-			</ul>
+			</section>
 
-			{/* Sección central */}
-			<ul className={`navbar-center ${menuAbierto ? "abierto" : ""}`}>
+			<section className={`navbar-center ${menuAbierto ? "abierto" : ""}`}>
 				<MenuPlegable className="navbar-link" />
-			</ul>
+			</section>
 
-			{/* Sección derecha */}
-			<ul className="navbar-right">
-				<li>
+			<section className="navbar-right">
+				<div>
 					<Usuario />
-				</li>
-				<li className="carrito-contenedor">
-					<IconoCarrito />
-				</li>
-				<div className="navbar-hamburguesa" onClick={toggleMenu} ref={modalRef}>
-					<div className={`linea ${menuAbierto ? "linea-1" : ""}`}></div>
-					<div className={`linea ${menuAbierto ? "linea-2" : ""}`}></div>
-					<div className={`linea ${menuAbierto ? "linea-3" : ""}`}></div>
 				</div>
-			</ul>
-			{/* Menú hamburguesa para móvil */}
+				<div className="carrito-contenedor">
+					<IconoCarrito
+						title="Carrito de compras"
+						aria-label="Carrito de compras"
+						alt="Carrito de compras"
+					/>
+				</div>
+				<nav
+					className="navbar-hamburguesa"
+					onClick={toggleMenu}
+					ref={modalRef}
+					title="Ir a menu hamburguesa"
+					alt="Ir a menu hamburguesa"
+					aria-label="Ir a menu hamburguesa">
+					<figure className={`linea ${menuAbierto ? "linea-1" : ""}`}></figure>
+					<figure className={`linea ${menuAbierto ? "linea-2" : ""}`}></figure>
+					<figure className={`linea ${menuAbierto ? "linea-3" : ""}`}></figure>
+				</nav>
+			</section>
 		</nav>
 	);
 };
