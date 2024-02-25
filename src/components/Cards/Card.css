@@ -8,11 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding-inline: 3rem; */
-  /* margin-right: 1.8em; */
 }
-
-
 
 .contenedor--encabezado svg {
   cursor: pointer;
@@ -32,7 +28,6 @@
   right: 13em;
   position: absolute;
   background-color: rgba(128, 128, 128, 0.3);
-  /* border: 1px solid rgba(0, 0, 0, 0.5); */
   border-radius: 6px;
   z-index: 10;
   font-size: .8em;
@@ -66,10 +61,6 @@
   margin-top: 2em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(142px, 1fr));
-  /* max-width: 100vw; */
-  /* align-items: start; */
-  justify-items: center;
-  /* gap: 2em; */
   margin-bottom: 6em;
 }
 
@@ -77,28 +68,21 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* padding-inline: 3em; */
-  /* max-width: 142px; */
-  /* height: 420px; */
+  max-width: 300px;
   cursor: pointer;
   padding-block: 1em;
   padding-inline: 10px;
   border-radius: 5px;
-  /* opacity: 100%; */
   background-color: #f6f6f6;
   color: black;
-  /* text-decoration: none; */
 }
 
 .productos a {
   position: relative;
   display: flex;
   overflow: hidden;
-  /* justify-content: space-evenly; */
   height: 100%;
   flex-direction: column;
-  /* background-color: green; */
 }
 
 .logo-shoes {
@@ -110,18 +94,10 @@
 }
 
 .shoes {
-  /* position: relative; */
   display: flex;
-  /* align-items: center; */
-  /* top: 1em; */
-  /* left: -6px; */
   max-width: 100%;
-  /* overflow: hidden; */
-  /* height: 220px; */
-  /* border-radius: 0; */
   transform: rotate(30deg) scaleX(-1);
   z-index: 1;
-  /* margin-bottom: 0.7em; */
   transition: transform 0.3s ease, filter 0.3s ease;
   opacity: 85%;
 }
@@ -168,27 +144,19 @@
 
 .description-shoes {
   position: relative;
-  /* text-decoration: none; */
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   z-index: 3;
-  /* height: 135px; */
-  /* margin-bottom: .8em; */
-  /* padding-top: .5em; */
 }
 
 
 .description-shoes-price {
   display: flex;
   justify-content: end;
-  /* align-items: center; */
-  /* gap: 0.4em; */
 }
 
 .description-shoes h3 {
   font-size: 1em;
-  /* text-transform: uppercase; */
   color: black;
 }
 
@@ -196,16 +164,6 @@
   font-size: 0.6em;
   color: gray;
 }
-
-/* .description-shoes-price p {
-  text-align: end;
-}
-
-.description-shoes-price span {
-  font-size: 12px;
-  font-weight: bold;
-  color: black;
-} */
 
 .contenedor-button {
   justify-content: space-between;
@@ -215,10 +173,7 @@
 }
 
 .contenedor-button-precios {
-  display: flex;
-  flex-direction: column;
   text-align: end;
-  justify-content: center;
 }
 
 .contenedor-button-precios--oferta {
@@ -227,15 +182,19 @@
   font-size: 12px;
 }
 
-
 .btn-secondary.special {
+  display: flex;
   font-size: .8em;
   padding-block: .5em;
-  /* width: 100%; */
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  border-radius: 5px;
 }
 
 .not-found {
   display: flex;
+  justify-content: center;
   align-items: center;
   height: 44vh;
 }
@@ -248,18 +207,29 @@
   display: flex;
 }
 
-.flex {
+.lista {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: .5em;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2em;
+  margin-bottom: 6em;
 }
 
 @media(min-width:320px) {
   .lista-de-productos {
     margin-inline: 1rem;
-    /* grid-template-columns: 1fr 1fr; */
     gap: 1rem;
+  }
+
+  .lista {
+    margin-inline: 1rem;
+  }
+
+  .not-found {
+    margin-inline: 1rem;
+    font-size: 1rem;
+    text-align: center;
   }
 
   .contenedor--encabezado {
@@ -270,16 +240,28 @@
     font-size: 1.3rem;
   }
 
-  .description-shoes h3 {
-    font-size: 12px;
+  .description-shoes {
+    padding-bottom: 1rem;
   }
 
-  .btn-secondary.special {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30%;
-    border-radius: 5px;
+  .anade--carrito {
+    position: absolute;
+    opacity: 0;
+  }
+
+  .description-shoes-par {
+    opacity: 0;
+    position: absolute;
+  }
+
+  .color-options {
+    opacity: 0;
+    position: absolute;
+  }
+
+  .contenedor-button-precios--oferta {
+    opacity: 0;
+    position: absolute;
   }
 }
 
@@ -292,22 +274,119 @@
     margin-inline: 1rem;
   }
 
-}
-
-@media (min-width: 425px) {}
-
-@media (min-width: 791px) {
-  .contenedor--encabezado {
-    padding-inline: 3rem;
+  .description-shoes h3 {
+    font-size: 12px;
   }
 
-  .lista-de-productos {
-    padding-inline: 2rem;
+  @media (min-width: 425px) {
+    .description-shoes h3 {
+      font-size: 1rem;
+    }
+  }
+
+  @media (min-width:648px) {
+    .lista-de-productos {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+    }
+
+    .lista {
+      gap: 2rem;
+    }
+
+    .color-options {
+      right: 0;
+      opacity: 1;
+      top: 10px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .not-found {
+      font-size: 2rem;
+    }
+
+    .flex {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+  }
+
+  @media (min-width:820px) {
+    .lista-de-productos {
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 2rem;
+    }
+  }
+
+  @media(min-width:755px) {
+    .description-shoes-par {
+      opacity: 0;
+      position: absolute;
+    }
+
+    .anade--carrito {
+      position: relative;
+      opacity: 1;
+    }
+
+    .btn-secondary.special {
+      width: 60%;
+    }
+
+    .flex {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+
+    .logo-shoes {
+      width: 50px;
+      left: 10px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .description-shoes-par {
+      opacity: 1;
+      position: relative;
+    }
+
+    .contenedor--encabezado {
+      padding-inline: 3rem;
+    }
+
+    .lista-de-productos {
+      padding-inline: 2rem;
+    }
+
+    .lista {
+      padding-inline: 2rem;
+    }
+
+    .description-shoes-par {
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width:1370px) {
+    .contenedor--encabezado {
+      padding-inline: 9rem;
+    }
+
+    .lista {
+      padding-inline: 8rem;
+    }
+
+    .lista-de-productos {
+      padding-inline: 8rem;
+    }
+  }
+
+  @media (min-width: 1825px) {
+    .lista-de-productos {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
   }
 }
-
-@media (max-width: 1023px) {}
-
-@media (min-width: 1300px) {}
-
-@media (min-width:1440px) {}

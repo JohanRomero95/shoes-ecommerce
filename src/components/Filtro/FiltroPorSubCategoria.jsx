@@ -4,7 +4,6 @@ import { useProductos } from "../Call/useProductos";
 import Card from "../Cards/Card";
 import "../Cards/Card.css";
 import OrderFilter from "../Order/OrderIcon"; // Ajusta la ruta según tu estructura de carpetas
-import { MdErrorOutline } from "react-icons/md";
 
 const FiltroPorSubCategoria = () => {
 	const { titulo, encabezado, subCategorias } = useParams();
@@ -69,12 +68,12 @@ const FiltroPorSubCategoria = () => {
 			{productosFiltrados.length > 0 ? (
 				<>
 					<main className="contenedor">
-						<div className="contenedor--encabezado">
-							<h1 className="titulo--paginas">
+						<header className="contenedor--encabezado">
+							<h4 className="titulo--paginas">
 								{encabezado.toLowerCase().includes("ropa niña")
 									? `${subCategorias} de ${titulo.replace("Niños", "Niñas")}`
 									: `${subCategorias} de ${titulo}`}
-							</h1>
+							</h4>
 							<OrderFilter
 								toggleFiltro={toggleFiltro}
 								filtroAbierto={filtroAbierto}
@@ -83,19 +82,18 @@ const FiltroPorSubCategoria = () => {
 								handleMenorAMayorChange={handleMenorAMayorChange}
 								handleMayorAMenorChange={handleMayorAMenorChange}
 							/>
-						</div>
-						<div className="lista-de-productos">
+						</header>
+						<section className="lista">
 							{productosOrdenados.map((producto) => (
 								<Card key={producto.id} {...producto} />
 							))}
-						</div>
+						</section>
 					</main>
 				</>
 			) : categoriaNoEncontrada ? (
 				<div className="contenedor">
 					<h1 className="not-found">
 						No se encontraron productos en {subCategorias} de {titulo}
-						<MdErrorOutline className="icons" />
 					</h1>
 				</div>
 			) : (

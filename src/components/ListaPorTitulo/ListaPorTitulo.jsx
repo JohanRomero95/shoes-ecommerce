@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Card from "../Cards/Card";
 import "../Cards/Card.css";
 import OrderIcon from "../Order/OrderIcon"; // Ajusta la ruta según tu estructura de carpetas
@@ -44,12 +44,12 @@ const ListaPorTitulo = () => {
 	return (
 		<>
 			<main className="contenedor">
-				<div className="contenedor--encabezado">
-					<h1 className="titulo--paginas">
+				<header className="contenedor--encabezado">
+					<h4 className="titulo--paginas">
 						{titulo.includes("Colección")
 							? "Todos los productos"
 							: `Todos los productos para ${titulo}`}
-					</h1>
+					</h4>
 					<OrderIcon
 						toggleFiltro={toggleFiltro}
 						filtroAbierto={filtroAbierto}
@@ -58,14 +58,14 @@ const ListaPorTitulo = () => {
 						handleMenorAMayorChange={handleMenorAMayorChange}
 						handleMayorAMenorChange={handleMayorAMenorChange}
 					/>
-				</div>
-				<div className="lista-de-productos">
+				</header>
+				<section className="lista-de-productos">
 					{productosOrdenados.map((producto) => (
 						// <Link key={producto.id} to={`/producto/${producto.id}`}>
 						<Card key={producto.id} {...producto} />
 						// </Link>
 					))}
-				</div>
+				</section>
 			</main>
 		</>
 	);

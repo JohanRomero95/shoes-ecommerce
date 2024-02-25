@@ -82,8 +82,8 @@
   position: relative;
 }
 
-/* RESPNSIVE */
 
+/* RESPONSIVE */
 .navbar-hamburguesa {
   display: none;
   cursor: pointer;
@@ -128,7 +128,7 @@
   }
 }
 
-@media (min-width: 791px) {
+@media (min-width:1024px) {
   .navbar {
     padding-inline: 3rem;
   }
@@ -136,8 +136,6 @@
 
 /* TABLET */
 @media (max-width: 1023px) {
-
-
   .navbar-hamburguesa {
     display: block;
     z-index: 100;
@@ -163,7 +161,7 @@
   }
 }
 
-@media (min-width:1440px) {
+@media (min-width:1370px) {
   .navbar {
     padding-inline: 9em;
   }

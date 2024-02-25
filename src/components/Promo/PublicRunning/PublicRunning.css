@@ -98,7 +98,7 @@ a {
 
 }
 
-@media (min-width: 791px) {
+@media (min-width: 768px) {
   .section-running {
     grid-template-columns: 1fr 1fr;
   }

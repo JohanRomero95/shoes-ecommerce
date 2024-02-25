@@ -60,12 +60,12 @@ const FiltroPorEncabezado = () => {
 		<>
 			<main className="contenedor">
 				<header className="contenedor--encabezado">
-					<h1 className="titulo--paginas">
+					<h4 className="titulo--paginas">
 						{encabezado.toLowerCase().includes("ropa niño") ||
 						encabezado.toLowerCase().includes("ropa niña")
 							? encabezado.replace("ropa niño", "")
 							: `${encabezado} de ${titulo}`}
-					</h1>
+					</h4>
 					<OrderFilter
 						toggleFiltro={toggleFiltro}
 						filtroAbierto={filtroAbierto}
@@ -75,11 +75,11 @@ const FiltroPorEncabezado = () => {
 						handleMayorAMenorChange={handleMayorAMenorChange}
 					/>
 				</header>
-				<div className="lista-de-productos">
+				<section className="lista-de-productos">
 					{productosOrdenados.map((producto) => (
 						<Card key={producto.id} {...producto} />
 					))}
-				</div>
+				</section>
 			</main>
 		</>
 	);

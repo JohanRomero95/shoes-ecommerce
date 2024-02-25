@@ -154,10 +154,10 @@
 
   /* TABLET */
 
-  @media (min-width: 791px) {
+  @media (min-width: 768px) {
     .footer-top {
       flex-direction: row;
-      padding-inline: 3rem;
+      padding-inline: 1rem;
     }
 
     .redes {
@@ -165,7 +165,7 @@
     }
 
     .footer-bottom {
-      padding: 2em 3em;
+      padding: 2em 1em;
     }
 
     .derechos {
@@ -175,14 +175,18 @@
 
     .terminos {
       flex-direction: row;
-      gap: .5rem;
+      gap: 1rem;
       padding-block: 1rem;
     }
   }
 
-  @media(min-width: 1023px) {
+  @media(min-width: 1024px) {
     .footer-top {
       padding-inline: 3em;
+    }
+
+    .footer-bottom {
+      padding-inline: 3rem;
     }
   }
 
@@ -202,7 +206,7 @@
     }
   }
 
-  @media (min-width:1440px) {
+  @media (min-width:1370px) {
     .footer-top {
       padding: 3em 9.2em;
     }

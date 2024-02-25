@@ -63,7 +63,7 @@ const Card = ({ ...producto }) => {
 					}}
 				/>
 				{/* en mobile no mostrar */}
-				{/* <div className="color-options">
+				<div className="color-options">
 					{producto.colors &&
 						producto.colors.map((color, index) => (
 							<div
@@ -74,12 +74,12 @@ const Card = ({ ...producto }) => {
 									backgroundColor: color,
 								}}></div>
 						))}
-				</div> */}
+				</div>
 				<div className="description-shoes">
 					<h3>{producto.name}</h3>
-					{/* <p className="description-shoes-par">
+					<p className="description-shoes-par">
 						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, atque.
-					</p> */}
+					</p>
 					<p className="description-shoes-price">
 						{/* Oferta */}
 						{/* <span>${agregarNueves(producto.price)}</span> */}
@@ -93,7 +93,7 @@ const Card = ({ ...producto }) => {
 							<span className="icon">
 								<LiaCartArrowDownSolid strokeWidth=".7" size={20} />
 							</span>
-							{/* <span>Add to cart</span> */}
+							<span className="anade--carrito">Add to cart</span>
 						</div>
 					}
 					isSpecial

@@ -21,8 +21,8 @@ const Slider = () => {
 	};
 
 	const isMobile = useMediaQuery("(max-width: 550px)");
-	const isTablet = useMediaQuery("(min-width: 551px) and (max-width: 790px)");
-	const isDesktop = useMediaQuery("(min-width: 791px) and (max-width: 1034px) ");
+	const isTablet = useMediaQuery("(min-width: 551px) and (max-width: 767px)");
+	const isDesktop = useMediaQuery("(min-width: 768px) and (max-width: 1034px) ");
 
 	const slidesToShow = isMobile ? 1 : isTablet ? 2 : isDesktop ? 3 : 4;
 

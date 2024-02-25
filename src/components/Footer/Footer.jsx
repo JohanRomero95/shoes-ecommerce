@@ -27,7 +27,7 @@ const Footer = () => {
 		setEventosExpanded(!eventosExpanded);
 	};
 
-	const isWideScreen = useMediaQuery("(min-width: 791px)");
+	const isWideScreen = useMediaQuery("(min-width: 768px)");
 
 	useEffect(() => {
 		if (isWideScreen) {
@@ -137,7 +137,7 @@ const Footer = () => {
 						<FaMapMarkerAlt className="icons" />
 						Chile
 					</h2>
-					<a href="https://johanromero.vercel.app">
+					<a href="https://johanromero.vercel.app" target="_blank">
 						© 2023 JR Company. Todos los derechos reservados
 					</a>
 				</div>
