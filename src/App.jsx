@@ -11,14 +11,9 @@ import DetalleProducto from "./components/DetalleProducto/DetalleProducto";
 import { ToastContainer } from "react-toastify";
 import ScrollToTop from "./helpers/ScrollToTop";
 import "react-toastify/dist/ReactToastify.css";
-import { useState } from "react";
 import CarritoProvider from "./context/CarritoContext";
 
 function App() {
-	const [carrito, setCarrito] = useState([]);
-
-	// const user = "Carpi";
-
 	return (
 		<>
 			<BrowserRouter>

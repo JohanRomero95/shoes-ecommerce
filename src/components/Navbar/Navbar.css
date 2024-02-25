@@ -66,9 +66,9 @@
   transition: border 0.1s ease;
 }
 
-.navbar img:hover {
+/* .navbar img:hover {
   border: 2px solid rgb(255, 132, 0);
-}
+} */
 
 .navbar-right {
   display: flex;

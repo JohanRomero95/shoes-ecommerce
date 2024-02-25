@@ -9,21 +9,13 @@
   width: 100%;
   max-height: 600px;
   object-fit: cover;
+  aspect-ratio: 127/60;
 }
 
-.btn-video
-
-/* boton del video */
-  {
+.btn-video {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.video video {
-  position: relative;
-
-  object-fit: cover;
 }
 
 .button-pause {

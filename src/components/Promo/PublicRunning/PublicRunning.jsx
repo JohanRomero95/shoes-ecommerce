@@ -17,7 +17,7 @@ const PublicRunning = () => {
 						el mundo del running!
 					</p>
 				</article>
-				<video autoPlay loop muted playsInline src={videoRunning}></video>
+				<video autoPlay loop muted playsInline src={videoRunning} loading="lazy"></video>
 			</section>
 		</Link>
 	);

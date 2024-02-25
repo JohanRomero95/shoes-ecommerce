@@ -9,7 +9,6 @@ const FiltroPorSubCategoria = () => {
 	const { titulo, encabezado, subCategorias } = useParams();
 	const productos = useProductos();
 
-	// Filtrar dinámicamente los productos según la categoría y el género
 	const filtrarProductos = productos.filter((producto) => {
 		return (
 			producto.gender.toLowerCase().trim() === titulo.toLowerCase().trim() &&
@@ -17,7 +16,6 @@ const FiltroPorSubCategoria = () => {
 		);
 	});
 
-	// Filtrar los productos por la categoría
 	let productosFiltrados;
 
 	if (
@@ -38,7 +36,6 @@ const FiltroPorSubCategoria = () => {
 	const [ordenMenorAMayor, setOrdenMenorAMayor] = useState(false);
 	const [ordenMayorAMenor, setOrdenMayorAMenor] = useState(false);
 
-	// Verificar si no se encontraron productos con la categoría deseada
 	const categoriaNoEncontrada = !productosFiltrados.some(
 		(producto) => producto.category.toLowerCase().trim() === subCategorias.toLowerCase().trim(),
 	);

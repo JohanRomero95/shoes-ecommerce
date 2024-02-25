@@ -40,7 +40,8 @@ const Home = () => {
 							src={pauseImg}
 							className="button-pause"
 							onClick={pausarReproducir}
-							alt="Pause"></img>
+							alt="Pause"
+							loading="lazy"></img>
 					)}
 				</div>
 				<article className="publicidad-video">

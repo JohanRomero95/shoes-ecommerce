@@ -62,7 +62,6 @@ const Card = ({ ...producto }) => {
 						}deg)`,
 					}}
 				/>
-				{/* en mobile no mostrar */}
 				<div className="color-options">
 					{producto.colors &&
 						producto.colors.map((color, index) => (

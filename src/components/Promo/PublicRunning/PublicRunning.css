@@ -38,13 +38,6 @@
 }
 
 
-.publicidad-text {
-  color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 a {
   text-decoration: none;
