@@ -42,6 +42,7 @@ const Slider = () => {
 					src={before}
 					onClick={prevSlide}
 					alt="Anterior Imagen"
+					title="Anterior Imagen"
 				/>
 				{slidesToRender.map((producto) => (
 					<div className="slider-detail" key={producto.id}>
@@ -63,6 +64,7 @@ const Slider = () => {
 					src={next}
 					onClick={nextSlide}
 					alt="Siguiente Imagen"
+					title="Siguiente Imagen"
 				/>
 			</section>
 		</>

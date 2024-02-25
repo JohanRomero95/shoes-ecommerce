@@ -76,7 +76,7 @@ const CarritoModal = ({ isOpen, onClose }) => {
 									/>
 								</Link>
 								<div className="carrito-contenedor--productos--description">
-									<Link to={`/producto/${prod.id}`}>
+									<Link to={`/producto/${prod.id}`} title={`Ir a detalle de ${prod.name}`}>
 										<h1 className="carrito-contenedor--productos--description---titulo">
 											{prod.name}
 										</h1>

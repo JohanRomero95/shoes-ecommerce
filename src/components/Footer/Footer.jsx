@@ -137,7 +137,10 @@ const Footer = () => {
 						<FaMapMarkerAlt className="icons" />
 						Chile
 					</h5>
-					<a href="https://johanromero.vercel.app" target="_blank">
+					<a
+						href="https://johanromero.vercel.app"
+						target="_blank"
+						title="Portfolio del programador">
 						© 2023 JR Company. Todos los derechos reservados
 					</a>
 				</div>

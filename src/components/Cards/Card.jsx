@@ -44,6 +44,7 @@ const Card = ({ ...producto }) => {
 			aria-labelledby={`product-${producto.id}`}>
 			<Link
 				to={`/producto/${producto.id}`}
+				title={`Ver detalles de ${producto.name}`}
 				onClick={(e) => {
 					if (e.target.classList.contains("color-option")) {
 						e.preventDefault();
@@ -51,7 +52,7 @@ const Card = ({ ...producto }) => {
 				}}
 				aria-label={`Ver detalles de ${producto.name}`}
 				role="button">
-				<img className="logo-shoes" src={producto.logo} alt="" />
+				<img className="logo-shoes" src={producto.logo} alt={`${producto.brand}`} />
 				<img
 					className={`shoes ${hoverEffect ? "scale-on-hover" : ""}`}
 					src={producto.imageURL}

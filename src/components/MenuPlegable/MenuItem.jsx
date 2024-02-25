@@ -27,7 +27,10 @@ const MenuItem = ({ titulo, submenu }) => {
 				<div className={tituloClass}>
 					<div className="contenedor--menu-articulo">
 						{submenu.map((submenuItem, subIndex) => (
-							<div key={subIndex} className="contenedor--menu-articulo-inicio">
+							<div
+								key={subIndex}
+								className="contenedor--menu-articulo-inicio"
+								title={`${submenuItem.encabezado}`}>
 								<Link
 									className="contenedor--menu-articulo-titulo"
 									to={`/${titulo}/${submenuItem.encabezado}`}>
@@ -38,6 +41,7 @@ const MenuItem = ({ titulo, submenu }) => {
 									{submenuItem.subCategorias.map((sl, slIndex) => (
 										<Link
 											to={`/${titulo}/${submenuItem.encabezado}/${sl.nombre}`}
+											title={`${sl.nombre}`}
 											key={slIndex}>
 											{sl.nombre}
 										</Link>

@@ -4,7 +4,7 @@ import "./PublicMid.css";
 const PublicMid = () => {
 	return (
 		<article className="publicidad-mid">
-			<img src={publicImg} loading="lazy" alt="Holiday Nike" />
+			<img src={publicImg} loading="lazy" alt="Holiday Nike" title="Holiday Nike" />
 		</article>
 	);
 };
