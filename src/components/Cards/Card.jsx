@@ -41,7 +41,7 @@ const Card = ({ ...producto }) => {
 			}`}
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}
-			aria-labelledby={`product-${producto.id}`}>
+    >
 			<Link
 				to={`/producto/${producto.id}`}
 				title={`Ver detalles de ${producto.name}`}
@@ -50,8 +50,8 @@ const Card = ({ ...producto }) => {
 						e.preventDefault();
 					}
 				}}
-				aria-label={`Ver detalles de ${producto.name}`}
-				role="button">
+        role="button"
+      >
 				<img className="logo-shoes" src={producto.logo} alt={`${producto.brand}`} />
 				<img
 					className={`shoes ${hoverEffect ? "scale-on-hover" : ""}`}
@@ -76,8 +76,7 @@ const Card = ({ ...producto }) => {
 								style={{
 									backgroundColor: color,
 								}}
-								aria-label={`Seleccionar color ${color}`}
-								role="button"></div>
+              ></div>
 						))}
 				</div>
 				<div className="description-shoes">
@@ -97,15 +96,14 @@ const Card = ({ ...producto }) => {
 							</span>
 							<span
 								className="anade--carrito"
-								aria-label={`Añadir ${producto.name} al carrito`}>
+              >
 								Add to cart
 							</span>
 						</div>
 					}
 					isSpecial
 					onClick={() => agregarAlCarrito(producto, 1)}
-					aria-label={`Añadir ${producto.name} al carrito`}
-					role="button"></ButtonSecondary>
+        ></ButtonSecondary>
 				<div className="contenedor-button-precios">
 					<p className="contenedor-button-precios--oferta">${agregarNueves(producto.price)}</p>
 					<p>${agregarNueves(producto.price)}</p>
