@@ -20,7 +20,6 @@ const MenuItem = ({ titulo, submenu }) => {
 			aria-label={`Menú de ${titulo}`}
 			title={`${titulo}`}
 			alt={`${titulo}`}
-			role="button"
 			aria-expanded={showSubMenu ? "true" : "false"}>
 			<Link className="navbar--center-titulo" to={`/${titulo}`}>
 				{titulo}

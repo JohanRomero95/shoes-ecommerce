@@ -41,7 +41,7 @@ const Footer = () => {
 		<footer className="footer-contenedor">
 			<section className="footer-top">
 				<div className="ubicacion">
-					<h4>Ubicaciones</h4>
+					<h3>Ubicaciones</h3>
 					<h4>Buscar Tienda</h4>
 					<h4>Hazte Miembro</h4>
 				</div>
