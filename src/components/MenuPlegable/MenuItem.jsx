@@ -18,9 +18,8 @@ const MenuItem = ({ titulo, submenu }) => {
 			onMouseEnter={toggleSubMenu}
 			onMouseLeave={toggleSubMenu}
 			title={`${titulo}`}
-			alt={`${titulo}`}
-			aria-expanded={showSubMenu ? "true" : "false"}>
-			<Link className="navbar--center-titulo" to={`/${titulo}`}>
+			alt={`${titulo}`}>
+			<Link className="navbar--center-titulo" to={`/${titulo}`} title={`${titulo}`}>
 				{titulo}
 			</Link>
 			{showSubMenu && submenu && (

@@ -12,8 +12,8 @@
   gap: 5em;
 }
 
-.footer-contenedor h4,
-.footer-contenedor h3 {
+.footer-contenedor h3,
+.footer-contenedor h2 {
   font-size: 1em;
   width: fit-content;
   cursor: pointer;
@@ -83,8 +83,8 @@
   transition: transform 0.3s ease;
 }
 
-.footer-contenedor h4:hover,
-.footer-contenedor h3:hover {
+.footer-contenedor h3:hover,
+.footer-contenedor h2:hover {
   transform: scale(1.1);
   transition: transform 0.5s ease;
 }

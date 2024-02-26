@@ -41,13 +41,13 @@ const Footer = () => {
 		<footer className="footer-contenedor">
 			<section className="footer-top">
 				<div className="ubicacion">
-					<h3>Ubicaciones</h3>
-					<h4>Buscar Tienda</h4>
-					<h4>Hazte Miembro</h4>
+					<h2>Ubicaciones</h2>
+					<h3>Buscar Tienda</h3>
+					<h3>Hazte Miembro</h3>
 				</div>
 				<div className="ayuda">
 					<div className="ayuda-title">
-						<h4>Ayuda </h4>
+						<h3>Ayuda </h3>
 						{!isWideScreen && (
 							<span onClick={toggleAyuda}>
 								<FaPlus />
@@ -59,7 +59,7 @@ const Footer = () => {
 
 				<div className="acerca">
 					<div className="acerca-title">
-						<h4>Acerca de Nosotros</h4>
+						<h3>Acerca de Nosotros</h3>
 						{!isWideScreen && (
 							<span onClick={toggleAcerca}>
 								<FaPlus />
@@ -78,7 +78,7 @@ const Footer = () => {
 
 				<div className="eventos">
 					<div className="eventos-title">
-						<h4>Eventos sneakers</h4>
+						<h3>Eventos sneakers</h3>
 						{!isWideScreen && (
 							<span onClick={toggleEventos}>
 								<FaPlus />
