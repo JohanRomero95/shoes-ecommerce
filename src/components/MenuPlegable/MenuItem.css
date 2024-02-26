@@ -1,10 +1,11 @@
 .navbar--center-titulo {
-  color: #757575;
+  color: black;
+  opacity: 85%;
   font-weight: 500;
 }
 
 .navbar--center-titulo:hover {
-  border-bottom: 2em solid rgb(255, 132, 0);
+  border-bottom: 2em solid #ff8400;
   padding-bottom: 1.2em;
   border-width: 4px;
   transition: border-bottom 0.3s ease, padding-bottom 0.3s ease;

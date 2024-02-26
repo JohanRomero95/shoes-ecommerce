@@ -12,7 +12,7 @@
 
 .title {
   font-size: 2em;
-  color: black;
+  color: #ff8400;
   transition: transform 0.3s ease;
   margin-right: -4em;
 }
@@ -22,7 +22,7 @@
 }
 
 .title span {
-  color: rgb(255, 132, 0);
+  color: black;
   font-weight: 800;
   position: relative;
   display: inline-block;
