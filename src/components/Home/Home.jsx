@@ -37,7 +37,7 @@ const Home = () => {
 						aria-label="Video publicitario Puma Rihanna"
 						alt="Video publicitario Puma Rihanna"
 						src={VideoRihanna}>
-						<track src="subtitles.vtt" kind="captions" srcLang="es" label="Spanish" default />
+						<track src="#" kind="captions" srcLang="es" label="Spanish" default />
 					</video>
 					{mostrarBoton && (
 						<MdOutlinePauseCircleOutline
