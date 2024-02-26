@@ -17,7 +17,6 @@ const MenuItem = ({ titulo, submenu }) => {
 		<header
 			onMouseEnter={toggleSubMenu}
 			onMouseLeave={toggleSubMenu}
-			aria-label={`Menú de ${titulo}`}
 			title={`${titulo}`}
 			alt={`${titulo}`}
 			aria-expanded={showSubMenu ? "true" : "false"}>
