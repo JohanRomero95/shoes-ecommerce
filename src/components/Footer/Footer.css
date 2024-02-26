@@ -42,9 +42,10 @@
   margin-bottom: 2px;
 }
 
-.footer-bottom h5 {
+.footer-bottom h4 {
   display: flex;
   align-items: center;
+  font-size: 12px;
 }
 
 .footer-contenedor p,

@@ -133,10 +133,10 @@ const Footer = () => {
 			<hr />
 			<section className="footer-bottom">
 				<div className="derechos">
-					<h5>
+					<h4>
 						<FaMapMarkerAlt className="icons" />
 						Chile
-					</h5>
+					</h4>
 					<a
 						href="https://johanromero.vercel.app"
 						target="_blank"
