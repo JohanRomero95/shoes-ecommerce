@@ -15,6 +15,7 @@
   font-size: 1.4em;
   margin-right: .2rem;
   position: relative;
+  margin-right: .7rem;
 }
 
 .filtro-contenedor {
@@ -370,7 +371,7 @@
 
   @media (min-width: 1550px) {
     .lista-de-productos {
-      grid-template-columns: repeat(auto-fit, minmax(255px, 18.2%));
+      grid-template-columns: repeat(auto-fit, minmax(255px, 18.42%));
 
 
 
