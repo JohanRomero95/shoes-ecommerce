@@ -1,6 +1,5 @@
 .navbar--center-titulo {
-  color: black;
-  opacity: 85%;
+  color: #1C1C1C;
   font-weight: 500;
 }
 
@@ -18,7 +17,7 @@
   z-index: 1;
   display: flex;
   flex-direction: column;
-  margin-block: 1.35em;
+  margin-block: 1.26em;
   padding-bottom: 2.3em;
   align-items: center;
   padding-left: 10em;
@@ -46,7 +45,7 @@
   height: 45px;
   display: flex;
   align-items: center;
-  color: #757575;
+  color: #1C1C1C;
   font-weight: 600;
   transition: color 0.3s;
 }
@@ -58,8 +57,7 @@
 }
 
 .contenedor--menu-articulo-titulo {
-  color: black;
-  opacity: 80%;
+  color: #1C1C1C;
   font-weight: 700;
   font-size: 1.2em;
 }

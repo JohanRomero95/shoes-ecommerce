@@ -3,6 +3,7 @@
   position: relative;
   justify-content: center;
   gap: 1.1em;
+  height: 340px;
   padding-block: 1em;
   background-color: #f6f6f6;
 }
@@ -36,8 +37,6 @@
 .button-slider-next {
   position: absolute;
   top: 150px;
-  /* width: 50px;
-  height: 50px; */
   cursor: pointer;
   aspect-ratio: 1/1;
   z-index: 20;
@@ -55,6 +54,7 @@
 @media (min-width: 320px) {
   .slider {
     height: 340px;
+    aspect-ratio: 16/17;
   }
 
   .button-slider-before,
@@ -76,11 +76,22 @@
   .navbar {
     padding-inline: 3em;
   }
+
+  .slider {
+    aspect-ratio: 75/68;
+  }
+}
+
+@media (min-width: 425px) {
+  .slider {
+    aspect-ratio: 5/4;
+  }
 }
 
 @media (min-width: 768px) {
   .slider {
     gap: 2.1rem;
+    aspect-ratio: 192/85;
   }
 }
 
@@ -90,6 +101,10 @@
   .button-slider-next {
     width: 60px;
     height: 60px;
+  }
+
+  .slider {
+    aspect-ratio: 55/17;
   }
 
   .button-slider-next {
@@ -109,10 +124,15 @@
   .button-slider-before {
     left: 6rem;
   }
+
+  .slider {
+    aspect-ratio: 65/17;
+  }
 }
 
 @media (min-width: 1366px) {
   .slider {
     gap: 3.6rem;
+    aspect-ratio: 683/170;
   }
 }

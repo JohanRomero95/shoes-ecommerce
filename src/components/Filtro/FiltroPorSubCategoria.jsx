@@ -80,7 +80,7 @@ const FiltroPorSubCategoria = () => {
 								handleMayorAMenorChange={handleMayorAMenorChange}
 							/>
 						</header>
-						<section className="lista">
+						<section className="lista-de-productos">
 							{productosOrdenados.map((producto) => (
 								<Card key={producto.id} {...producto} />
 							))}

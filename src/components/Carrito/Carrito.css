@@ -57,7 +57,7 @@
   top: 0;
   position: absolute;
   padding-block: .3em;
-  background-color: black;
+  background-color: #1C1C1C;
   opacity: 95%;
   color: #ffff;
   font-weight: 600;
@@ -117,7 +117,7 @@
 .carrito-contenedor--productos--description---titulo,
 .carrito-contenedor--productos--description---titulo p {
   text-decoration: none;
-  color: black;
+  color: #1C1C1C;
   display: flex;
   gap: 1em;
   font-size: 1em;
