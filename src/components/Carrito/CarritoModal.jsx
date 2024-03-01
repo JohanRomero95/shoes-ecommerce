@@ -116,7 +116,7 @@ const CarritoModal = ({ isOpen, onClose }) => {
 						</div>
 
 						<section className="finalizar-compra">
-							<ButtonPrimary title="Finalizar compra" isSpecial />
+							<ButtonPrimary titulo="Finalizar compra" isSpecial />
 							<Link to={"/Colección"} className="finalizar-compra--enlace" onClick={onClose}>
 								<p>Seguir comprando</p>
 								<SlArrowRight
