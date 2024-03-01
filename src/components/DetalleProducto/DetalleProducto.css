@@ -248,12 +248,6 @@
     font-size: 13px;
   }
 
-
-  /* .contenedor-detalle-producto {
-    margin-inline: 0;
-  } */
-
-
   .producto--contenedor {
     min-width: 0;
     height: auto;
@@ -330,6 +324,16 @@
 
   .miniatura {
     gap: 6.6px;
+  }
+}
+
+@media (min-width:490px) {
+  .tallas {
+    grid-template-columns: repeat(6, auto);
+  }
+
+  .miniatura {
+    gap: 6.3px;
   }
 }
 
