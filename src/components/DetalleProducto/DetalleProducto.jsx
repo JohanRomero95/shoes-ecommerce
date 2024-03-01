@@ -102,22 +102,22 @@ const DetalleProducto = () => {
 					</section>
 
 					<section className="producto--contenedor">
-						{producto.colors && producto.colors.length > 0 ? (
-							<div className="detalle-producto--description---colores">
-								<img
-									className="producto--imagen"
-									src={producto.gallery[selectedGalleryImage] || producto.imageURL}
-									alt={producto.name}
-									title={producto.name}
-									style={{
-										filter: `hue-rotate(${
-											shoeColor
-												? (producto.colors.indexOf(shoeColor) + 2) *
-												  (360 / producto.colors.length)
-												: 0
-										}deg)`,
-									}}
-								/>
+						<div className="detalle-producto--description---colores">
+							<img
+								className="producto--imagen"
+								src={producto.gallery[selectedGalleryImage] || producto.imageURL}
+								alt={producto.name}
+								title={producto.name}
+								style={{
+									filter: `hue-rotate(${
+										shoeColor
+											? (producto.colors.indexOf(shoeColor) + 2) *
+											  (360 / producto.colors.length)
+											: 0
+									}deg)`,
+								}}
+							/>
+							{producto.colors && producto.colors.length > 0 ? (
 								<div className="color-optionse">
 									{producto.colors &&
 										producto.colors.map((color, index) => (
@@ -130,8 +130,8 @@ const DetalleProducto = () => {
 												}}></div>
 										))}
 								</div>
-							</div>
-						) : null}
+							) : null}
+						</div>
 					</section>
 					<section className="miniatura">
 						{[producto.imageURL || [], ...producto.gallery].map((img, index) => (
