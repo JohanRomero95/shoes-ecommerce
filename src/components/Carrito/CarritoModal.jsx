@@ -95,17 +95,10 @@ const CarritoModal = ({ isOpen, onClose }) => {
 										</strong>
 									</p>
 								</div>
-								<div className="carrito-contenedor--basura">
-									{/* <button
-                                        className="carrito-contenedor--productos--description---basura"
-                                        onClick={() => eliminarDelCarritoPorItem(prod.id)}>
-                                        <FaRegTrashCan />
-                                    </button> */}
-									<div className="contador">
-										<button onClick={() => eliminarDelCarritoPorItem(prod.id)}>-</button>
-										<p>{prod.cantidad}</p>
-										<button onClick={() => handleSumar(prod.id)}>+</button>
-									</div>
+								<div className="contador">
+									<button onClick={() => eliminarDelCarritoPorItem(prod.id)}>-</button>
+									<p>{prod.cantidad}</p>
+									<button onClick={() => handleSumar(prod.id)}>+</button>
 								</div>
 							</article>
 						))}
