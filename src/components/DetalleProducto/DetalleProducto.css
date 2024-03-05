@@ -150,6 +150,12 @@
   margin-inline: .3em;
 }
 
+.hr-line {
+  border-top: 2px solid #fff;
+  margin-top: 3px;
+  margin-bottom: -3px;
+}
+
 .talla-info--internacional {
   display: flex;
   width: 50%;
@@ -232,6 +238,10 @@
 .producto .btn-secondary.special {
   width: 100%;
 }
+
+
+
+
 
 @media (min-width: 320px) and (max-width:768px) {
   .containere {

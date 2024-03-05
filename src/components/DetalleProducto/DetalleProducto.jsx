@@ -6,7 +6,7 @@ import { CarritoContext } from "../../context/CarritoContext";
 import ButtonSecondary from "../Button/ButtonSecondary/ButtonSecondary";
 import "./DetalleProducto.css";
 import { LiaCartArrowDownSolid } from "react-icons/lia";
-import { useMediaQueries } from "@react-hook/media-query";
+import { useTallaContext } from "../../context/TallaContext";
 
 const DetalleProducto = () => {
 	const { id } = useParams();
@@ -18,18 +18,16 @@ const DetalleProducto = () => {
 	const [selectedButtons, setSelectedButtons] = useState({});
 	const [cantidadSeleccionada, setCantidadSeleccionada] = useState(1);
 	const { agregarAlCarrito, carrito } = useContext(CarritoContext);
+	const { setTallaSeleccionada } = useTallaContext();
 
 	// Galeria
 	const handleClick = (index) => {
 		const nextIndex = (index - 1) % producto.gallery.length;
 		setSelectedGalleryImage(nextIndex);
 	};
-
-	// Talla
-	const handleClickTalla = (index) => {
-		setSelectedButtons({ [index]: true });
+	const handleSelectTalla = (talla) => {
+		setTallaSeleccionada(producto.id, talla);
 	};
-
 	// Colores
 	const changeColor = (color) => {
 		setShoeColor(color);
@@ -154,7 +152,6 @@ const DetalleProducto = () => {
 							/>
 						))}
 					</section>
-
 					<div className="contenedor-de-tallas">
 						<p>
 							<strong>Selecciona tu talla</strong>
@@ -163,20 +160,24 @@ const DetalleProducto = () => {
 							{producto.tallas &&
 								producto.tallas.map((talla, index) => (
 									<div key={index} className="talla-container">
-										<button
+										{/* <button
 											className={
-												selectedButtons[index]
+												talla.eu === tallaSeleccionada
 													? "selected-button grid-item"
 													: "grid-item"
 											}
-											onClick={() => handleClickTalla(index)}>
+											onClick={() => handleClickTalla(talla.eu)}
+											style={{
+												fontWeight: talla.eu === tallaSeleccionada ? "bold" : "normal",
+											}}>
 											{talla.eu}
-										</button>
+										</button> */}
 										<div className="talla-info">
 											<div className="talla-info--division">
-												<p className="talla-info--nacional">
-													{talla.eu} <hr /> <span>TALLA CL</span>
-												</p>
+												<div className="talla-info--nacional">
+													{talla.eu} <div className="hr-line"></div>
+													<span>TALLA CL</span>
+												</div>
 												<div className="talla-info--internacional">
 													<p>
 														<span>CM</span> {talla.cm}
@@ -306,19 +307,24 @@ const DetalleProducto = () => {
 									producto.tallas.map((talla, index) => (
 										<div key={index} className="talla-container">
 											<button
-												className={
-													selectedButtons[index]
-														? "selected-button grid-item"
-														: "grid-item"
-												}
-												onClick={() => handleClickTalla(index)}>
+												// className={
+												// 	talla.eu === tallaSeleccionada
+												// 		? "selected-button grid-item"
+												// 		: "grid-item"
+												// }
+												onClick={() => handleSelectTalla(talla)} // style={{
+												// 	fontWeight:
+												// 		talla.eu === tallaSeleccionada ? "bold" : "normal",
+												// }}
+											>
 												{talla.eu}
 											</button>
 											<div className="talla-info">
 												<div className="talla-info--division">
-													<p className="talla-info--nacional">
-														{talla.eu} <hr /> <span>TALLA CL</span>
-													</p>
+													<div className="talla-info--nacional">
+														{talla.eu} <div className="hr-line"></div>
+														<span>TALLA CL</span>
+													</div>
 													<div className="talla-info--internacional">
 														<p>
 															<span>CM</span> {talla.cm}

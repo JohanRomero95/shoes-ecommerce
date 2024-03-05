@@ -110,21 +110,25 @@
   align-items: flex-start;
   justify-content: space-between;
   margin-left: 1em;
-  margin-right: 3em;
-  font-size: .8em;
+  /* margin-right: 2em; */
 }
 
-.carrito-contenedor--productos--description---titulo,
-.carrito-contenedor--productos--description---titulo p {
+.carrito-contenedor--productos--description---titulo {
   text-decoration: none;
   color: #1C1C1C;
   display: flex;
   gap: 1em;
-  font-size: 1em;
+  font-size: .8em;
 }
 
-.carrito-contenedor--productos--description p {
-  font-size: 16px;
+
+.carrito-contenedor--productos--description---talla {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.carrito-contenedor--productos--description---precio {
+  font-size: 1rem;
 }
 
 .carrito-contenedor--basura {

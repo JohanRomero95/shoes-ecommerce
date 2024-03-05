@@ -9,8 +9,10 @@ import { Link } from "react-router-dom";
 import { CiShoppingBasket } from "react-icons/ci";
 import ButtonPrimary from "../Button/ButtonPrimary/ButtonPrimary";
 import useModalScrollLock from "../../context/useModalScrollLock";
+import { useTallaContext } from "../../context/TallaContext";
 
 const CarritoModal = ({ isOpen, onClose }) => {
+	const { tallasSeleccionadas } = useTallaContext();
 	const {
 		carrito,
 		precioTotal,
@@ -81,7 +83,13 @@ const CarritoModal = ({ isOpen, onClose }) => {
 											{prod.name}
 										</h1>
 									</Link>
-									<p>
+									<p className="carrito-contenedor--productos--description---talla">
+										Talla:
+										{tallasSeleccionadas[prod.id]
+											? tallasSeleccionadas[prod.id].eu
+											: "No seleccionada"}
+									</p>
+									<p className="carrito-contenedor--productos--description---precio">
 										<strong>
 											${`${(agregarNueves(prod.price) * prod.cantidad).toFixed(3)}`}
 										</strong>

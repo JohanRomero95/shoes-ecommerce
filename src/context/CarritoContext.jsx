@@ -34,8 +34,8 @@ const CarritoProvider = ({ children }) => {
 		setCarrito(nuevoCarrito);
 	};
 
-	const agregarAlCarrito = (producto, cantidad) => {
-		const itemAgregado = { ...producto, cantidad };
+	const agregarAlCarrito = (producto, cantidad, talla) => {
+		const itemAgregado = { ...producto, cantidad, talla };
 
 		const nuevoCarrito = [...carrito];
 		const estaEnElCarrito = nuevoCarrito.find((producto) => producto.id === itemAgregado.id);

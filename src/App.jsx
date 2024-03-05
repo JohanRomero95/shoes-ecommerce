@@ -12,27 +12,30 @@ import { ToastContainer } from "react-toastify";
 import ScrollToTop from "./helpers/ScrollToTop";
 import "react-toastify/dist/ReactToastify.css";
 import CarritoProvider from "./context/CarritoContext";
+import { TallaProvider } from "./context/TallaContext";
 
 function App() {
 	return (
 		<>
 			<BrowserRouter>
-				<CarritoProvider>
-					<PromoHeader />
-					<Navbar />
-					<ScrollToTop />
-					<Routes>
-						<Route path="/" element={<Home />} />
-						<Route path="/:titulo" element={<ListaPorTitulo />} />
-						<Route path="/:titulo/:encabezado" element={<FiltroPorEncabezado />} />
-						<Route
-							path="/:titulo/:encabezado/:subCategorias"
-							element={<FiltroPorSubCategoria />}
-						/>
-						<Route path="/producto/:id/" element={<DetalleProducto />} />
-					</Routes>
-					<Footer />
-				</CarritoProvider>
+				<TallaProvider>
+					<CarritoProvider>
+						<PromoHeader />
+						<Navbar />
+						<ScrollToTop />
+						<Routes>
+							<Route path="/" element={<Home />} />
+							<Route path="/:titulo" element={<ListaPorTitulo />} />
+							<Route path="/:titulo/:encabezado" element={<FiltroPorEncabezado />} />
+							<Route
+								path="/:titulo/:encabezado/:subCategorias"
+								element={<FiltroPorSubCategoria />}
+							/>
+							<Route exact path="/producto/:id/" element={<DetalleProducto />} />
+						</Routes>
+						<Footer />
+					</CarritoProvider>
+				</TallaProvider>
 			</BrowserRouter>
 			<ToastContainer />
 		</>
