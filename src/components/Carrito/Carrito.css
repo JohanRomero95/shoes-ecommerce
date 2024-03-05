@@ -15,9 +15,10 @@
 .carrito-content {
   position: relative;
   height: 100%;
-  width: 400px;
+  min-width: 320px;
   background: #ffff;
   z-index: 100;
+  max-width: 430px;
 }
 
 .no-hay-producto {
@@ -96,11 +97,12 @@
 }
 
 .carrito--contenedor--detalles {
+  margin-inline: 1rem;
   margin-bottom: 2.6em;
   width: 360px;
   max-height: 100px;
   display: grid;
-  grid-template-columns: 80px 220px 30px;
+  grid-template-columns: 80px 215px 20px;
   grid-template-rows: 1fr;
 }
 
@@ -241,5 +243,20 @@
 @media (min-width: 320px) and (max-width: 767px) {
   .carrito-modal--header p {
     font-size: .8rem;
+  }
+}
+
+@media (min-width:320px) and (max-width:430px) {
+  .contador {
+    flex-direction: column-reverse;
+  }
+
+  .carrito--contenedor--detalles {
+    width: max-content;
+    grid-template-columns: 75px 190px 0px;
+  }
+
+  .btn-primary.special {
+    font-weight: 500;
   }
 }
