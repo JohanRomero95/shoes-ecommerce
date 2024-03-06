@@ -120,9 +120,9 @@
 .talla-info {
   position: absolute;
   bottom: 100%;
-  width: 120px;
+  width: 100px;
   left: 0;
-  transform: translateX(-50%);
+  transform: translateX(-22%);
   border-radius: 5px;
   padding: 5px;
   display: none;
@@ -142,7 +142,7 @@
 .talla-info--nacional {
   text-align: center;
   font-size: 1.2em;
-  margin-inline: .3em;
+  padding-right: .5rem;
 }
 
 .hr-line {
@@ -177,18 +177,21 @@
   justify-content: space-between;
 }
 
-.contador {
+.contador,
+.contador-special {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1em;
 }
 
-.contador p {
+.contador p,
+.contador-special p {
   font-weight: 700;
 }
 
-.contador button {
+.contador button,
+.contador-special button {
   background-color: #f0f0f0;
   border: none;
   border-radius: 5px;
@@ -236,8 +239,9 @@
 
 
 
-@media (min-width: 320px) and (max-width:768px) {
+@media (min-width: 320px) and (max-width:767px) {
   .containere {
+    justify-content: center;
     margin: auto;
   }
 
@@ -354,7 +358,7 @@
 
 @media (min-width:490px) {
   .tallas {
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: repeat(7, auto);
   }
 
   .miniatura {
@@ -362,10 +366,58 @@
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width:516px) {
+  .miniatura {
+    gap: 10px;
+  }
+}
+
+@media (min-width: 768px) {
   .responsive-structure {
     display: none;
   }
 
+  .producto {
+    position: relative;
+    display: grid;
+    margin: 0 auto;
+    padding-top: 1rem;
+    grid-template-columns: 90px 340px 340px;
+  }
 
+  .detalle-producto--titulo h1 {
+    font-size: 1.4em;
+  }
+
+  .tallas {
+    grid-template-columns: repeat(4, auto);
+  }
+
+  .contenedor-detalle-producto {
+    margin-inline: 1.5rem;
+  }
+
+  .containere {
+    margin-top: 5rem;
+    margin-bottom: 0rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .producto {
+    grid-template-columns: 90px 480px 440px;
+  }
+
+  .detalle-producto--titulo h1 {
+    font-size: 2rem;
+  }
+
+  .containere {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+  }
+
+  .tallas {
+    grid-template-columns: repeat(6, auto);
+  }
 }

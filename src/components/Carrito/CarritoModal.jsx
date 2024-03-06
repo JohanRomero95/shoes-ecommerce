@@ -84,10 +84,13 @@ const CarritoModal = ({ isOpen, onClose }) => {
 										</h1>
 									</Link>
 									<p className="carrito-contenedor--productos--description---talla">
-										Talla:
-										{tallasSeleccionadas[prod.id]
-											? tallasSeleccionadas[prod.id].eu
-											: "No seleccionada"}
+										Talla:{" "}
+										<span
+											className={tallasSeleccionadas[prod.id] ? "" : "no-seleccionada"}>
+											{tallasSeleccionadas[prod.id]
+												? tallasSeleccionadas[prod.id].eu
+												: "No seleccionada"}
+										</span>
 									</p>
 									<p className="carrito-contenedor--productos--description---precio">
 										<strong>
@@ -95,7 +98,7 @@ const CarritoModal = ({ isOpen, onClose }) => {
 										</strong>
 									</p>
 								</div>
-								<div className="contador">
+								<div className="contador-special">
 									<button onClick={() => eliminarDelCarritoPorItem(prod.id)}>-</button>
 									<p>{prod.cantidad}</p>
 									<button onClick={() => handleSumar(prod.id)}>+</button>

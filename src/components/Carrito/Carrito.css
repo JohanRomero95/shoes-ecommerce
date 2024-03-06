@@ -16,6 +16,7 @@
   position: relative;
   height: 100%;
   min-width: 320px;
+  width: 430px;
   background: #ffff;
   z-index: 100;
   max-width: 430px;
@@ -58,7 +59,7 @@
   top: 0;
   position: absolute;
   padding-block: .3em;
-  background-color: #1C1C1C;
+  background-color: black;
   opacity: 95%;
   color: #ffff;
   font-weight: 600;
@@ -102,7 +103,7 @@
   width: 360px;
   max-height: 100px;
   display: grid;
-  grid-template-columns: 80px 215px 20px;
+  grid-template-columns: 80px 215px 35px;
   grid-template-rows: 1fr;
 }
 
@@ -240,20 +241,24 @@
   overflow: hidden;
 }
 
+.no-seleccionada {
+  color: #fd0101;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .carrito-modal--header p {
     font-size: .8rem;
   }
 }
 
-@media (min-width:320px) and (max-width:430px) {
-  .contador {
+@media (min-width:320px) and (max-width:374px) {
+  .contador-special {
     flex-direction: column-reverse;
   }
 
   .carrito--contenedor--detalles {
     width: max-content;
-    grid-template-columns: 75px 190px 0px;
+    grid-template-columns: 100px 170px 25px;
   }
 
   .btn-primary.special {

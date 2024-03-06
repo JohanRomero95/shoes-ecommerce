@@ -9,6 +9,8 @@
   border: 0;
   color: #fff;
   background-color: rgb(255, 132, 0);
+  -webkit-animation: fade-in-bottom 0.5s ease-in both;
+  animation: fade-in-bottom 0.5s ease-in both;
 }
 
 .btn-primary:hover {
