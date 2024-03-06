@@ -4,9 +4,9 @@ import { pedirItemPorId } from "../../helpers/datos";
 import { agregarNueves } from "../../helpers/agregarNueves";
 import { CarritoContext } from "../../context/CarritoContext";
 import ButtonSecondary from "../Button/ButtonSecondary/ButtonSecondary";
-import "./DetalleProducto.css";
 import { LiaCartArrowDownSolid } from "react-icons/lia";
 import { useTallaContext } from "../../context/TallaContext";
+import "./DetalleProducto.css";
 
 const DetalleProducto = () => {
 	const { id } = useParams();

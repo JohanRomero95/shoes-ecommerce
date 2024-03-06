@@ -108,6 +108,7 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
+
 /* MOBILE */
 @media (min-width: 320px) {
   .navbar {
@@ -130,15 +131,22 @@
 
 /* TABLET */
 @media (max-width: 1023px) {
+
+  /* Boton 3 lineas */
   .navbar-hamburguesa {
     display: block;
     z-index: 100;
+    /* Boton 3 lineas arriba */
+  }
+
+  .navbar--center-titulo {
+    color: #1C1C1C;
   }
 
   .navbar-center {
     position: absolute;
     opacity: 0;
-    top: -6em;
+    /* top: -6em; */
   }
 
   .navbar-center.abierto {
@@ -148,11 +156,17 @@
     top: 0;
     bottom: 0;
     right: 0;
-    background-color: #333;
-    width: 60%;
+    background-color: #fff;
+    width: 50%;
     flex-direction: column;
     z-index: 100;
   }
+
+  .contenedor--menu-articulo {
+    flex-direction: column;
+  }
+
+
 }
 
 @media (min-width:1370px) {

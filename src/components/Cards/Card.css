@@ -28,7 +28,7 @@
   margin-top: 130px;
   right: 13.8em;
   position: absolute;
-  background-color: red;
+  background-color: #fff;
   border-radius: 0px 0px 0px 6px;
   z-index: 10;
   font-size: .7em;
@@ -208,10 +208,7 @@
   display: flex;
 }
 
-@media(min-width:320px)
-
-/* and (max-widht:375px)  */
-  {
+@media(min-width:320px) {
   .lista-de-productos {
     margin-inline: 1rem;
     gap: 1rem;
@@ -261,176 +258,182 @@
 
   .filtro-contenedor {
     right: 1rem;
+  }
+}
 
+@media (min-width: 375px) {
+  .contenedor--encabezado {
+    padding-inline: 1rem;
   }
 
-  @media (min-width: 375px) {
+  .lista-de-productos {
+    margin-inline: 1rem;
+  }
+
+  .description-shoes h3 {
+    font-size: 12px;
+  }
+
+  @media (min-width: 390px) {
     .contenedor--encabezado {
-      padding-inline: 1rem;
+      padding-right: 11px;
     }
 
-    .lista-de-productos {
-      margin-inline: 1rem;
-    }
+  }
+}
 
-    .description-shoes h3 {
-      font-size: 12px;
-    }
+@media (min-width: 425px) {
+  .description-shoes h3 {
+    font-size: 1rem;
+  }
 
-    @media (min-width: 390px) {
-      .contenedor--encabezado {
-        padding-right: 11px;
-      }
+  .contenedor--encabezado {
+    padding-right: 18px;
+  }
+}
 
-    }
+@media (min-width: 490px) and (max-width: 647px) {
+  .description-shoes h3 {
+    font-size: 13px;
+  }
+}
 
-    @media (min-width: 425px) {
-      .description-shoes h3 {
-        font-size: 1rem;
-      }
+@media (min-width:648px) {
+  .lista-de-productos {
+    grid-template-columns: repeat(auto-fit, minmax(30%, 30.3%));
+    gap: 1.7rem;
+  }
 
-      .contenedor--encabezado {
-        padding-right: 18px;
-      }
-    }
+  .color-options {
+    right: 0;
+    opacity: 1;
+    top: 10px;
+  }
+}
 
-    @media (min-width: 490px) and (max-width: 647px) {
-      .description-shoes h3 {
-        font-size: 13px;
-      }
-    }
+@media(min-width:755px) {
+  .description-shoes-par {
+    opacity: 0;
+    position: absolute;
+  }
 
-    @media (min-width:648px)
+  .anade--carrito {
+    position: relative;
+    opacity: 1;
+  }
 
-    /* and (max-width:768px)  */
-      {
-      .lista-de-productos {
-        grid-template-columns: repeat(auto-fit, minmax(30%, 30.3%));
-        gap: 1.7rem;
-      }
+  .btn-secondary.special {
+    width: 60%;
+  }
 
-      .color-options {
-        right: 0;
-        opacity: 1;
-        top: 10px;
-      }
-    }
+  .flex {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
 
-    @media (min-width: 768px) {
-      .not-found {
-        font-size: 2rem;
-      }
+  .logo-shoes {
+    width: 50px;
+    left: 10px;
+  }
 
-      .contenedor--encabezado {
-        padding-right: 18px;
-      }
+  .filtro-contenedor {
+    right: 1.8rem;
+  }
+}
 
-      .lista-de-productos {
-        gap: 2rem
-      }
+@media (min-width: 768px) {
+  .not-found {
+    font-size: 2rem;
+  }
 
-      ;
+  .contenedor--encabezado {
+    padding-right: 18px;
+  }
 
-      .flex {
-        display: flex;
-        align-items: center;
-        gap: .5rem;
-      }
-    }
+  .lista-de-productos {
+    gap: 2rem
+  }
 
-    @media (min-width:820px) {
-      .lista-de-productos {
-        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-        gap: 2rem;
-      }
-    }
+  .flex {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
 
-    @media(min-width:755px) {
-      .description-shoes-par {
-        opacity: 0;
-        position: absolute;
-      }
-
-      .anade--carrito {
-        position: relative;
-        opacity: 1;
-      }
-
-      .btn-secondary.special {
-        width: 60%;
-      }
-
-      .flex {
-        display: flex;
-        align-items: center;
-        gap: .5rem;
-      }
-
-      .logo-shoes {
-        width: 50px;
-        left: 10px;
-      }
-
-      .filtro-contenedor {
-        right: 1.8rem;
-      }
-    }
-
-    @media (min-width: 1024px) {
-      .description-shoes-par {
-        opacity: 1;
-        position: relative;
-      }
-
-      .contenedor--encabezado {
-        padding-inline: 3rem;
-      }
-
-      .lista-de-productos {
-        padding-inline: 2rem;
-        grid-template-columns: repeat(auto-fit, minmax(22%, 22.4%));
-      }
-
-      .description-shoes-par {
-        font-size: 14px;
-      }
-
-      .filtro-contenedor {
-        right: 3rem;
-      }
-    }
-
-    @media (min-width:1280px) {
-      .lista-de-productos {
-        gap: 2.3rem;
-      }
-    }
-
-    @media (min-width:1366px) {
-      .lista-de-productos {
-        gap: 2.6rem;
-      }
-    }
-
-    @media (min-width:1370px) {
-      .contenedor--encabezado {
-        padding-inline: 9rem;
-      }
-
-      .lista-de-productos {
-        margin-inline: 7rem;
-        grid-template-columns: repeat(auto-fit, minmax(22%, 22.9%));
-        gap: 1.8rem;
-      }
-    }
-
-    @media (min-width: 1550px) {
-      .lista-de-productos {
-        grid-template-columns: repeat(auto-fit, minmax(289px, 18.42%));
-        gap: 2rem;
+  .filtro-contenedor {
+    right: 1.4rem;
+  }
+}
 
 
-      }
-    }
+@media (min-width:820px) {
+  .lista-de-productos {
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    gap: 2rem;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .description-shoes-par {
+    opacity: 1;
+    position: relative;
+  }
+
+  .contenedor--encabezado {
+    padding-inline: 3rem;
+  }
+
+  .lista-de-productos {
+    padding-inline: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(22%, 22.4%));
+  }
+
+  .description-shoes-par {
+    font-size: 14px;
+  }
+
+  .filtro-contenedor {
+    right: 3.5rem;
+  }
+}
+
+@media (min-width:1280px) {
+  .lista-de-productos {
+    gap: 2.3rem;
+  }
+}
+
+@media (min-width:1366px) {
+  .lista-de-productos {
+    gap: 2.6rem;
+  }
+}
+
+@media (min-width:1370px) {
+  .contenedor--encabezado {
+    padding-inline: 9rem;
+  }
+
+  .lista-de-productos {
+    margin-inline: 7rem;
+    grid-template-columns: repeat(auto-fit, minmax(22%, 22.9%));
+    gap: 1.8rem;
+  }
+
+  .filtro-contenedor {
+    right: 9.3rem;
+  }
+}
+
+@media (min-width: 1550px) {
+  .lista-de-productos {
+    grid-template-columns: repeat(auto-fit, minmax(289px, 18.42%));
+    gap: 2rem;
+  }
+
+  .filtro-contenedor {
+    right: 9.6rem;
   }
 }

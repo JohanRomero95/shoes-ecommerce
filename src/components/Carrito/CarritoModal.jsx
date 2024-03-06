@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useRef } from "react";
-import "./Carrito.css";
 import { CarritoContext } from "../../context/CarritoContext";
 import { agregarNueves } from "../../helpers/agregarNueves";
 import { FaRegTrashCan } from "react-icons/fa6";
@@ -10,9 +9,11 @@ import { CiShoppingBasket } from "react-icons/ci";
 import ButtonPrimary from "../Button/ButtonPrimary/ButtonPrimary";
 import useModalScrollLock from "../../context/useModalScrollLock";
 import { useTallaContext } from "../../context/TallaContext";
+import "./Carrito.css";
 
 const CarritoModal = ({ isOpen, onClose }) => {
 	const { tallasSeleccionadas } = useTallaContext();
+	const modalRef = useRef();
 	const {
 		carrito,
 		precioTotal,
@@ -21,25 +22,23 @@ const CarritoModal = ({ isOpen, onClose }) => {
 		vaciarCarrito,
 	} = useContext(CarritoContext);
 
-	const modalRef = useRef();
-
 	const handleClickOutsideModal = (e) => {
 		if (modalRef.current && !modalRef.current.contains(e.target)) {
 			onClose();
 		}
 	};
 
-	// useEffect(() => {
-	// 	if (isOpen) {
-	// 		document.body.style.overflow = "hidden";
-	// 	} else {
-	// 		document.body.style.overflow = "unset";
-	// 	}
+	useEffect(() => {
+		if (isOpen) {
+			document.body.style.overflow = "hidden";
+		} else {
+			document.body.style.overflow = "unset";
+		}
 
-	// 	return () => {
-	// 		document.body.style.overflow = "unset";
-	// 	};
-	// }, [isOpen]);
+		return () => {
+			document.body.style.overflow = "unset";
+		};
+	}, [isOpen]);
 
 	useModalScrollLock(isOpen);
 

@@ -16,7 +16,7 @@ const MenuItem = ({ titulo, submenu }) => {
 	return (
 		<header
 			onMouseEnter={toggleSubMenu}
-			onMouseLeave={toggleSubMenu}
+			// onMouseLeave={toggleSubMenu}
 			title={`${titulo}`}
 			alt={`${titulo}`}>
 			<Link className="navbar--center-titulo" to={`/${titulo}`} title={`${titulo}`}>

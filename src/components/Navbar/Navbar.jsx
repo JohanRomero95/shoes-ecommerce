@@ -1,22 +1,20 @@
 import { Link } from "react-router-dom";
 import IconoCarrito from "../Carrito/Carrito";
-import "./Navbar.css";
 import MenuPlegable from "../MenuPlegable/MenuPlegable";
 import { useEffect, useRef, useState } from "react";
+import "./Navbar.css";
 
 const Navbar = () => {
 	const [menuAbierto, setMenuAbierto] = useState(false);
+	const modalRef = useRef();
 
 	const toggleMenu = () => {
 		setMenuAbierto(!menuAbierto);
 	};
 
-	const modalRef = useRef();
-
 	const handleClickOutsideModal = (e) => {
 		if (modalRef.current && !modalRef.current.contains(e.target)) {
 			setMenuAbierto(false);
-			// Habilitar el scroll cuando se cierra el menú
 			document.body.style.overflow = "auto";
 		}
 	};

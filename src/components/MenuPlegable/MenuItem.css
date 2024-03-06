@@ -67,3 +67,9 @@
   margin-block: 0;
   padding-bottom: 0;
 }
+
+@media (max-width: 1023px) {
+  .contenedor--menu {
+    position: absolute;
+  }
+}

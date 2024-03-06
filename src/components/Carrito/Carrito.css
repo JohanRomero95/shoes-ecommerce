@@ -156,6 +156,8 @@
   flex-direction: column;
   gap: 1em;
   background-color: #ffff;
+  -webkit-animation: fade-in-bottom 0.5s ease-in both;
+  animation: fade-in-bottom 0.5s ease-in both;
 }
 
 .contenedor-compra--monto {

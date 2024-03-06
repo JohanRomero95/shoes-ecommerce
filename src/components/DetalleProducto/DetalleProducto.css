@@ -9,6 +9,8 @@
   padding-top: 5em;
   margin: 0 auto;
   grid-template-columns: 100px 480px 440px;
+  -webkit-animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .miniatura {
@@ -120,7 +122,7 @@
 .talla-info {
   position: absolute;
   bottom: 100%;
-  width: 100px;
+  width: 102px;
   left: 0;
   transform: translateX(-22%);
   border-radius: 5px;
@@ -142,7 +144,7 @@
 .talla-info--nacional {
   text-align: center;
   font-size: 1.2em;
-  padding-right: .5rem;
+  padding-right: .3rem;
 }
 
 .hr-line {
@@ -236,6 +238,12 @@
   border-radius: 5px;
   font-weight: 500;
 }
+
+.responsive-structure {
+  -webkit-animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
 
 
 
@@ -419,5 +427,33 @@
 
   .tallas {
     grid-template-columns: repeat(6, auto);
+  }
+}
+
+@-webkit-keyframes fade-in-right {
+  0% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-right {
+  0% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
   }
 }
