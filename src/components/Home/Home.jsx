@@ -1,11 +1,12 @@
 import { useRef, useState } from "react";
-import "./Home.css";
 import Slider from "../Slider/Slider";
 import PublicMid from "../Promo/PublicHoliday/PublicMid";
 import PublicRunning from "../Promo/PublicRunning/PublicRunning";
 import VideoRihanna from "../../assets/videos/videoPumaRihanna (video-converter.com).mp4";
 import ButtonPrimary from "../Button/ButtonPrimary/ButtonPrimary";
 import { MdOutlinePauseCircleOutline } from "react-icons/md";
+import { FaRegPlayCircle } from "react-icons/fa";
+import "./Home.css";
 
 const Home = () => {
 	const videoRef = useRef(null);
@@ -46,7 +47,8 @@ const Home = () => {
 							alt="Pausar reproducción"
 							aria-label="Pausar reproducción"
 							title="Pausar reproducción"
-							loading="lazy"></MdOutlinePauseCircleOutline>
+							// loading="lazy"
+						></MdOutlinePauseCircleOutline>
 					)}
 				</div>
 				<article className="publicidad-video">

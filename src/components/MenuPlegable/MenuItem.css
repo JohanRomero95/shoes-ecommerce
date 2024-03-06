@@ -68,8 +68,40 @@
   padding-bottom: 0;
 }
 
+.navbar--center-svg {
+  width: 25px;
+  height: 25px;
+}
+
 @media (max-width: 1023px) {
   .contenedor--menu {
     position: absolute;
+  }
+
+  .header--titulo {
+    width: 100%;
+    padding-inline: 1rem;
+  }
+
+  .navbar--center-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar--center-titulo header {
+    width: 100%;
+  }
+
+  .navbar--center-titulo:hover {
+    border-bottom: 0em;
+    padding-bottom: 0em;
+    border-width: 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar--center-svg {
+    display: none;
   }
 }

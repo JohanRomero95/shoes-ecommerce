@@ -5,8 +5,13 @@ import { useEffect, useRef, useState } from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
+	const [subMenuActivo, setSubMenuActivo] = useState(null);
 	const [menuAbierto, setMenuAbierto] = useState(false);
 	const modalRef = useRef();
+
+	const toggleSubMenu = (titulo) => {
+		setSubMenuActivo(subMenuActivo === titulo ? null : titulo);
+	};
 
 	const toggleMenu = () => {
 		setMenuAbierto(!menuAbierto);
@@ -49,7 +54,7 @@ const Navbar = () => {
 			</section>
 
 			<section className={`navbar-center ${menuAbierto ? "abierto" : ""}`}>
-				<MenuPlegable className="navbar-link" />
+				<MenuPlegable toggleSubMenu={toggleSubMenu} subMenuActivo={subMenuActivo} />
 			</section>
 
 			<section className="navbar-right">
@@ -63,7 +68,6 @@ const Navbar = () => {
 				<nav
 					className="navbar-hamburguesa"
 					onClick={toggleMenu}
-					ref={modalRef}
 					title="Ir a menu hamburguesa"
 					alt="Ir a menu hamburguesa"
 					aria-label="Ir a menu hamburguesa">
