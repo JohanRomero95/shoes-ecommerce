@@ -14,52 +14,62 @@
       {
         "eu": "36",
         "us": "5.5",
-        "cm": "22.5"
+        "cm": "22.5",
+        "is_available": true
       },
       {
         "eu": "37",
         "us": "6.5",
-        "cm": "23.5"
+        "cm": "23.5",
+        "is_available": true
       },
       {
         "eu": "38",
         "us": "7.5",
-        "cm": "24.5"
+        "cm": "24.5",
+        "is_available": true
       },
       {
         "eu": "39",
         "us": "8.5",
-        "cm": "25.5"
+        "cm": "25.5",
+        "is_available": true
       },
       {
         "eu": "40",
         "us": "9.5",
-        "cm": "26.5"
+        "cm": "26.5",
+        "is_available": true
       },
       {
         "eu": "41",
         "us": "10.5",
-        "cm": "27.5"
+        "cm": "27.5",
+        "is_available": false
       },
       {
         "eu": "42",
         "us": "11.5",
-        "cm": "28.5"
+        "cm": "28.5",
+        "is_available": false
       },
       {
         "eu": "43",
         "us": "12.5",
-        "cm": "29.5"
+        "cm": "29.5",
+        "is_available": true
       },
       {
         "eu": "44",
         "us": "13.5",
-        "cm": "30.5"
+        "cm": "30.5",
+        "is_available": true
       },
       {
         "eu": "45",
         "us": "14.5",
-        "cm": "31.5"
+        "cm": "31.5",
+        "is_available": false
       }
     ],
     "items_left": 3,
@@ -87,52 +97,62 @@
       {
         "eu": "36",
         "us": "5.5",
-        "cm": "22.5"
+        "cm": "22.5",
+        "is_available": true
       },
       {
         "eu": "37",
         "us": "6.5",
-        "cm": "23.5"
+        "cm": "23.5",
+        "is_available": false
       },
       {
         "eu": "38",
         "us": "7.5",
-        "cm": "24.5"
+        "cm": "24.5",
+        "is_available": true
       },
       {
         "eu": "39",
         "us": "8.5",
-        "cm": "25.5"
+        "cm": "25.5",
+        "is_available": false
       },
       {
         "eu": "40",
         "us": "9.5",
-        "cm": "26.5"
+        "cm": "26.5",
+        "is_available": true
       },
       {
         "eu": "41",
         "us": "10.5",
-        "cm": "27.5"
+        "cm": "27.5",
+        "is_available": false
       },
       {
         "eu": "42",
         "us": "11.5",
-        "cm": "28.5"
+        "cm": "28.5",
+        "is_available": true
       },
       {
         "eu": "43",
         "us": "12.5",
-        "cm": "29.5"
+        "cm": "29.5",
+        "is_available": true
       },
       {
         "eu": "44",
         "us": "13.5",
-        "cm": "30.5"
+        "cm": "30.5",
+        "is_available": false
       },
       {
         "eu": "45",
         "us": "14.5",
-        "cm": "31.5"
+        "cm": "31.5",
+        "is_available": true
       }
     ],
     "items_left": 3,
@@ -168,37 +188,44 @@
       {
         "eu": "35",
         "us": "4.5",
-        "cm": "22.0"
+        "cm": "22.0",
+        "is_available": false
       },
       {
         "eu": "36",
         "us": "5.5",
-        "cm": "22.5"
+        "cm": "22.5",
+        "is_available": true
       },
       {
         "eu": "37",
         "us": "6.5",
-        "cm": "23.5"
+        "cm": "23.5",
+        "is_available": false
       },
       {
         "eu": "38",
         "us": "7.5",
-        "cm": "24.5"
+        "cm": "24.5",
+        "is_available": true
       },
       {
         "eu": "39",
         "us": "8.5",
-        "cm": "25.5"
+        "cm": "25.5",
+        "is_available": true
       },
       {
         "eu": "40",
         "us": "9.5",
-        "cm": "26.5"
+        "cm": "26.5",
+        "is_available": false
       },
       {
         "eu": "41",
         "us": "10.5",
-        "cm": "27.5"
+        "cm": "27.5",
+        "is_available": true
       }
     ],
     "items_left": 3,
@@ -228,37 +255,44 @@
       {
         "eu": "35",
         "us": "4.5",
-        "cm": "22.0"
+        "cm": "22.0",
+        "is_available": false
       },
       {
         "eu": "36",
         "us": "5.5",
-        "cm": "22.5"
+        "cm": "22.5",
+        "is_available": true
       },
       {
         "eu": "37",
         "us": "6.5",
-        "cm": "23.5"
+        "cm": "23.5",
+        "is_available": false
       },
       {
         "eu": "38",
         "us": "7.5",
-        "cm": "24.5"
+        "cm": "24.5",
+        "is_available": true
       },
       {
         "eu": "39",
         "us": "8.5",
-        "cm": "25.5"
+        "cm": "25.5",
+        "is_available": true
       },
       {
         "eu": "40",
         "us": "9.5",
-        "cm": "26.5"
+        "cm": "26.5",
+        "is_available": false
       },
       {
         "eu": "41",
         "us": "10.5",
-        "cm": "27.5"
+        "cm": "27.5",
+        "is_available": true
       }
     ],
     "items_left": 3,
@@ -291,37 +325,44 @@
       {
         "eu": "35",
         "us": "4.5",
-        "cm": "22.0"
+        "cm": "22.0",
+        "is_available": true
       },
       {
         "eu": "36",
         "us": "5.5",
-        "cm": "22.5"
+        "cm": "22.5",
+        "is_available": false
       },
       {
         "eu": "37",
         "us": "6.5",
-        "cm": "23.5"
+        "cm": "23.5",
+        "is_available": true
       },
       {
         "eu": "38",
         "us": "7.5",
-        "cm": "24.5"
+        "cm": "24.5",
+        "is_available": false
       },
       {
         "eu": "39",
         "us": "8.5",
-        "cm": "25.5"
+        "cm": "25.5",
+        "is_available": true
       },
       {
         "eu": "40",
         "us": "9.5",
-        "cm": "26.5"
+        "cm": "26.5",
+        "is_available": true
       },
       {
         "eu": "41",
         "us": "10.5",
-        "cm": "27.5"
+        "cm": "27.5",
+        "is_available": false
       }
     ],
     "items_left": 3,
@@ -353,37 +394,44 @@
       {
         "eu": "35",
         "us": "4.5",
-        "cm": "22.0"
+        "cm": "22.0",
+        "is_available": true
       },
       {
         "eu": "36",
         "us": "5.5",
-        "cm": "22.5"
+        "cm": "22.5",
+        "is_available": false
       },
       {
         "eu": "37",
         "us": "6.5",
-        "cm": "23.5"
+        "cm": "23.5",
+        "is_available": true
       },
       {
         "eu": "38",
         "us": "7.5",
-        "cm": "24.5"
+        "cm": "24.5",
+        "is_available": false
       },
       {
         "eu": "39",
         "us": "8.5",
-        "cm": "25.5"
+        "cm": "25.5",
+        "is_available": true
       },
       {
         "eu": "40",
         "us": "9.5",
-        "cm": "26.5"
+        "cm": "26.5",
+        "is_available": true
       },
       {
         "eu": "41",
         "us": "10.5",
-        "cm": "27.5"
+        "cm": "27.5",
+        "is_available": false
       }
     ],
     "items_left": 3,
@@ -420,37 +468,44 @@
       {
         "eu": "35",
         "us": "4.5",
-        "cm": "22.0"
+        "cm": "22.0",
+        "is_available": false
       },
       {
         "eu": "36",
         "us": "5.5",
-        "cm": "22.5"
+        "cm": "22.5",
+        "is_available": true
       },
       {
         "eu": "37",
         "us": "6.5",
-        "cm": "23.5"
+        "cm": "23.5",
+        "is_available": false
       },
       {
         "eu": "38",
         "us": "7.5",
-        "cm": "24.5"
+        "cm": "24.5",
+        "is_available": true
       },
       {
         "eu": "39",
         "us": "8.5",
-        "cm": "25.5"
+        "cm": "25.5",
+        "is_available": true
       },
       {
         "eu": "40",
         "us": "9.5",
-        "cm": "26.5"
+        "cm": "26.5",
+        "is_available": false
       },
       {
         "eu": "41",
         "us": "10.5",
-        "cm": "27.5"
+        "cm": "27.5",
+        "is_available": true
       }
     ],
     "items_left": 3,
@@ -481,52 +536,62 @@
       {
         "eu": "36",
         "us": "5.5",
-        "cm": "22.5"
+        "cm": "22.5",
+        "is_available": true
       },
       {
         "eu": "37",
         "us": "6.5",
-        "cm": "23.5"
+        "cm": "23.5",
+        "is_available": false
       },
       {
         "eu": "38",
         "us": "7.5",
-        "cm": "24.5"
+        "cm": "24.5",
+        "is_available": true
       },
       {
         "eu": "39",
         "us": "8.5",
-        "cm": "25.5"
+        "cm": "25.5",
+        "is_available": false
       },
       {
         "eu": "40",
         "us": "9.5",
-        "cm": "26.5"
+        "cm": "26.5",
+        "is_available": true
       },
       {
         "eu": "41",
         "us": "10.5",
-        "cm": "27.5"
+        "cm": "27.5",
+        "is_available": true
       },
       {
         "eu": "42",
         "us": "11.5",
-        "cm": "28.5"
+        "cm": "28.5",
+        "is_available": false
       },
       {
         "eu": "43",
         "us": "12.5",
-        "cm": "29.5"
+        "cm": "29.5",
+        "is_available": true
       },
       {
         "eu": "44",
         "us": "13.5",
-        "cm": "30.5"
+        "cm": "30.5",
+        "is_available": false
       },
       {
         "eu": "45",
         "us": "14.5",
-        "cm": "31.5"
+        "cm": "31.5",
+        "is_available": true
       }
     ],
     "items_left": 3,
@@ -554,52 +619,62 @@
       {
         "eu": "36",
         "us": "5.5",
-        "cm": "22.5"
+        "cm": "22.5",
+        "is_available": true
       },
       {
         "eu": "37",
         "us": "6.5",
-        "cm": "23.5"
+        "cm": "23.5",
+        "is_available": false
       },
       {
         "eu": "38",
         "us": "7.5",
-        "cm": "24.5"
+        "cm": "24.5",
+        "is_available": true
       },
       {
         "eu": "39",
         "us": "8.5",
-        "cm": "25.5"
+        "cm": "25.5",
+        "is_available": false
       },
       {
         "eu": "40",
         "us": "9.5",
-        "cm": "26.5"
+        "cm": "26.5",
+        "is_available": true
       },
       {
         "eu": "41",
         "us": "10.5",
-        "cm": "27.5"
+        "cm": "27.5",
+        "is_available": true
       },
       {
         "eu": "42",
         "us": "11.5",
-        "cm": "28.5"
+        "cm": "28.5",
+        "is_available": false
       },
       {
         "eu": "43",
         "us": "12.5",
-        "cm": "29.5"
+        "cm": "29.5",
+        "is_available": true
       },
       {
         "eu": "44",
         "us": "13.5",
-        "cm": "30.5"
+        "cm": "30.5",
+        "is_available": false
       },
       {
         "eu": "45",
         "us": "14.5",
-        "cm": "31.5"
+        "cm": "31.5",
+        "is_available": true
       }
     ],
     "items_left": 3,
@@ -628,25 +703,32 @@
     "submenu": "Zapatillas",
     "tallas": [
       {
-        "eu": "1Y"
+        "eu": "1Y",
+        "is_available": false
       },
       {
-        "eu": "2Y"
+        "eu": "2Y",
+        "is_available": true
       },
       {
-        "eu": "3Y"
+        "eu": "3Y",
+        "is_available": true
       },
       {
-        "eu": "4Y"
+        "eu": "4Y",
+        "is_available": false
       },
       {
-        "eu": "5Y"
+        "eu": "5Y",
+        "is_available": true
       },
       {
-        "eu": "6Y"
+        "eu": "6Y",
+        "is_available": true
       },
       {
-        "eu": "7Y"
+        "eu": "7Y",
+        "is_available": false
       }
     ],
     "items_left": 3,
@@ -674,25 +756,32 @@
     "submenu": "Zapatillas",
     "tallas": [
       {
-        "eu": "1Y"
+        "eu": "1Y",
+        "is_available": false
       },
       {
-        "eu": "2Y"
+        "eu": "2Y",
+        "is_available": true
       },
       {
-        "eu": "3Y"
+        "eu": "3Y",
+        "is_available": true
       },
       {
-        "eu": "4Y"
+        "eu": "4Y",
+        "is_available": false
       },
       {
-        "eu": "5Y"
+        "eu": "5Y",
+        "is_available": true
       },
       {
-        "eu": "6Y"
+        "eu": "6Y",
+        "is_available": true
       },
       {
-        "eu": "7Y"
+        "eu": "7Y",
+        "is_available": false
       }
     ],
     "items_left": 3,
@@ -729,52 +818,62 @@
       {
         "eu": "36",
         "us": "5.5",
-        "cm": "22.5"
+        "cm": "22.5",
+        "is_available": true
       },
       {
         "eu": "37",
         "us": "6.5",
-        "cm": "23.5"
+        "cm": "23.5",
+        "is_available": false
       },
       {
         "eu": "38",
         "us": "7.5",
-        "cm": "24.5"
+        "cm": "24.5",
+        "is_available": true
       },
       {
         "eu": "39",
         "us": "8.5",
-        "cm": "25.5"
+        "cm": "25.5",
+        "is_available": false
       },
       {
         "eu": "40",
         "us": "9.5",
-        "cm": "26.5"
+        "cm": "26.5",
+        "is_available": true
       },
       {
         "eu": "41",
         "us": "10.5",
-        "cm": "27.5"
+        "cm": "27.5",
+        "is_available": true
       },
       {
         "eu": "42",
         "us": "11.5",
-        "cm": "28.5"
+        "cm": "28.5",
+        "is_available": false
       },
       {
         "eu": "43",
         "us": "12.5",
-        "cm": "29.5"
+        "cm": "29.5",
+        "is_available": true
       },
       {
         "eu": "44",
         "us": "13.5",
-        "cm": "30.5"
+        "cm": "30.5",
+        "is_available": false
       },
       {
         "eu": "45",
         "us": "14.5",
-        "cm": "31.5"
+        "cm": "31.5",
+        "is_available": true
       }
     ],
     "items_left": 3,
@@ -942,25 +1041,32 @@
     "submenu": "Zapatillas",
     "tallas": [
       {
-        "eu": "1Y"
+        "eu": "1Y",
+        "is_available": false
       },
       {
-        "eu": "2Y"
+        "eu": "2Y",
+        "is_available": true
       },
       {
-        "eu": "3Y"
+        "eu": "3Y",
+        "is_available": true
       },
       {
-        "eu": "4Y"
+        "eu": "4Y",
+        "is_available": false
       },
       {
-        "eu": "5Y"
+        "eu": "5Y",
+        "is_available": true
       },
       {
-        "eu": "6Y"
+        "eu": "6Y",
+        "is_available": true
       },
       {
-        "eu": "7Y"
+        "eu": "7Y",
+        "is_available": false
       }
     ],
     "items_left": 3,
@@ -1001,32 +1107,38 @@
       {
         "eu": "S",
         "cm": "48",
-        "us": "38"
+        "us": "38",
+        "is_available": true
       },
       {
         "eu": "M",
         "cm": "50",
-        "us": "40"
+        "us": "40",
+        "is_available": false
       },
       {
         "eu": "L",
         "cm": "52",
-        "us": "42"
+        "us": "42",
+        "is_available": true
       },
       {
         "eu": "XL",
         "cm": "54",
-        "us": "44"
+        "us": "44",
+        "is_available": true
       },
       {
         "eu": "XXL",
         "cm": "56",
-        "us": "46"
+        "us": "46",
+        "is_available": false
       },
       {
         "eu": "XXXL",
         "cm": "58",
-        "us": "48"
+        "us": "48",
+        "is_available": true
       }
     ]
   },
@@ -1041,32 +1153,38 @@
       {
         "eu": "XXS",
         "cm": "32",
-        "us": "0"
+        "us": "0",
+        "is_available": false
       },
       {
         "eu": "XS",
         "cm": "34",
-        "us": "2"
+        "us": "2",
+        "is_available": true
       },
       {
         "eu": "S",
         "cm": "36",
-        "us": "4"
+        "us": "4",
+        "is_available": true
       },
       {
         "eu": "M",
         "cm": "38",
-        "us": "6"
+        "us": "6",
+        "is_available": false
       },
       {
         "eu": "L",
         "cm": "40",
-        "us": "8"
+        "us": "8",
+        "is_available": true
       },
       {
         "eu": "XL",
         "cm": "42",
-        "us": "10"
+        "us": "10",
+        "is_available": true
       }
     ],
     "price": 72,
@@ -1257,32 +1375,38 @@
       {
         "eu": "XXS",
         "cm": "32",
-        "us": "0"
+        "us": "0",
+        "is_available": false
       },
       {
         "eu": "XS",
         "cm": "34",
-        "us": "2"
+        "us": "2",
+        "is_available": true
       },
       {
         "eu": "S",
         "cm": "36",
-        "us": "4"
+        "us": "4",
+        "is_available": true
       },
       {
         "eu": "M",
         "cm": "38",
-        "us": "6"
+        "us": "6",
+        "is_available": false
       },
       {
         "eu": "L",
         "cm": "40",
-        "us": "8"
+        "us": "8",
+        "is_available": true
       },
       {
         "eu": "XL",
         "cm": "42",
-        "us": "10"
+        "us": "10",
+        "is_available": true
       }
     ],
     "category": "Poleras",

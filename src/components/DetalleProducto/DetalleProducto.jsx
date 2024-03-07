@@ -18,7 +18,7 @@ const DetalleProducto = () => {
 	const [selectedButtons, setSelectedButtons] = useState({});
 	const [cantidadSeleccionada, setCantidadSeleccionada] = useState(1);
 	const { agregarAlCarrito, carrito } = useContext(CarritoContext);
-	const { setTallaSeleccionada, tallaSeleccionada } = useTallaContext(null);
+	const { setTallaSeleccionada } = useTallaContext(null);
 
 	// Galeria
 	const handleClick = (index) => {
@@ -28,9 +28,13 @@ const DetalleProducto = () => {
 
 	// Tallas
 	const handleSelectTalla = (talla) => {
-		setTallaSeleccionada(producto.id, talla);
+		const isTallaAvailable = producto.tallas.find((t) => t.eu === talla.eu && t.is_available);
+		if (isTallaAvailable) {
+			setTallaSeleccionada(producto.id, talla);
+		} else {
+			console.log("Talla no disponible");
+		}
 	};
-
 	// Colores
 	const changeColor = (color) => {
 		setShoeColor(color);
@@ -162,27 +166,37 @@ const DetalleProducto = () => {
 						<div className="tallas">
 							{producto.tallas &&
 								producto.tallas.map((talla, index) => {
+									const isAvailable = talla.is_available;
+									const claseTalla = isAvailable
+										? "talla-container"
+										: "talla-container no-disponible";
 									return (
-										<div key={index} className="talla-container">
-											<button onClick={() => handleSelectTalla(talla)}>
+										<div key={index} className={claseTalla}>
+											<button
+												onClick={() => handleSelectTalla(talla)}
+												disabled={!isAvailable}>
 												{talla.eu}
 											</button>
-											<div className="talla-info">
-												<div className="talla-info--division">
-													<div className="talla-info--nacional">
-														{talla.eu} <div className="hr-line"></div>
-														<span>TALLA CL</span>
-													</div>
-													<div className="talla-info--internacional">
-														<p>
-															<span>CM</span> {talla.cm}
-														</p>
-														<p>
-															<span>US</span> {talla.us}
-														</p>
+											{isAvailable ? (
+												<div className="talla-info">
+													<div className="talla-info--division">
+														<div className="talla-info--nacional">
+															{talla.eu} <div className="hr-line"></div>
+															<span>TALLA CL</span>
+														</div>
+														<div className="talla-info--internacional">
+															<p>
+																<span>CM</span> {talla.cm}
+															</p>
+															<p>
+																<span>US</span> {talla.us}
+															</p>
+														</div>
 													</div>
 												</div>
-											</div>
+											) : (
+												<div className="talla-no-disponible"></div>
+											)}
 										</div>
 									);
 								})}
@@ -301,27 +315,37 @@ const DetalleProducto = () => {
 							<div className="tallas">
 								{producto.tallas &&
 									producto.tallas.map((talla, index) => {
+										const isAvailable = talla.is_available;
+										const claseTalla = isAvailable
+											? "talla-container"
+											: "talla-container no-disponible";
 										return (
-											<div key={index} className="talla-container">
-												<button onClick={() => handleSelectTalla(talla)}>
+											<div key={index} className={claseTalla}>
+												<button
+													onClick={() => handleSelectTalla(talla)}
+													disabled={!isAvailable}>
 													{talla.eu}
 												</button>
-												<div className="talla-info">
-													<div className="talla-info--division">
-														<div className="talla-info--nacional">
-															{talla.eu} <div className="hr-line"></div>
-															<span>TALLA CL</span>
-														</div>
-														<div className="talla-info--internacional">
-															<p>
-																<span>CM</span> {talla.cm}
-															</p>
-															<p>
-																<span>US</span> {talla.us}
-															</p>
+												{isAvailable ? (
+													<div className="talla-info">
+														<div className="talla-info--division">
+															<div className="talla-info--nacional">
+																{talla.eu} <div className="hr-line"></div>
+																<span>TALLA CL</span>
+															</div>
+															<div className="talla-info--internacional">
+																<p>
+																	<span>CM</span> {talla.cm}
+																</p>
+																<p>
+																	<span>US</span> {talla.us}
+																</p>
+															</div>
 														</div>
 													</div>
-												</div>
+												) : (
+													<div className="talla-no-disponible"></div>
+												)}
 											</div>
 										);
 									})}

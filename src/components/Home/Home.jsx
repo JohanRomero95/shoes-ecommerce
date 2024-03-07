@@ -5,7 +5,6 @@ import PublicRunning from "../Promo/PublicRunning/PublicRunning";
 import VideoRihanna from "../../assets/videos/videoPumaRihanna (video-converter.com).mp4";
 import ButtonPrimary from "../Button/ButtonPrimary/ButtonPrimary";
 import { MdOutlinePauseCircleOutline } from "react-icons/md";
-import { FaRegPlayCircle } from "react-icons/fa";
 import "./Home.css";
 
 const Home = () => {
