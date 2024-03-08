@@ -176,3 +176,37 @@ body::-webkit-scrollbar-thumb {
   background-color: rgb(255, 132, 0);
   border-radius: 10px;
 }
+
+.toast-container {
+  position: relative;
+  top: 1.5rem;
+  width: 300px;
+  border-radius: 5px;
+  background-color: #1c1c1c;
+  color: #ffff;
+}
+
+.toast-container p {
+  text-align: center;
+  padding-block: .3rem;
+}
+
+.toast {
+  color: #1c1c1c;
+  display: flex;
+  padding: 1rem;
+  gap: .5rem;
+  background-color: #fff;
+  width: 100%;
+}
+
+.toast h2 {
+  font-size: 1rem;
+}
+
+.toast-img {
+  width: 60px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 3px;
+}

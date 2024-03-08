@@ -6,6 +6,7 @@ import "./Card.css";
 import { LiaCartArrowDownSolid } from "react-icons/lia";
 import { CarritoContext } from "../../context/CarritoContext";
 import ButtonSecondary from "../Button/ButtonSecondary/ButtonSecondary";
+import { toast } from "react-hot-toast";
 
 const Card = ({ ...producto }) => {
 	const [hoverEffect, setHoverEffect] = useState(false);
@@ -40,8 +41,7 @@ const Card = ({ ...producto }) => {
 				producto.submenu.toLowerCase().includes("ropa") ? "ropa-hover" : ""
 			}`}
 			onMouseEnter={handleMouseEnter}
-			onMouseLeave={handleMouseLeave}
-    >
+			onMouseLeave={handleMouseLeave}>
 			<Link
 				to={`/producto/${producto.id}`}
 				title={`Ver detalles de ${producto.name}`}
@@ -50,8 +50,7 @@ const Card = ({ ...producto }) => {
 						e.preventDefault();
 					}
 				}}
-        role="button"
-      >
+				role="button">
 				<img className="logo-shoes" src={producto.logo} alt={`${producto.brand}`} />
 				<img
 					className={`shoes ${hoverEffect ? "scale-on-hover" : ""}`}
@@ -75,8 +74,7 @@ const Card = ({ ...producto }) => {
 								onClick={() => changeColor(color)}
 								style={{
 									backgroundColor: color,
-								}}
-              ></div>
+								}}></div>
 						))}
 				</div>
 				<div className="description-shoes">
@@ -94,15 +92,11 @@ const Card = ({ ...producto }) => {
 							<span className="icon">
 								<LiaCartArrowDownSolid strokeWidth=".7" size={20} />
 							</span>
-							<span
-								className="anade--carrito"
-              >
-								Add to cart
-							</span>
+							<span className="anade--carrito">Add to cart</span>
 						</div>
 					}
 					isSpecial
-					onClick={() => agregarAlCarrito(producto, 1)}
+          onClick={() => agregarAlCarrito(producto, 1)}
         ></ButtonSecondary>
 				<div className="contenedor-button-precios">
 					<p className="contenedor-button-precios--oferta">${agregarNueves(producto.price)}</p>

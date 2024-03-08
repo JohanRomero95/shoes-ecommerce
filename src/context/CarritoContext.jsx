@@ -1,7 +1,8 @@
 import React, { createContext, useState } from "react";
 import { agregarNueves } from "../helpers/agregarNueves";
-
+import { toast } from "react-hot-toast";
 export const CarritoContext = createContext();
+import "../styles/App.css";
 
 const CarritoProvider = ({ children }) => {
 	const [cantidad, setCantidad] = useState(1);
@@ -14,10 +15,18 @@ const CarritoProvider = ({ children }) => {
 				if (stockDisponible > 0) {
 					return { ...item, cantidad: item.cantidad + 1 };
 				} else {
-					// Si se intenta sumar más unidades de las disponibles, se muestra un mensaje o se hace alguna acción
-					console.log(
-						`No se pueden sumar más unidades, solo quedan ${stockDisponible} en stock`,
-					);
+					toast(`No se pueden sumar más unidades, quedan ${stockDisponible} en stock`, {
+						position: "top-center",
+						icon: "⛔",
+						style: {
+							marginTop: "4rem",
+							padding: "1rem",
+							fontWeight: "600",
+							color: "#1c1c1c",
+							textAlign: "center",
+						},
+					});
+
 					return item;
 				}
 			} else {
@@ -45,19 +54,30 @@ const CarritoProvider = ({ children }) => {
 			if (cantidad <= stockDisponible) {
 				estaEnElCarrito.cantidad += cantidad;
 			} else {
-				// Si se intenta agregar más unidades de las disponibles, se muestra un mensaje o se hace alguna acción
-				console.log(
-					// AGREGAR EL TOAST DE NO HAY STOCK
-					`No se pueden agregar ${cantidad} unidades, solo quedan ${stockDisponible} en stock`,
-				);
+				toast(`No nos quedan en stock`, {
+					position: "top-center",
+					icon: "⛔",
+					style: { marginTop: "2rem", padding: "1rem", fontWeight: "600", color: "#1c1c1c" },
+				});
 			}
+			// ⚠️🚫⛔❌
 		} else {
 			if (cantidad <= producto.stock) {
 				nuevoCarrito.push(itemAgregado);
+				toast.custom(
+					() => (
+						<div className="toast-container">
+							<p>Añadido al carrito:</p>
+							<div className="toast">
+								<img src={producto.imageURL} alt={producto.name} className="toast-img" />
+								<h2>{producto.name}</h2>
+							</div>
+						</div>
+					),
+					{ position: "top-left", persist: true },
+				);
 			} else {
-				// Si se intenta agregar más unidades de las disponibles, se muestra un mensaje o se hace alguna acción
 				console.log(
-					// AGREGAR EL TOAST DE NO HAY STOCK
 					`No se pueden agregar ${cantidad} unidades, solo quedan ${producto.stock} en stock`,
 				);
 			}
@@ -92,21 +112,23 @@ const CarritoProvider = ({ children }) => {
 	};
 
 	return (
-		<CarritoContext.Provider
-			value={{
-				carrito,
-				agregarAlCarrito,
-				cantidadEnCarrito,
-				precioTotal,
-				cantidad,
-				setCantidad,
-				eliminarDelCarrito,
-				handleSumar,
-				handleRestar,
-				vaciarCarrito,
-			}}>
-			{children}
-		</CarritoContext.Provider>
+		<>
+			<CarritoContext.Provider
+				value={{
+					carrito,
+					agregarAlCarrito,
+					cantidadEnCarrito,
+					precioTotal,
+					cantidad,
+					setCantidad,
+					eliminarDelCarrito,
+					handleSumar,
+					handleRestar,
+					vaciarCarrito,
+				}}>
+				{children}
+			</CarritoContext.Provider>
+		</>
 	);
 };
 

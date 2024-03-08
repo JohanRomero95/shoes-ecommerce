@@ -8,11 +8,10 @@ import FiltroPorSubCategoria from "./components/Filtro/FiltroPorSubCategoria";
 import FiltroPorEncabezado from "./components/Filtro/FiltroPorEncabezado";
 import ListaPorTitulo from "./components/ListaPorTitulo/ListaPorTitulo";
 import DetalleProducto from "./components/DetalleProducto/DetalleProducto";
-import { ToastContainer } from "react-toastify";
 import ScrollToTop from "./helpers/ScrollToTop";
-import "react-toastify/dist/ReactToastify.css";
 import CarritoProvider from "./context/CarritoContext";
 import { TallaProvider } from "./context/TallaContext";
+import { Toaster } from "react-hot-toast";
 
 function App() {
 	return (
@@ -37,7 +36,7 @@ function App() {
 					</CarritoProvider>
 				</TallaProvider>
 			</BrowserRouter>
-			<ToastContainer />
+			<Toaster />
 		</>
 	);
 }
