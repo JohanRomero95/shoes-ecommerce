@@ -71,7 +71,7 @@ const Footer = () => {
 							<p>Noticias</p>
 							<p>Empleos</p>
 							<p>Inversionistas</p>
-							<p>Sustentabilidad</p>
+							<p>Sostenibilidad</p>
 						</>
 					)}
 				</div>
@@ -116,8 +116,8 @@ const Footer = () => {
 						href="https://linkedin.com/"
 						target="_blank"
 						rel="noopener noreferrer"
-						title="Linkedin"
-						aria-label="Linkedin">
+						title="LinkedIn"
+						aria-label="LinkedIn">
 						<FaLinkedinIn />
 					</a>
 					<a
@@ -146,9 +146,9 @@ const Footer = () => {
 				</div>
 				<div className="terminos">
 					<p>Términos y Condiciones</p>
-					<p>Terminos Cyber Monday</p>
-					<p>Terminos de uso</p>
-					<p>Terminos de venta</p>
+					<p>Términos Cyber Monday</p>
+					<p>Términos de uso</p>
+					<p>Términos de venta</p>
 					<p>Política de privacidad y cookies</p>
 				</div>
 			</section>

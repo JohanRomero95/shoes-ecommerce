@@ -92,12 +92,11 @@ const Card = ({ ...producto }) => {
 							<span className="icon">
 								<LiaCartArrowDownSolid strokeWidth=".7" size={20} />
 							</span>
-							<span className="anade--carrito">Add to cart</span>
+							<span className="anade--carrito">Añadir al carro</span>
 						</div>
 					}
 					isSpecial
-          onClick={() => agregarAlCarrito(producto, 1)}
-        ></ButtonSecondary>
+					onClick={() => agregarAlCarrito(producto, 1)}></ButtonSecondary>
 				<div className="contenedor-button-precios">
 					<p className="contenedor-button-precios--oferta">${agregarNueves(producto.price)}</p>
 					<p>${agregarNueves(producto.price)}</p>

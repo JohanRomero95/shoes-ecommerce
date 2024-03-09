@@ -26,7 +26,7 @@ export const pedirItemPorGender = (gender) => {
 		if (item) {
 			resolve(item);
 		} else {
-			reject({ error: "No se encontro el producto" });
+			reject({ error: "No se encontró el producto" });
 		}
 	});
 };

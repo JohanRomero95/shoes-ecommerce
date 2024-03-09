@@ -323,7 +323,7 @@
   }
 
   .btn-secondary.special {
-    width: 60%;
+    width: 65%;
   }
 
   .flex {
@@ -397,6 +397,9 @@
   .filtro-contenedor {
     right: 3.5rem;
   }
+    .btn-secondary.special {
+   font-size: .69rem;
+    }
 }
 
 @media (min-width:1280px) {

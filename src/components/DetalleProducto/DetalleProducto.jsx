@@ -223,7 +223,7 @@ const DetalleProducto = () => {
 								<span className="icon">
 									<LiaCartArrowDownSolid strokeWidth=".7" size={20} />
 								</span>
-								<span>Add to cart</span>
+								<span>Añadir al carro</span>
 							</div>
 						}
 						isSpecial
@@ -373,7 +373,7 @@ const DetalleProducto = () => {
 									<span className="icon">
 										<LiaCartArrowDownSolid strokeWidth=".7" size={20} />
 									</span>
-									<span>Add to cart</span>
+									<span>Añadir al carro</span>
 								</div>
 							}
 							isSpecial

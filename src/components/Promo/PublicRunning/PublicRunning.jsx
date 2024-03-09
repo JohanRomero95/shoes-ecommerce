@@ -24,7 +24,7 @@ const PublicRunning = () => {
 					playsInline
 					src={videoRunning}
 					loading="lazy"
-					alt="Video running nike"
+					alt="Video running Nike"
 				/>
 			</section>
 		</Link>
