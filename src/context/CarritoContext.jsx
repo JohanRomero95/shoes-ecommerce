@@ -74,7 +74,7 @@ const CarritoProvider = ({ children }) => {
 							</div>
 						</div>
 					),
-					{ position: "top-left", persist: true },
+					{ position: "top-left", persist: true, duration: 500 },
 				);
 			} else {
 				console.log(
