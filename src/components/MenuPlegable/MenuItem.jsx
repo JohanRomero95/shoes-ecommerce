@@ -5,7 +5,7 @@ import { FaChevronRight } from "react-icons/fa";
 import { FaChevronDown } from "react-icons/fa";
 import "../MenuPlegable/MenuItem.css";
 
-const MenuItem = ({ titulo, submenu, toggleSubMenu }) => {
+const MenuItem = ({ titulo, submenu, toggleSubMenu, toggleMenu }) => {
 	const [showSubMenu, setShowSubMenu] = useState(false);
 	const hasColeccion = titulo.includes("Colección");
 	const tituloClass = `contenedor--menu ${hasColeccion ? "coleccioon" : ""}`;
@@ -23,6 +23,11 @@ const MenuItem = ({ titulo, submenu, toggleSubMenu }) => {
 		toggleSubMenu(titulo);
 	};
 
+	const handleClick = () => {
+		toggleSubMenu(titulo);
+		toggleMenu(false);
+	};
+
 	return (
 		<header
 			className="header--titulo"
@@ -30,7 +35,11 @@ const MenuItem = ({ titulo, submenu, toggleSubMenu }) => {
 			onMouseLeave={handleMouseLeave}
 			title={`${titulo}`}
 			alt={`${titulo}`}>
-			<Link className="navbar--center-titulo" to={`/${titulo}`} title={`${titulo}`}>
+			<Link
+				className="navbar--center-titulo"
+				to={`/${titulo}`}
+				title={`${titulo}`}
+				onClick={handleClick}>
 				<span>{titulo}</span>
 				{!hasColeccion && (
 					<>
@@ -53,6 +62,7 @@ const MenuItem = ({ titulo, submenu, toggleSubMenu }) => {
 								title={`${submenuItem.encabezado}`}>
 								<Link
 									className="contenedor--menu-articulo-titulo"
+									onClick={handleClick}
 									to={`/${titulo}/${submenuItem.encabezado}`}>
 									{submenuItem.encabezado}
 								</Link>
@@ -60,6 +70,7 @@ const MenuItem = ({ titulo, submenu, toggleSubMenu }) => {
 								<ul className="contenedor--menu-articulo-lista">
 									{submenuItem.subCategorias.map((sl, slIndex) => (
 										<Link
+											onClick={handleClick}
 											to={`/${titulo}/${submenuItem.encabezado}/${sl.nombre}`}
 											title={`${sl.nombre}`}
 											key={slIndex}>

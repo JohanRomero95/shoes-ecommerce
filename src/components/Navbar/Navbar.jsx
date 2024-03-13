@@ -17,6 +17,10 @@ const Navbar = () => {
 		setMenuAbierto(!menuAbierto);
 	};
 
+	const handleLinkClick = () => {
+		setMenuAbierto(false);
+	};
+
 	const handleClickOutsideModal = (e) => {
 		if (modalRef.current && !modalRef.current.contains(e.target)) {
 			setMenuAbierto(false);
@@ -54,7 +58,11 @@ const Navbar = () => {
 			</section>
 
 			<section className={`navbar-center ${menuAbierto ? "abierto" : ""}`}>
-				<MenuPlegable toggleSubMenu={toggleSubMenu} subMenuActivo={subMenuActivo} />
+				<MenuPlegable
+					toggleSubMenu={toggleSubMenu}
+					subMenuActivo={subMenuActivo}
+					toggleMenu={toggleMenu}
+				/>
 			</section>
 
 			<section className="navbar-right">

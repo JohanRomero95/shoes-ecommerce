@@ -1,7 +1,7 @@
 import { dataSubMenu } from "../../data/dataSubMenu";
 import MenuItem from "./MenuItem";
 
-const MenuPlegable = ({ toggleSubMenu }) => {
+const MenuPlegable = ({ toggleSubMenu, toggleMenu }) => {
 	const links = dataSubMenu;
 
 	return (
@@ -12,6 +12,7 @@ const MenuPlegable = ({ toggleSubMenu }) => {
 					titulo={menu.titulo}
 					submenu={menu.submenu || []}
 					toggleSubMenu={toggleSubMenu}
+					toggleMenu={toggleMenu}
 				/>
 			))}
 		</>
