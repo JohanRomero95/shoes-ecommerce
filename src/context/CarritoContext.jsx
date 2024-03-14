@@ -108,7 +108,12 @@ const CarritoProvider = ({ children }) => {
 	const cantidadEnCarrito = carrito.reduce((total, item) => total + item.cantidad, 0);
 
 	const precioTotal = () => {
-		return carrito.reduce((total, item) => total + agregarNueves(item.price) * item.cantidad, 0);
+		return carrito.reduce((total, item) => {
+			const precio = item.has_offer
+				? item.price - (item.price * item.offer_percentage) / 100
+				: item.price;
+			return total + agregarNueves(precio) * item.cantidad;
+		}, 0);
 	};
 
 	return (

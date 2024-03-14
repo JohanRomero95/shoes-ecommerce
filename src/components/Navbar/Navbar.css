@@ -144,7 +144,6 @@
     position: absolute;
     opacity: 0;
     top: -6em;
-
   }
 
   .navbar-center.abierto {
@@ -157,7 +156,7 @@
     width: 100%;
     flex-direction: column;
     padding-block: 3.6rem;
-    padding-right: 1rem;
+    padding-inline: 1rem;
     z-index: 100;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -187,7 +186,7 @@
 
 @media (min-width: 426px) {
   .navbar-center.abierto {
-    width: 50%;
+    max-width: 50%;
   }
 }
 

@@ -20,6 +20,10 @@ const DetalleProducto = () => {
 	const { agregarAlCarrito, carrito } = useContext(CarritoContext);
 	const { setTallaSeleccionada } = useTallaContext(null);
 
+	const offerPrice = producto?.has_offer
+		? producto.price - (producto.price * producto.offer_percentage) / 100
+		: null;
+
 	// Galeria
 	const handleClick = (index) => {
 		const nextIndex = (index - 1) % producto.gallery.length;
@@ -52,7 +56,6 @@ const DetalleProducto = () => {
 
 			if (prevCantidad + 1 > producto.stock - cantidadEnCarritoDelProducto) {
 				// AGREGAR AQUI EL TOAST DE NO HAY STOCK
-
 				return prevCantidad;
 			} else {
 				return prevCantidad + 1;
@@ -98,7 +101,7 @@ const DetalleProducto = () => {
 			{producto ? (
 				<div className="responsive-structure">
 					<section className="detalle-producto--titulo">
-						<h1>{producto.name}</h1>
+						<h2>{producto.name}</h2>
 						<p className="detalle-producto--genero">
 							<Link to={`/${producto.gender}/${producto.submenu}`}>
 								{producto.submenu} para {producto.gender}
@@ -122,6 +125,7 @@ const DetalleProducto = () => {
 									}deg)`,
 								}}
 							/>
+
 							{producto.colors && producto.colors.length > 0 ? (
 								<div className="color-optionse">
 									{producto.colors &&
@@ -136,6 +140,15 @@ const DetalleProducto = () => {
 										))}
 								</div>
 							) : null}
+							{offerPrice && (
+								<p className="description-shoes-price-new">
+									{offerPrice && (
+										<span className="offer-percentage">
+											-{producto.offer_percentage}%
+										</span>
+									)}
+								</p>
+							)}
 						</div>
 					</section>
 					<section className="miniatura">
@@ -204,7 +217,8 @@ const DetalleProducto = () => {
 					</div>
 					<div className="contenedor-contador-precio">
 						<p className="detalle-producto--description---credito">
-							Hasta 3 x ${(agregarNueves(producto.price) / 3).toFixed(3)} sin interés
+							Hasta 3 x ${(agregarNueves(offerPrice || producto.price) / 3).toFixed(3)} sin
+							interés
 						</p>
 						<div className="cont-precio">
 							<div className="contador">
@@ -213,7 +227,16 @@ const DetalleProducto = () => {
 								<button onClick={handleClickSumar}>+</button>
 							</div>
 							<p className="precio">
-								<strong>${agregarNueves(producto.price)}</strong>
+								{offerPrice && (
+									<strong className="contenedor-button-precios--descuento">
+										${agregarNueves(producto.price)}
+									</strong>
+								)}
+								{offerPrice ? (
+									<strong>${agregarNueves(offerPrice)}</strong>
+								) : (
+									<strong>${agregarNueves(producto.price)}</strong>
+								)}
 							</p>
 						</div>
 					</div>
@@ -273,11 +296,18 @@ const DetalleProducto = () => {
 								}deg)`,
 							}}
 						/>
+						{offerPrice && (
+							<p className="description-shoes-price-grand">
+								{offerPrice && (
+									<span className="offer-percentage">-{producto.offer_percentage}%</span>
+								)}
+							</p>
+						)}
 					</section>
 
 					<section className="contenedor-detalle-producto">
 						<header className="detalle-producto--titulo">
-							<h1>{producto.name}</h1>
+							<h2>{producto.name}</h2>
 							<p className="detalle-producto--genero">
 								<Link to={`/${producto.gender}/${producto.submenu}`}>
 									{producto.submenu} para {producto.gender}
@@ -354,7 +384,8 @@ const DetalleProducto = () => {
 
 						<div className="contenedor-contador-precio">
 							<p className="detalle-producto--description---credito">
-								Hasta 3 x ${(agregarNueves(producto.price) / 3).toFixed(3)} sin interés
+								Hasta 3 x ${(agregarNueves(offerPrice || producto.price) / 3).toFixed(3)}{" "}
+								sin interés
 							</p>
 							<div className="cont-precio">
 								<div className="contador">
@@ -363,10 +394,20 @@ const DetalleProducto = () => {
 									<button onClick={handleClickSumar}>+</button>
 								</div>
 								<p className="precio">
-									<strong>${agregarNueves(producto.price)}</strong>
+									{offerPrice && (
+										<strong className="contenedor-button-precios--descuento">
+											${agregarNueves(producto.price)}
+										</strong>
+									)}
+									{offerPrice ? (
+										<strong>${agregarNueves(offerPrice)}</strong>
+									) : (
+										<strong>${agregarNueves(producto.price)}</strong>
+									)}
 								</p>
 							</div>
 						</div>
+
 						<ButtonSecondary
 							title={
 								<div className="extra">

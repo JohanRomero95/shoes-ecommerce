@@ -17,9 +17,9 @@ const Navbar = () => {
 		setMenuAbierto(!menuAbierto);
 	};
 
-	const handleLinkClick = () => {
-		setMenuAbierto(false);
-	};
+	// const handleLinkClick = () => {
+	// 	setMenuAbierto(false);
+	// };
 
 	const handleClickOutsideModal = (e) => {
 		if (modalRef.current && !modalRef.current.contains(e.target)) {
@@ -37,7 +37,7 @@ const Navbar = () => {
 
 	useEffect(() => {
 		if (menuAbierto) {
-			document.body.style.overflow = "hidden";
+			// document.body.style.overflow = "inherit";
 		} else {
 			document.body.style.overflow = "auto";
 		}

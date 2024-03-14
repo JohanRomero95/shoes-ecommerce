@@ -6,15 +6,17 @@ import "./Card.css";
 import { LiaCartArrowDownSolid } from "react-icons/lia";
 import { CarritoContext } from "../../context/CarritoContext";
 import ButtonSecondary from "../Button/ButtonSecondary/ButtonSecondary";
-import { toast } from "react-hot-toast";
 
 const Card = ({ ...producto }) => {
 	const [hoverEffect, setHoverEffect] = useState(false);
 	const { agregarAlCarrito } = useContext(CarritoContext);
-
 	const [shoeColor, setShoeColor] = useState(
 		producto.colors && producto.colors.length > 0 ? producto.colors[0] : "",
 	);
+
+	const offerPrice = producto.has_offer
+		? producto.price - (producto.price * producto.offer_percentage) / 100
+		: null;
 
 	useEffect(() => {
 		if (producto.colors && producto.colors.length > 0) {
@@ -82,7 +84,6 @@ const Card = ({ ...producto }) => {
 					<p className="description-shoes-par">
 						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, atque.
 					</p>
-					<p className="description-shoes-price"></p>
 				</div>
 			</Link>
 			<div className="contenedor-button">
@@ -98,10 +99,25 @@ const Card = ({ ...producto }) => {
 					isSpecial
 					onClick={() => agregarAlCarrito(producto, 1)}></ButtonSecondary>
 				<div className="contenedor-button-precios">
-					<p className="contenedor-button-precios--oferta">${agregarNueves(producto.price)}</p>
-					<p>${agregarNueves(producto.price)}</p>
+					{offerPrice && (
+						<p className="contenedor-button-precios--oferta">
+							${agregarNueves(producto.price)}
+						</p>
+					)}
+					{offerPrice ? (
+						<p>${agregarNueves(offerPrice)}</p>
+					) : (
+						<p>${agregarNueves(producto.price)}</p>
+					)}
 				</div>
 			</div>
+			{offerPrice && (
+				<p className="description-shoes-price">
+					{offerPrice && (
+						<span className="offer-percentage">-{producto.offer_percentage}%</span>
+					)}
+				</p>
+			)}
 		</article>
 	);
 };

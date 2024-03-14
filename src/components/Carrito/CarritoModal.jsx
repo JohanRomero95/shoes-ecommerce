@@ -78,9 +78,9 @@ const CarritoModal = ({ isOpen, onClose }) => {
 								</Link>
 								<div className="carrito-contenedor--productos--description">
 									<Link to={`/producto/${prod.id}`} title={`Ir a detalle de ${prod.name}`}>
-										<h1 className="carrito-contenedor--productos--description---titulo">
+										<h2 className="carrito-contenedor--productos--description---titulo">
 											{prod.name}
-										</h1>
+										</h2>
 									</Link>
 									<p className="carrito-contenedor--productos--description---talla">
 										Talla:{" "}
@@ -93,7 +93,14 @@ const CarritoModal = ({ isOpen, onClose }) => {
 									</p>
 									<p className="carrito-contenedor--productos--description---precio">
 										<strong>
-											${`${(agregarNueves(prod.price) * prod.cantidad).toFixed(3)}`}
+											$
+											{`${(
+												agregarNueves(
+													prod.has_offer
+														? prod.price - (prod.price * prod.offer_percentage) / 100
+														: prod.price,
+												) * prod.cantidad
+											).toFixed(3)}`}
 										</strong>
 									</p>
 								</div>

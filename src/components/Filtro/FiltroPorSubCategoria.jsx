@@ -89,9 +89,9 @@ const FiltroPorSubCategoria = () => {
 				</>
 			) : categoriaNoEncontrada ? (
 				<div className="contenedor">
-					<h1 className="not-found">
+					<h3 className="not-found">
 						No se encontraron productos en {subCategorias} de {titulo}
-					</h1>
+					</h3>
 				</div>
 			) : (
 				<div>No se encontraron productos</div>

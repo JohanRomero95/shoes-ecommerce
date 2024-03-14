@@ -21,9 +21,17 @@ const ListaPorTitulo = () => {
 			  );
 
 	const productosOrdenados = ordenMenorAMayor
-		? [...productosFiltradosPorTitulo].sort((a, b) => a.price - b.price)
+		? [...productosFiltradosPorTitulo].sort((a, b) => {
+				const precioA = a.has_offer ? a.price - (a.price * a.offer_percentage) / 100 : a.price;
+				const precioB = b.has_offer ? b.price - (b.price * b.offer_percentage) / 100 : b.price;
+				return precioA - precioB;
+		  })
 		: ordenMayorAMenor
-		? [...productosFiltradosPorTitulo].sort((a, b) => b.price - a.price)
+		? [...productosFiltradosPorTitulo].sort((a, b) => {
+				const precioA = a.has_offer ? a.price - (a.price * a.offer_percentage) / 100 : a.price;
+				const precioB = b.has_offer ? b.price - (b.price * b.offer_percentage) / 100 : b.price;
+				return precioB - precioA;
+		  })
 		: productosFiltradosPorTitulo;
 
 	const toggleFiltro = () => {
