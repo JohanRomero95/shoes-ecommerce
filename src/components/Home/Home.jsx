@@ -51,9 +51,9 @@ const Home = () => {
 					)}
 				</div>
 				<article className="publicidad-video">
-					<h3>
+					<h2>
 						ZAPATILLAS <br /> NUEVA COLECCIÓN
-					</h3>
+					</h2>
 					<ButtonPrimary
 						titulo="Ver Colección"
 						url="/Colección"

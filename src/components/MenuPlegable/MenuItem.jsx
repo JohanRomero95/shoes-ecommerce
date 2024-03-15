@@ -29,21 +29,20 @@ const MenuItem = ({ titulo, submenu, toggleSubMenu, toggleMenu }) => {
 	};
 
 	return (
-		<ul
+		<header
 			className="header--titulo"
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}
 			title={`${titulo}`}
 			alt={`${titulo}`}>
-			<li>
-				<Link
-					className="navbar--center-titulo"
-					to={`/${titulo}`}
-					title={`${titulo}`}
-					onClick={handleClick}>
-					<span>{titulo}</span>
-				</Link>
-			</li>
+			<Link
+				className="navbar--center-titulo"
+				to={`/${titulo}`}
+				title={`${titulo}`}
+				onClick={handleClick}>
+				<span>{titulo}</span>
+			</Link>
+
 			{!hasColeccion && (
 				<>
 					{showSubMenu ? (
@@ -85,7 +84,7 @@ const MenuItem = ({ titulo, submenu, toggleSubMenu, toggleMenu }) => {
 					</div>
 				</div>
 			)}
-		</ul>
+		</header>
 	);
 };
 

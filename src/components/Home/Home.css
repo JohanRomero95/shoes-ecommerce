@@ -27,7 +27,7 @@
 }
 
 .publicidad-video {
-  font-size: 2.5em;
+  font-size: 2em;
   text-align: center;
   padding-block: 1em;
 }
@@ -35,7 +35,7 @@
 
 @media (min-width: 320px) and (max-width: 767px) {
   .publicidad-video {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding-inline: .8em;
   }
 
