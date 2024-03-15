@@ -46,8 +46,7 @@ const Home = () => {
 							alt="Pausar reproducción"
 							aria-label="Pausar reproducción"
 							title="Pausar reproducción"
-							// loading="lazy"
-						></MdOutlinePauseCircleOutline>
+							loading="lazy"></MdOutlinePauseCircleOutline>
 					)}
 				</div>
 				<article className="publicidad-video">

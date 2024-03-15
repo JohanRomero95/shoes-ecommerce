@@ -15,7 +15,7 @@
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .promo-header h2 {
+  .promo-header h4 {
     font-size: .8em;
   }
 }
