@@ -74,6 +74,10 @@
   margin: auto 0;
 }
 
+li {
+  list-style: none;
+}
+
 @media (max-width: 1023px) {
   .contenedor--menu {
     position: absolute;

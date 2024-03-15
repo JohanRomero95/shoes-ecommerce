@@ -55,7 +55,7 @@ const Slider = () => {
 								loading="lazy"
 							/>
 						</Link>
-						<h3>{producto.name}</h3>
+						<h2>{producto.name}</h2>
 					</div>
 				))}
 				<img

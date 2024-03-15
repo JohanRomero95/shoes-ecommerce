@@ -17,8 +17,9 @@
   width: 220px;
 }
 
-.slider-detail h3 {
+.slider-detail h2 {
   text-align: center;
+  font-size: 1.17rem;
 }
 
 .slider-detail img {

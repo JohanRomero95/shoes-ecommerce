@@ -35,13 +35,15 @@ const MenuItem = ({ titulo, submenu, toggleSubMenu, toggleMenu }) => {
 			onMouseLeave={handleMouseLeave}
 			title={`${titulo}`}
 			alt={`${titulo}`}>
-			<Link
-				className="navbar--center-titulo"
-				to={`/${titulo}`}
-				title={`${titulo}`}
-				onClick={handleClick}>
-				<span>{titulo}</span>
-			</Link>
+			<li>
+				<Link
+					className="navbar--center-titulo"
+					to={`/${titulo}`}
+					title={`${titulo}`}
+					onClick={handleClick}>
+					<span>{titulo}</span>
+				</Link>
+			</li>
 			{!hasColeccion && (
 				<>
 					{showSubMenu ? (
