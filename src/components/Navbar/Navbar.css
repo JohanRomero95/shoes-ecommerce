@@ -121,7 +121,6 @@
   }
 }
 
-
 @media (min-width:1024px) {
   .navbar {
     padding-inline: 3rem;
@@ -165,7 +164,6 @@
 
   .contenedor--menu {
     padding-left: 0;
-    margin-block: 0;
     align-items: start;
     left: auto;
   }

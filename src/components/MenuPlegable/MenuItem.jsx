@@ -29,7 +29,7 @@ const MenuItem = ({ titulo, submenu, toggleSubMenu, toggleMenu }) => {
 	};
 
 	return (
-		<header
+		<ul
 			className="header--titulo"
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}
@@ -41,16 +41,16 @@ const MenuItem = ({ titulo, submenu, toggleSubMenu, toggleMenu }) => {
 				title={`${titulo}`}
 				onClick={handleClick}>
 				<span>{titulo}</span>
-				{!hasColeccion && (
-					<>
-						{showSubMenu ? (
-							<FaChevronDown className="navbar--center-svg" onClick={handleToggleSubMenu} />
-						) : (
-							<FaChevronRight className="navbar--center-svg" onClick={handleToggleSubMenu} />
-						)}
-					</>
-				)}
 			</Link>
+			{!hasColeccion && (
+				<>
+					{showSubMenu ? (
+						<FaChevronDown className="navbar--center-svg" onClick={handleToggleSubMenu} />
+					) : (
+						<FaChevronRight className="navbar--center-svg" onClick={handleToggleSubMenu} />
+					)}
+				</>
+			)}
 
 			{showSubMenu && submenu && (
 				<div className={tituloClass}>
@@ -83,7 +83,7 @@ const MenuItem = ({ titulo, submenu, toggleSubMenu, toggleMenu }) => {
 					</div>
 				</div>
 			)}
-		</header>
+		</ul>
 	);
 };
 
